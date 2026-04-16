@@ -4,7 +4,7 @@ window.API = {
     const token = AppState.get('token');
     const headers = { 'Content-Type': 'application/json', ...options.headers };
     if (token) headers['X-Session-Token'] = token;
-    if (AppState.get('isAdmin')) headers['X-Admin-Token'] = token;
+    if (AppState.get('isAdmin')) headers['X-Admin-Token'] = AppState.get('adminPassword') || '';
 
     const res = await fetch(url, { ...options, headers });
     const data = await res.json();
