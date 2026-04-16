@@ -1,0 +1,93 @@
+/* Tablet / iPad */
+@media (max-width: 1024px) {
+  .investigation-layout {
+    grid-template-columns: 180px 1fr;
+  }
+  .investigation-findings {
+    display: none;
+  }
+
+  .board-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .modules-layout {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .top-nav-info .nav-item.hide-tablet {
+    display: none;
+  }
+}
+
+/* Mobile / iPad Portrait */
+@media (max-width: 768px) {
+  .investigation-layout {
+    grid-template-columns: 1fr;
+  }
+  .investigation-sidebar {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    width: 260px;
+    z-index: 900;
+    box-shadow: var(--shadow-lg);
+  }
+  .investigation-sidebar.open {
+    display: block;
+  }
+
+  .board-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .modules-layout {
+    grid-template-columns: 1fr;
+  }
+  .modules-list {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    width: 260px;
+    z-index: 900;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .top-nav-info {
+    display: none;
+  }
+
+  .top-nav {
+    padding: 0 0.5rem;
+  }
+
+  .modal {
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .login-container {
+    padding: 1.5rem;
+  }
+}
+
+/* Touch optimizations */
+@media (pointer: coarse) {
+  .btn { min-height: 44px; min-width: 44px; }
+  .nav-link { min-height: 44px; }
+  input, select, textarea { min-height: 44px; font-size: 16px; }
+
+  .board-cards .card {
+    padding: 0.75rem;
+  }
+}

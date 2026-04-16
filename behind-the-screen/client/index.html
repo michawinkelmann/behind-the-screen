@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Behind the Screen - Ermittlungsspiel</title>
+  <link rel="stylesheet" href="/css/colors.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/investigator-theme.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-screen">
+      <div class="login-container">
+        <div class="login-title">Behind the Screen</div>
+        <div class="login-subtitle">Ermittlungsspiel - Radikalisierung verstehen und verhindern</div>
+
+        <div class="login-tabs">
+          <button class="login-tab active" data-tab="login">Anmelden</button>
+          <button class="login-tab" data-tab="register">Neues Team</button>
+          <button class="login-tab" data-tab="admin">Admin</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="login-form">
+          <div class="form-group">
+            <label for="login-name">Teamname</label>
+            <input type="text" id="login-name" placeholder="z.B. Team Gamer" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Passwort</label>
+            <input type="password" id="login-password" placeholder="Passwort eingeben" required>
+          </div>
+          <div class="login-error" id="login-error"></div>
+          <button type="submit" class="btn btn-primary w-full">Anmelden</button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" class="login-form hidden">
+          <div class="form-group">
+            <label for="register-name">Teamname</label>
+            <input type="text" id="register-name" placeholder="z.B. Team Gamer" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Passwort</label>
+            <input type="password" id="register-password" placeholder="Passwort waehlen" required>
+          </div>
+          <div class="form-group">
+            <label for="register-spur">Primaere Spur</label>
+            <select id="register-spur" required>
+              <option value="">Spur waehlen...</option>
+              <option value="gamer">Der Gamer (In-Game-Verhalten)</option>
+              <option value="creator">Der Creator (TikTok/YouTube)</option>
+              <option value="discord">Das Discord-Mitglied (Chat-Verlaeufe)</option>
+              <option value="social-media">Social Media (Instagram/Netzwerk)</option>
+              <option value="algorithmus">Der Algorithmus (Feed-Analyse)</option>
+            </select>
+          </div>
+          <div class="login-error" id="register-error"></div>
+          <button type="submit" class="btn btn-primary w-full">Team erstellen</button>
+        </form>
+
+        <!-- Admin Login -->
+        <form id="admin-login-form" class="login-form hidden">
+          <div class="form-group">
+            <label for="admin-password">Admin-Passwort</label>
+            <input type="password" id="admin-password" placeholder="Admin-Passwort" required>
+          </div>
+          <div class="login-error" id="admin-error"></div>
+          <button type="submit" class="btn btn-primary w-full">Als Admin anmelden</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main App (hidden until logged in) -->
+    <div id="main-app" class="hidden">
+      <!-- Broadcast Banner -->
+      <div id="broadcast-banner" class="broadcast-banner">
+        <span id="broadcast-text"></span>
+        <button class="broadcast-close" onclick="document.getElementById('broadcast-banner').classList.remove('visible')">&times;</button>
+      </div>
+
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <div class="top-nav-brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          Behind the Screen
+        </div>
+        <div class="top-nav-info">
+          <div class="nav-item">Team: <strong id="nav-team-name"></strong></div>
+          <div class="nav-item hide-tablet">Spur: <strong id="nav-team-spur"></strong></div>
+          <div class="nav-item">Tag <strong id="nav-day">1</strong>/3</div>
+          <div class="nav-item">Phase: <strong id="nav-phase">Ermittlung</strong></div>
+          <div class="nav-item" id="nav-timer-container" style="display:none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <strong id="nav-timer">--:--</strong>
+          </div>
+        </div>
+        <div class="top-nav-actions">
+          <a href="#/investigation" class="nav-link" data-screen="investigation">Ermittlung</a>
+          <a href="#/board" class="nav-link" data-screen="board">Pinnwand</a>
+          <a href="#/modules" class="nav-link" data-screen="modules">Module</a>
+          <a href="#/algorithm" class="nav-link" data-screen="algorithm">Algorithmus-Lab</a>
+          <a href="#/admin" class="nav-link" data-screen="admin" id="nav-admin-link" style="display:none">Admin</a>
+        </div>
+      </nav>
+
+      <!-- Screens -->
+      <div class="main-content">
+        <!-- Investigation Central -->
+        <section id="screen-investigation" class="screen active">
+          <div class="investigation-layout">
+            <aside class="investigation-sidebar" id="investigation-sidebar">
+              <h3 style="font-size:0.9rem; margin-bottom:0.75rem; color:var(--accent);">Spuren</h3>
+              <div id="spur-list"></div>
+              <div style="margin-top:1.5rem;">
+                <h3 style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">Fortschritt</h3>
+                <div id="progress-overview"></div>
+              </div>
+            </aside>
+            <main class="investigation-main">
+              <div class="search-bar mb-1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                <input type="text" id="evidence-search" placeholder="Beweise durchsuchen...">
+              </div>
+              <div class="filter-bar" id="evidence-filters">
+                <select id="filter-type"><option value="">Alle Typen</option></select>
+                <select id="filter-source"><option value="">Alle Quellen</option></select>
+                <select id="filter-importance">
+                  <option value="">Alle Wichtigkeiten</option>
+                  <option value="5">Sehr hoch (5)</option>
+                  <option value="4">Hoch (4+)</option>
+                  <option value="3">Mittel (3+)</option>
+                </select>
+              </div>
+              <div id="evidence-list" style="display:flex; flex-direction:column; gap:0.5rem;"></div>
+              <div id="evidence-loading" class="text-muted text-sm mt-2" style="text-align:center;"></div>
+            </main>
+            <aside class="investigation-findings">
+              <h3 style="font-size:0.9rem; margin-bottom:0.75rem; color:var(--accent);">Team-Erkenntnisse</h3>
+              <div id="team-findings-list"></div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Board -->
+        <section id="screen-board" class="screen">
+          <div class="board-layout" id="board-container"></div>
+        </section>
+
+        <!-- Modules -->
+        <section id="screen-modules" class="screen">
+          <div class="modules-layout">
+            <aside class="modules-list" id="modules-sidebar"></aside>
+            <main class="modules-content" id="modules-content">
+              <div class="text-muted" style="text-align:center; margin-top:3rem;">
+                Waehle ein Modul aus der Liste links.
+              </div>
+            </main>
+          </div>
+        </section>
+
+        <!-- Algorithm Lab -->
+        <section id="screen-algorithm" class="screen">
+          <div class="algorithm-layout" id="algorithm-container"></div>
+        </section>
+
+        <!-- Admin Panel -->
+        <section id="screen-admin" class="screen">
+          <div class="admin-layout" id="admin-container"></div>
+        </section>
+      </div>
+
+      <!-- Team Chat (bottom panel) -->
+      <div id="chat-panel" style="position:fixed; bottom:0; right:1rem; width:340px; z-index:800;">
+        <div id="chat-toggle" style="background:var(--bg-card); border:1px solid var(--border); border-bottom:none; border-radius:var(--radius-md) var(--radius-md) 0 0; padding:0.5rem 1rem; cursor:pointer; display:flex; align-items:center; justify-content:space-between;">
+          <span style="font-size:0.85rem; font-weight:600;">Team-Chat</span>
+          <span id="chat-unread" class="badge" style="background:var(--accent); color:var(--text-inverse); display:none;">0</span>
+        </div>
+        <div id="chat-body" class="hidden" style="background:var(--bg-secondary); border:1px solid var(--border); border-top:none; max-height:300px; display:flex; flex-direction:column;">
+          <div id="chat-messages" style="flex:1; overflow-y:auto; padding:0.5rem; max-height:220px;"></div>
+          <div style="padding:0.5rem; border-top:1px solid var(--border); display:flex; gap:0.5rem;">
+            <input type="text" id="chat-input" placeholder="Nachricht..." style="flex:1;">
+            <button class="btn btn-primary btn-sm" id="chat-send">Senden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pause Overlay -->
+    <div id="pause-overlay" class="pause-overlay">
+      <h2>Spiel pausiert</h2>
+      <p id="pause-message">Die Lehrkraft hat das Spiel pausiert.</p>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-container"></div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/app-state.js"></script>
+  <script src="/js/api/api-calls.js"></script>
+  <script src="/js/api/socket-client.js"></script>
+  <script src="/js/utils/notifications.js"></script>
+  <script src="/js/ui/screen-manager.js"></script>
+  <script src="/js/ui/evidence-viewer.js"></script>
+  <script src="/js/ui/chat-viewer.js"></script>
+  <script src="/js/ui/profile-viewer.js"></script>
+  <script src="/js/ui/investigation-central.js"></script>
+  <script src="/js/ui/team-board.js"></script>
+  <script src="/js/ui/learning-hub.js"></script>
+  <script src="/js/ui/algorithm-lab.js"></script>
+  <script src="/js/ui/admin-panel.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+:root {
+  /* Primary backgrounds */
+  --bg-primary: #0f1923;
+  --bg-secondary: #1a2332;
+  --bg-card: #232f3b;
+  --bg-card-hover: #2a3847;
+  --bg-input: #1a2332;
+  --bg-modal: rgba(0, 0, 0, 0.85);
+
+  /* Text */
+  --text-primary: #e0e6ed;
+  --text-secondary: #8899a6;
+  --text-muted: #556677;
+  --text-inverse: #0f1923;
+
+  /* Accent colors */
+  --accent: #00d084;
+  --accent-hover: #00b871;
+  --accent-light: rgba(0, 208, 132, 0.15);
+
+  /* Status colors */
+  --warning: #e74c3c;
+  --warning-light: rgba(231, 76, 60, 0.15);
+  --success: #27ae60;
+  --success-light: rgba(39, 174, 96, 0.15);
+  --info: #3498db;
+  --info-light: rgba(52, 152, 219, 0.15);
+  --orange: #ff9500;
+  --orange-light: rgba(255, 149, 0, 0.15);
+
+  /* Sentiment colors (for chat messages) */
+  --sentiment-positive: #27ae60;
+  --sentiment-neutral: #8899a6;
+  --sentiment-concerning: #ff9500;
+  --sentiment-alarming: #e74c3c;
+
+  /* Spur colors */
+  --spur-gamer: #9b59b6;
+  --spur-creator: #e74c3c;
+  --spur-discord: #5865F2;
+  --spur-social: #e91e63;
+  --spur-algorithm: #ff9500;
+
+  /* Borders */
+  --border: #2a3847;
+  --border-light: #3a4857;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+  /* Spacing */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
