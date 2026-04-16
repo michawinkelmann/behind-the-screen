@@ -3,6 +3,7 @@ window.AppState = {
   _state: {
     team: null,
     token: null,
+    adminPassword: null,
     isAdmin: false,
     currentScreen: 'investigation',
     gameState: null,
@@ -46,7 +47,8 @@ window.AppState = {
     const data = {
       token: this._state.token,
       team: this._state.team,
-      isAdmin: this._state.isAdmin
+      isAdmin: this._state.isAdmin,
+      adminPassword: this._state.adminPassword
     };
     localStorage.setItem('bts_session', JSON.stringify(data));
   },
@@ -58,6 +60,7 @@ window.AppState = {
         this._state.token = data.token;
         this._state.team = data.team;
         this._state.isAdmin = data.isAdmin || false;
+        this._state.adminPassword = data.adminPassword || null;
         return true;
       }
     } catch (e) {}
@@ -69,6 +72,7 @@ window.AppState = {
     this._state.token = null;
     this._state.team = null;
     this._state.isAdmin = false;
+    this._state.adminPassword = null;
   },
 
   // Helper: get spur display name

@@ -5,8 +5,20 @@
 
   // Check for existing session
   if (AppState.load()) {
+    // Admin sessions live in server memory and don't survive a restart.
+    // Re-login silently with the stored password so Pinnwand/REST stays authorized.
+    if (AppState.get('isAdmin') && AppState.get('adminPassword')) {
+      API.adminLogin(AppState.get('adminPassword'))
+        .then(({ token }) => {
+          AppState.set('token', token);
+          AppState.save();
+          SocketClient.authenticate(token);
+        })
+        .catch(() => { AppState.clear(); location.reload(); });
+    } else {
+      SocketClient.authenticate(AppState.get('token'));
+    }
     showApp();
-    SocketClient.authenticate(AppState.get('token'));
   }
 
   // Login tabs
@@ -79,9 +91,11 @@
       errorEl.textContent = '';
       const { token } = await API.adminLogin(password);
       AppState.set('team', { id: 0, name: 'Admin' });
-      AppState.set('token', password); // admin uses password as token for API calls
+      AppState.set('token', token);
+      AppState.set('adminPassword', password);
       AppState.set('isAdmin', true);
       AppState.save();
+      SocketClient.authenticate(token);
       showApp();
     } catch (err) {
       errorEl.textContent = err.message;

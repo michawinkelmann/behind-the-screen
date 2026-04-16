@@ -2,6 +2,8 @@
 window.AdminPanel = {
   _initialized: false,
   _refreshInterval: null,
+  _boardFilter: 'all',
+  _boardListenerBound: false,
 
   async onShow() {
     if (!AppState.get('isAdmin')) {
@@ -9,6 +11,12 @@ window.AdminPanel = {
       return;
     }
     this.render();
+    if (!this._boardListenerBound) {
+      AppState.on('boardNotes', () => {
+        if (AppState.get('currentScreen') === 'admin') this.renderBoardNotes();
+      });
+      this._boardListenerBound = true;
+    }
     await this.refresh();
 
     // Auto-refresh every 10s
@@ -57,6 +65,21 @@ window.AdminPanel = {
       <div class="admin-section">
         <h3>Teams</h3>
         <div id="admin-teams-list"></div>
+      </div>
+
+      <!-- Pinnwand (Live-Mitlesen) -->
+      <div class="admin-section">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+          <h3 style="margin:0;">Pinnwand <span class="text-xs text-muted" id="admin-board-count"></span></h3>
+          <div style="display:flex; gap:0.3rem; flex-wrap:wrap;">
+            <button class="btn btn-sm btn-secondary admin-board-filter" data-column="all">Alle</button>
+            <button class="btn btn-sm btn-secondary admin-board-filter" data-column="timeline">Timeline</button>
+            <button class="btn btn-sm btn-secondary admin-board-filter" data-column="profiles">Profile</button>
+            <button class="btn btn-sm btn-secondary admin-board-filter" data-column="warnsignale">Warnsignale</button>
+            <button class="btn btn-sm btn-secondary admin-board-filter" data-column="interventions">Interventionen</button>
+          </div>
+        </div>
+        <div id="admin-board-notes" style="margin-top:0.75rem; max-height:420px; overflow-y:auto;"></div>
       </div>
 
       <!-- Activity Log -->
@@ -122,6 +145,23 @@ window.AdminPanel = {
         this.refresh();
       }
     });
+
+    // Pinnwand filter
+    container.querySelectorAll('.admin-board-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this._boardFilter = btn.dataset.column;
+        container.querySelectorAll('.admin-board-filter').forEach(b => {
+          b.classList.toggle('btn-primary', b.dataset.column === this._boardFilter);
+          b.classList.toggle('btn-secondary', b.dataset.column !== this._boardFilter);
+        });
+        this.renderBoardNotes();
+      });
+    });
+    const activeFilterBtn = container.querySelector(`.admin-board-filter[data-column="${this._boardFilter}"]`);
+    if (activeFilterBtn) {
+      activeFilterBtn.classList.remove('btn-secondary');
+      activeFilterBtn.classList.add('btn-primary');
+    }
 
     document.getElementById('admin-export-btn').addEventListener('click', async () => {
       const data = await API.adminExport();
@@ -212,6 +252,14 @@ window.AdminPanel = {
         `).join('')}
       `;
 
+      // Pinnwand notes
+      try {
+        const { notes } = await API.getBoardNotes();
+        AppState.set('boardNotes', notes || []);
+      } catch (e) {
+        this.renderBoardNotes();
+      }
+
       // Activity
       const { recent } = await API.adminGetActivity();
       document.getElementById('admin-activity-log').innerHTML = recent.slice(0, 30).map(r => `
@@ -225,6 +273,63 @@ window.AdminPanel = {
     } catch (e) {
       console.error('Admin refresh error:', e);
     }
+  },
+
+  renderBoardNotes() {
+    const container = document.getElementById('admin-board-notes');
+    const countEl = document.getElementById('admin-board-count');
+    if (!container) return;
+
+    const all = AppState.get('boardNotes') || [];
+    const notes = this._boardFilter === 'all'
+      ? all
+      : all.filter(n => n.column_name === this._boardFilter);
+
+    if (countEl) {
+      countEl.textContent = this._boardFilter === 'all'
+        ? `(${all.length} gesamt)`
+        : `(${notes.length} / ${all.length})`;
+    }
+
+    if (notes.length === 0) {
+      container.innerHTML = '<div class="text-muted text-sm" style="padding:1rem; text-align:center;">Noch keine Pinnwand-Eintraege.</div>';
+      return;
+    }
+
+    const columnLabels = {
+      timeline: 'Timeline',
+      profiles: 'Profile',
+      warnsignale: 'Warnsignale',
+      interventions: 'Interventionen'
+    };
+
+    container.innerHTML = notes.map(note => {
+      const tags = (() => { try { return JSON.parse(note.tags); } catch (e) { return []; } })();
+      const commentCount = (note.comments || []).length;
+      const content = note.content && note.content.length > 240
+        ? note.content.slice(0, 240) + '...'
+        : (note.content || '');
+
+      return `
+        <div class="card mb-1" style="padding:0.6rem;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:0.5rem; flex-wrap:wrap;">
+            <div>
+              <strong>${this.escapeHTML(note.title)}</strong>
+              <span class="badge badge-type" style="margin-left:0.3rem;">${columnLabels[note.column_name] || note.column_name}</span>
+            </div>
+            <span class="text-xs text-muted">${new Date(note.created_at).toLocaleTimeString('de-DE', {hour:'2-digit', minute:'2-digit'})}</span>
+          </div>
+          <div class="text-xs" style="color:var(--accent); margin-top:0.15rem;">${this.escapeHTML(note.team_name || 'Team')}</div>
+          ${content ? `<div class="text-sm" style="margin-top:0.3rem; white-space:pre-wrap;">${this.escapeHTML(content)}</div>` : ''}
+          ${tags.length > 0 ? `
+            <div style="display:flex; gap:0.2rem; flex-wrap:wrap; margin-top:0.3rem;">
+              ${tags.slice(0, 5).map(t => `<span class="badge badge-type" style="font-size:0.65rem;">${this.escapeHTML(t)}</span>`).join('')}
+            </div>
+          ` : ''}
+          ${commentCount > 0 ? `<div class="text-xs text-muted" style="margin-top:0.3rem;">${commentCount} Kommentar${commentCount > 1 ? 'e' : ''}</div>` : ''}
+        </div>
+      `;
+    }).join('');
   },
 
   escapeHTML(str) {
