@@ -1,0 +1,61 @@
+{
+  "id": "module-2.3",
+  "title": "Manipulationstechniken",
+  "description": "Wie Rekrutierer wie Niklas vorgehen: Love Bombing, Wir-gegen-die-Anderen, schrittweise Eskalation",
+  "day_available": 2,
+  "order": 4,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Die Werkzeuge der Rekrutierer"
+    },
+    {
+      "type": "text",
+      "content": "Rekrutierer in extremistischen Netzwerken sind keine plumpen Propagandisten. Sie sind oft geschickte Manipulatoren, die psychologische Techniken gezielt einsetzen, um Vertrauen aufzubauen und Menschen schrittweise in ihr Weltbild zu ziehen. Diese Techniken sind nicht neu — sie ähneln denen, die auch in Sekten oder von sogenannten Scam-Künstlern eingesetzt werden. Der Unterschied liegt im Medium: Im Internet können Rekrutierer gleichzeitig Dutzende potenzieller Opfer ansprechen."
+    },
+    {
+      "type": "heading",
+      "content": "Love Bombing: Die Überflutung mit Zuneigung"
+    },
+    {
+      "type": "text",
+      "content": "Love Bombing beschreibt eine Technik, bei der eine Person mit übermäßiger Aufmerksamkeit, Zuneigung und Anerkennung überschüttet wird. Für jemanden, der sich einsam oder unverstanden fühlt, ist dieses plötzliche Gefühl von Zugehörigkeit und Wertschätzung extrem mächtig. Es erzeugt eine emotionale Abhängigkeit, die es dem Rekrutierer ermöglicht, später auch fragwürdige Forderungen zu stellen."
+    },
+    {
+      "type": "example",
+      "title": "Niklas und das Love Bombing",
+      "content": "Niklas überhäufte Max von Anfang an mit Lob und Anerkennung: 'Endlich jemand, der es kapiert!', 'Du bist einer der Klügsten hier', 'Wir brauchen Leute wie dich'. Für Max, der gerade Probleme mit seinen Schulfreunden hatte, war diese Zuwendung wie eine Droge. Als Niklas später begann, ideologische Inhalte zu teilen, wollte Max dieses Gefühl der Anerkennung nicht verlieren — und stimmte zu, statt zu widersprechen."
+    },
+    {
+      "type": "heading",
+      "content": "Wir gegen die Anderen"
+    },
+    {
+      "type": "text",
+      "content": "Eine der wirkungsvollsten Manipulationstechniken ist die Aufteilung der Welt in 'Wir' und 'die Anderen'. Die eigene Gruppe wird als überlegen, aufgeklärt und bedroht dargestellt, während alle Außenstehenden als feindlich, ignorant oder gefährlich gelten. Dieses Schwarz-Weiß-Denken vereinfacht komplexe Zusammenhänge und gibt den Mitgliedern ein Gefühl der Überlegenheit."
+    },
+    {
+      "type": "heading",
+      "content": "Schrittweise Eskalation: Die Salamitaktik"
+    },
+    {
+      "type": "text",
+      "content": "Kein Rekrutierer beginnt mit den extremsten Inhalten. Die Eskalation erfolgt in kleinen, kaum wahrnehmbaren Schritten — wie bei einer Salamitaktik. Jede einzelne Scheibe scheint harmlos, doch am Ende ist die gesamte Salami aufgeteilt. Erst ein provokanter Witz, dann ein 'kritisches' Video, dann eine Verschwörungstheorie, dann offene Propaganda. Jeder Schritt baut auf der Akzeptanz des vorherigen auf."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Schritt 1: Harmlose gemeinsame Aktivitäten (Gaming, Memes)",
+        "Schritt 2: Provokante Witze, die als 'nur Humor' abgetan werden",
+        "Schritt 3: Angeblich 'verbotene Wahrheiten' und 'Was dir die Medien nicht zeigen'",
+        "Schritt 4: Offen ideologische Inhalte mit Feindbild-Konstruktion",
+        "Schritt 5: Aufforderung zur aktiven Beteiligung und Verbreitung"
+      ]
+    },
+    {
+      "type": "reflection",
+      "question": "Kennt ihr aus eurem eigenen Alltag Situationen, in denen ähnliche Manipulationstechniken eingesetzt werden — zum Beispiel in Werbung, Politik oder sozialen Medien? Was macht diese Techniken so wirksam?"
+    }
+  ]
+}

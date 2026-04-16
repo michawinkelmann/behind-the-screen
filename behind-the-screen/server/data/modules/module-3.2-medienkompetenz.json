@@ -1,0 +1,67 @@
+{
+  "id": "module-3.2",
+  "title": "Medienkompetenz und Resilienz",
+  "description": "Wie man sich schützt: Kritisches Denken, Fact-Checking und digitale Selbstverteidigung",
+  "day_available": 3,
+  "order": 3,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Medienkompetenz als Schutzschild"
+    },
+    {
+      "type": "text",
+      "content": "Die beste Verteidigung gegen Online-Radikalisierung, Desinformation und Manipulation ist Medienkompetenz — die Fähigkeit, Medieninhalte kritisch zu bewerten, Quellen zu überprüfen und die eigenen Reaktionen auf Inhalte zu reflektieren. Medienkompetenz bedeutet nicht, allem zu misstrauen, sondern bewusst mit Informationen umzugehen, statt sich von Algorithmen und Emotionen leiten zu lassen."
+    },
+    {
+      "type": "heading",
+      "content": "Der STOP-Check: Vier Fragen an jeden Inhalt"
+    },
+    {
+      "type": "list",
+      "items": [
+        "S — Source (Quelle): Wer hat diesen Inhalt erstellt? Ist die Quelle vertrauenswürdig und transparent?",
+        "T — Trigger (Auslöser): Welche Emotion löst der Inhalt bei mir aus? Will er mich bewusst wütend, ängstlich oder empört machen?",
+        "O — Other perspectives (Andere Perspektiven): Gibt es andere Sichtweisen auf das Thema? Was sagen seriöse Quellen dazu?",
+        "P — Purpose (Zweck): Was ist das Ziel dieses Inhalts? Will er informieren, unterhalten — oder manipulieren?"
+      ]
+    },
+    {
+      "type": "heading",
+      "content": "Fact-Checking: Behauptungen überprüfen"
+    },
+    {
+      "type": "text",
+      "content": "Bevor ihr einen Inhalt teilt oder euch eine Meinung bildet, überprüft die zentralen Behauptungen. Nutzt unabhängige Fact-Checking-Seiten wie Correctiv, Mimikama oder den Faktenfinder der Tagesschau. Prüft, ob andere seriöse Medien über dasselbe Thema berichten. Sucht nach der Originalquelle einer Behauptung, statt euch auf Screenshots oder Zusammenfassungen zu verlassen."
+    },
+    {
+      "type": "example",
+      "title": "Wie Max hätte prüfen können",
+      "content": "Niklas teilte regelmäßig Videos mit Behauptungen wie 'Das wird von den Mainstream-Medien verschwiegen'. Hätte Max diese Behauptungen gegoogelt, hätte er schnell festgestellt, dass die meisten entweder erfunden, aus dem Kontext gerissen oder längst widerlegt waren. Doch innerhalb der Echokammer wurde ihm beigebracht, externen Quellen grundsätzlich zu misstrauen — genau das verhinderte den Realitätscheck."
+    },
+    {
+      "type": "heading",
+      "content": "Digitale Resilienz aufbauen"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pflegt vielfältige soziale Kontakte — online und offline",
+        "Folgt bewusst Accounts und Kanälen mit unterschiedlichen Perspektiven",
+        "Nehmt euch Zeit, bevor ihr auf emotionale Inhalte reagiert oder sie teilt",
+        "Reflektiert regelmäßig: Warum sehe ich, was ich sehe? Was zeigt mir der Algorithmus nicht?",
+        "Sprecht offen mit Freunden und Familie über das, was euch online begegnet",
+        "Macht regelmäßig digitale Pausen — Abstand hilft, klarer zu denken"
+      ]
+    },
+    {
+      "type": "simulation_intro",
+      "content": "Im abschließenden Planspiel könnt ihr das Gelernte anwenden: Ihr erhaltet verschiedene Online-Inhalte und müsst bewerten, ob es sich um seriöse Information, Meinungsmache oder gezielte Manipulation handelt. Nutzt den STOP-Check und eure Fact-Checking-Fähigkeiten, um die Inhalte einzuordnen."
+    },
+    {
+      "type": "reflection",
+      "question": "Was nehmt ihr aus dieser Ermittlung für euren eigenen Umgang mit Online-Medien mit? Gibt es etwas, das ihr ab jetzt anders machen wollt?"
+    }
+  ]
+}

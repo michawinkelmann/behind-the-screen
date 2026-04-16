@@ -1,0 +1,142 @@
+[
+  {
+    "id": "stream-twitch-dec-2023-01",
+    "type": "video",
+    "spur": "creator",
+    "source": "Twitch IceWolf88",
+    "date": "2023-12-10",
+    "title": "Erster Stream - Valorant Ranked Grind (Harmlos)",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "Twitch",
+      "stream_title": "Valorant Ranked Grind - Road to Gold!",
+      "duration": "2h 15min",
+      "peak_viewers": 45,
+      "average_viewers": 22,
+      "highlights": ["Clutch-Runde in Overtime", "Lustige Fails mit Timo", "Setup-Tour fuer neue Follower"],
+      "chat_atmosphere": "Freundlich, Memes, normale Twitch-Kultur",
+      "commentary_style": "Fokussiert auf Gameplay, gelegentliche Witze",
+      "description": "Max' erster richtiger Stream. Er ist aufgeregt, zeigt seinen Gaming-Setup, spielt Valorant Ranked mit Timo. Alles ist harmlos und spassig. Typischer kleiner Gaming-Stream."
+    },
+    "analysis": {
+      "context": "Max beginnt mit Streaming als Hobby. Die Inhalte sind komplett gaming-fokussiert und unpolitisch.",
+      "significance": "Baseline-Dokument: So sah Max' Content aus, bevor die Radikalisierung begann.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "stream-twitch-mar-2024-01",
+    "type": "video",
+    "spur": "creator",
+    "source": "Twitch IceWolf88",
+    "date": "2024-03-22",
+    "title": "Stream mit ersten kulturkritischen Kommentaren",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 1,
+    "warnsignale_tags": ["culture-critique", "audience-shift"],
+    "content": {
+      "platform": "Twitch",
+      "stream_title": "CS2 Competitive + Real Talk",
+      "duration": "3h 10min",
+      "peak_viewers": 85,
+      "average_viewers": 52,
+      "highlights": ["Diskussion ueber 'warum Games schlechter werden'", "Rant ueber neue Charakter-Designs", "5 Kill-Streak im Competitive"],
+      "chat_atmosphere": "Zunehmend polarisiert, einige kritische Stimmen werden ignoriert",
+      "commentary_style": "Mix aus Gameplay und Kultur-Kommentaren, 60/40",
+      "description": "Max streamt CS2 und kommentiert nebenbei die Gaming-Industrie. Er beschwert sich ueber 'Diversity-Pflicht' in neuen Games und bekommt dafuer Zustimmung von neuen Zuschauern. Kritische Kommentare im Chat werden von Timo als Mod geloescht."
+    },
+    "analysis": {
+      "context": "Die Streams verschieben sich von reinem Gaming zu Kulturkritik. Das Publikum waechst, weil kontroverse Inhalte mehr Aufmerksamkeit erzeugen.",
+      "significance": "Erste Anzeichen im oeffentlichen Content. Die Algorithmic Amplification beginnt: Kontroverse Streams ziehen mehr Zuschauer an.",
+      "intervention_points": ["Twitch-Moderation haette die Inhalte ueberpruefen koennen"]
+    }
+  },
+  {
+    "id": "stream-twitch-jun-2024-01",
+    "type": "video",
+    "spur": "creator",
+    "source": "Twitch IceWolf88",
+    "date": "2024-06-28",
+    "title": "Gaming Talk Stream - Die Industrie 'entlarven'",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 1,
+    "warnsignale_tags": ["political-content", "radicalized-audience", "moderation-censorship"],
+    "content": {
+      "platform": "Twitch",
+      "stream_title": "REAL TALK: Warum Gaming stirbt + Competitive CS2",
+      "duration": "1h 50min",
+      "peak_viewers": 200,
+      "average_viewers": 130,
+      "highlights": ["20-minuetiger Rant ueber die Gaming-Industrie", "Max zitiert YouTube-Videos von ideologischen Channels", "Chat wird hitzig - viele Supporter, einige Kritiker gebannt"],
+      "chat_atmosphere": "Stark polarisiert. Mods (Timo) loeschen kritische Kommentare aktiv",
+      "commentary_style": "80% Kulturkritik, 20% Gameplay. Fokus auf Industrie-Versagen und Gesellschaftskritik",
+      "description": "Max widmet den Stream hauptsaechlich seiner Analyse 'warum Gaming stirbt'. Er zitiert Videos von ideologisch aufgeladenen YouTube-Channels und praesentiert sich als jemand, der 'die Wahrheit' kennt. Kritische Chat-Nachrichten werden von Timo sofort geloescht. Neue Follower kommen aus ideologisch aehnlichen Communities."
+    },
+    "analysis": {
+      "context": "Die Streams sind jetzt primaer politisch, nicht mehr gaming-fokussiert. Das Publikum hat sich verschoben zu ideologisch motivierten Zuschauern.",
+      "significance": "Max hat eine Plattform aufgebaut, die seine Radikalisierung verstaerkt. Mehr Zuschauer = mehr Validation = mehr Extremismus. Ein klassischer Feedback-Loop.",
+      "intervention_points": ["Twitch haette die geloeschten kritischen Kommentare als Warnsignal erkennen koennen"]
+    }
+  },
+  {
+    "id": "stream-twitch-sep-2024-01",
+    "type": "video",
+    "spur": "creator",
+    "source": "Twitch IceWolf88",
+    "date": "2024-09-15",
+    "title": "Stream mit offenem ideologischem Content",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["ideology", "recruitment", "audience-radicalization"],
+    "content": {
+      "platform": "Twitch",
+      "stream_title": "Die Wahrheit, die niemand hoeren will",
+      "duration": "2h 20min",
+      "peak_viewers": 450,
+      "average_viewers": 280,
+      "highlights": ["Max spricht offen ueber 'Maennlichkeitskrise'", "Empfiehlt radikale YouTube-Channels", "Verweist auf Discord fuer 'tiefere Gespraeche'", "Liest Texte von ideologischen Autoren vor"],
+      "chat_atmosphere": "Echokammer: Nur zustimmende Kommentare sichtbar, strikte Moderation",
+      "commentary_style": "90% ideologischer Content, 10% Gaming als Aufhänger",
+      "description": "Max hat jetzt eine deutlich groessere Zuschauerschaft. Der Stream ist kaum noch Gaming - er liest Auszuege aus ideologischen Texten vor, empfiehlt YouTube-Channels aus dem Niklas-Netzwerk und fordert Zuschauer auf, seinem Discord beizutreten fuer 'echte Diskussionen'. Kritische Stimmen werden sofort gebannt."
+    },
+    "analysis": {
+      "context": "Max nutzt seine Streaming-Plattform aktiv zur Rekrutierung. Er verweist auf den Discord und empfiehlt radikale Inhalte.",
+      "significance": "Max ist vom Konsumenten zum Verbreiter geworden. Er radikalisiert jetzt aktiv andere junge Menschen ueber seine Plattform.",
+      "intervention_points": ["Twitch haette den Stream wegen Community Guidelines ueberpruefen muessen", "Zuschauer haetten den Stream melden koennen"]
+    }
+  },
+  {
+    "id": "stream-twitch-jan-2025-01",
+    "type": "video",
+    "spur": "creator",
+    "source": "Twitch IceWolf88",
+    "date": "2025-01-18",
+    "title": "Letzter Stream - The Truth Stream (Verschwoerung)",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["conspiracy", "extremism", "point-of-no-return"],
+    "content": {
+      "platform": "Twitch",
+      "stream_title": "THE TRUTH STREAM - Was sie uns verschweigen",
+      "duration": "3h 05min",
+      "peak_viewers": 1000,
+      "average_viewers": 620,
+      "highlights": ["Max spricht ueber 'warum die Menschen schlafen'", "Verweist auf kommende 'Veraenderung'", "Verschwoerungstheorien ueber Medien und Politik", "Zuschauer werden aufgefordert, 'aufzuwachen'"],
+      "chat_atmosphere": "Stark radikalisiert, fanatische Unterstuetzung, jede Kritik wird sofort gebannt",
+      "commentary_style": "100% ideologisch. Verschwörungstheorien, Aufrufe zum Handeln",
+      "description": "Max' letzter grosser Stream vor der Polizei-Intervention. Er spricht offen ueber Verschwoerungstheorien, deutet an, dass sich 'bald etwas aendern wird' und fordert seine Community auf, 'bereit zu sein'. Der Chat ist eine reine Echokammer. Dies ist Max' Peak-Radikalisierung in oeffentlichem Content."
+    },
+    "analysis": {
+      "context": "Der letzte oeffentliche Stream zeigt die volle Radikalisierung. Max deutet realweltliche Aktionen an, ohne konkret zu werden.",
+      "significance": "Dieser Stream haette fuer Behoerden ein deutliches Warnsignal sein muessen. Die Sprache ist die von jemandem, der kurz vor einer Aktion steht.",
+      "intervention_points": ["Twitch-Moderation haette eingreifen muessen", "Zuschauer haetten den Stream bei den Behoerden melden koennen", "Eltern haetten die wachsende Zuschauerzahl bemerken koennen"]
+    }
+  }
+]

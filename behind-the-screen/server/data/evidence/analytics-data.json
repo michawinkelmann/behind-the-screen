@@ -1,0 +1,231 @@
+[
+  {
+    "id": "analytics-screentime-overview",
+    "type": "analytics",
+    "spur": "algorithmus",
+    "source": "Screentime-Daten (Smartphone)",
+    "date": "2025-01-30",
+    "title": "Bildschirmzeit-Verlauf Nov 2023 - Jan 2025",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["screentime-increase", "behavioral-change"],
+    "content": {
+      "metric": "daily_screentime_hours",
+      "data_points": [
+        {"month": "2023-11", "hours": 2.5, "top_apps": ["CS2", "TikTok", "WhatsApp", "Instagram"], "gaming_percent": 60, "social_percent": 30, "messaging_percent": 10},
+        {"month": "2024-01", "hours": 3.2, "top_apps": ["CS2", "TikTok", "Discord", "YouTube"], "gaming_percent": 50, "social_percent": 35, "messaging_percent": 15},
+        {"month": "2024-03", "hours": 4.1, "top_apps": ["Discord", "YouTube", "TikTok", "CS2"], "gaming_percent": 30, "social_percent": 40, "messaging_percent": 30},
+        {"month": "2024-06", "hours": 5.8, "top_apps": ["Discord", "YouTube", "Telegram", "TikTok"], "gaming_percent": 15, "social_percent": 45, "messaging_percent": 40},
+        {"month": "2024-09", "hours": 7.2, "top_apps": ["Discord", "Telegram", "YouTube", "Twitch"], "gaming_percent": 10, "social_percent": 35, "messaging_percent": 55},
+        {"month": "2024-12", "hours": 8.5, "top_apps": ["Telegram", "Discord", "YouTube", "Signal"], "gaming_percent": 5, "social_percent": 30, "messaging_percent": 65},
+        {"month": "2025-01", "hours": 9.1, "top_apps": ["Telegram", "Discord", "Signal", "YouTube"], "gaming_percent": 3, "social_percent": 25, "messaging_percent": 72}
+      ],
+      "description": "Max' Bildschirmzeit hat sich von November 2023 bis Januar 2025 fast vervierfacht. Noch auffaelliger ist die Verschiebung: Gaming-Apps wurden fast vollstaendig durch Messaging-Apps (Discord, Telegram, Signal) ersetzt. Dies zeigt den Uebergang von Freizeitnutzung zu intensiver ideologischer Kommunikation."
+    },
+    "analysis": {
+      "context": "Die Screentime-Daten zeigen eine dramatische Verschiebung im Nutzungsverhalten. Was als normales Gaming begann, wurde zu exzessiver Nutzung von Kommunikationsplattformen.",
+      "significance": "Der Wechsel von Gaming zu Messaging ist ein starkes Warnsignal. Es zeigt, dass Max' Online-Aktivitaet nicht mehr Unterhaltung ist, sondern aktive ideologische Vernetzung.",
+      "intervention_points": ["Eltern haetten die Screentime-Berichte auf dem Smartphone pruefen koennen", "Der sprunghafte Anstieg ab Maerz 2024 waere ein fruehes Warnsignal gewesen"]
+    }
+  },
+  {
+    "id": "analytics-twitch-growth",
+    "type": "analytics",
+    "spur": "creator",
+    "source": "Twitch Analytics IceWolf88",
+    "date": "2025-01-20",
+    "title": "Twitch-Kanal Wachstum und Content-Shift",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["audience-growth", "content-shift", "radicalized-audience"],
+    "content": {
+      "metric": "twitch_channel_analytics",
+      "data_points": [
+        {"month": "2023-12", "followers": 45, "avg_viewers": 12, "peak_viewers": 45, "streams": 8, "content_type": "Gaming (100%)", "new_followers_source": "Twitch-Suche, Freunde"},
+        {"month": "2024-03", "followers": 180, "avg_viewers": 52, "peak_viewers": 85, "streams": 12, "content_type": "Gaming (60%) + Talk (40%)", "new_followers_source": "Twitch-Suche, YouTube-Crossposts"},
+        {"month": "2024-06", "followers": 520, "avg_viewers": 130, "peak_viewers": 200, "streams": 10, "content_type": "Talk (80%) + Gaming (20%)", "new_followers_source": "YouTube, Discord-Raids, ideologische Communities"},
+        {"month": "2024-09", "followers": 1850, "avg_viewers": 280, "peak_viewers": 450, "streams": 15, "content_type": "Ideologie (90%) + Gaming (10%)", "new_followers_source": "Niklas-Netzwerk, Telegram-Gruppen, Raids"},
+        {"month": "2025-01", "followers": 4200, "avg_viewers": 620, "peak_viewers": 1000, "streams": 8, "content_type": "Ideologie (100%)", "new_followers_source": "Extremistische Netzwerke, Telegram, Signal"}
+      ],
+      "description": "Max' Twitch-Kanal wuchs exponentiell - aber nicht wegen besserem Gaming-Content. Das Wachstum korreliert direkt mit der Radikalisierung des Contents. Je extremer die Inhalte, desto mehr Zuschauer. Die Quelle der neuen Follower verschob sich von organischer Twitch-Suche zu gezielten Raids aus ideologischen Netzwerken."
+    },
+    "analysis": {
+      "context": "Die Twitch-Analytics zeigen den klassischen Algorithmus-Feedback-Loop: Kontroverse Inhalte erzeugen mehr Engagement, mehr Engagement fuehrt zu mehr Sichtbarkeit, mehr Sichtbarkeit zieht gleichgesinnte Zuschauer an.",
+      "significance": "Fuer einen 17-Jaehrigen ist dieses Wachstum extrem validierend. Die steigenden Zahlen bestaetigen in Max' Wahrnehmung, dass er 'recht hat' und seine Botschaft wichtig ist.",
+      "intervention_points": ["Twitch haette das ungewoehnliche Wachstumsmuster und den Content-Shift algorithmisch erkennen koennen"]
+    }
+  },
+  {
+    "id": "analytics-tiktok-engagement",
+    "type": "analytics",
+    "spur": "algorithmus",
+    "source": "TikTok Analytics @IceWolf88",
+    "date": "2025-01-15",
+    "title": "TikTok Engagement-Rate nach Content-Typ",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["algorithm-amplification", "engagement-reward"],
+    "content": {
+      "metric": "engagement_by_content_type",
+      "categories": [
+        {"type": "Gaming-Clips", "avg_views": 450, "avg_likes": 35, "avg_comments": 8, "avg_shares": 3, "engagement_rate": 10.2, "algorithm_boost": "niedrig"},
+        {"type": "Gaming-Memes", "avg_views": 1200, "avg_likes": 120, "avg_comments": 25, "avg_shares": 15, "engagement_rate": 13.3, "algorithm_boost": "mittel"},
+        {"type": "Kultur-Kritik", "avg_views": 8500, "avg_likes": 890, "avg_comments": 230, "avg_shares": 120, "engagement_rate": 14.6, "algorithm_boost": "hoch"},
+        {"type": "Anti-Woke Rants", "avg_views": 25000, "avg_likes": 3200, "avg_comments": 850, "avg_shares": 450, "engagement_rate": 18.0, "algorithm_boost": "sehr hoch"},
+        {"type": "Verschwoerung/Ideologie", "avg_views": 45000, "avg_likes": 5100, "avg_comments": 1800, "avg_shares": 920, "engagement_rate": 17.4, "algorithm_boost": "sehr hoch"}
+      ],
+      "description": "Die TikTok-Daten zeigen eindeutig: Je extremer Max' Content wurde, desto mehr Reichweite bekam er. Gaming-Clips erreichten durchschnittlich 450 Views. Ideologische Videos erreichten 45.000. Der TikTok-Algorithmus belohnte emotionalen, polarisierenden Content mit bis zu 100x mehr Reichweite. Fuer einen Teenager ist das ein unwiderstehlicher Anreiz."
+    },
+    "analysis": {
+      "context": "Diese Daten sind der Kern des Algorithmus-Problems. TikToks Empfehlungsalgorithmus optimiert fuer Engagement (Watch-Time, Likes, Kommentare, Shares). Polarisierende Inhalte erzeugen mehr Engagement als neutrale.",
+      "significance": "Dies ist der 'Beweis' fuer die Rolle der Algorithmen in Max' Radikalisierung. Der Algorithmus hat Max nicht radikalisiert - aber er hat die Radikalisierung massiv beschleunigt und belohnt.",
+      "intervention_points": ["TikTok koennte Engagement-Metriken fuer polarisierende Inhalte kuenstlich begrenzen", "Transparenz ueber algorithmische Verstaerkung koennte Nutzer sensibilisieren"]
+    }
+  },
+  {
+    "id": "analytics-discord-activity",
+    "type": "analytics",
+    "spur": "discord",
+    "source": "Discord Server-Statistiken Sturmfront Gaming",
+    "date": "2025-01-25",
+    "title": "Max' Discord-Aktivitaet im Sturmfront-Server",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["community-deepening", "isolation-from-offline"],
+    "content": {
+      "metric": "discord_activity",
+      "data_points": [
+        {"month": "2024-02", "messages_sent": 15, "channels_active": 1, "voice_hours": 0, "role": "Neuling", "status": "Gerade beigetreten"},
+        {"month": "2024-04", "messages_sent": 180, "channels_active": 3, "voice_hours": 8, "role": "Mitglied", "status": "Aktiv in #allgemein und #gaming"},
+        {"month": "2024-06", "messages_sent": 420, "channels_active": 5, "voice_hours": 25, "role": "Vertrauenswuerdig", "status": "Zugang zu #philosophie erhalten"},
+        {"month": "2024-08", "messages_sent": 680, "channels_active": 7, "voice_hours": 45, "role": "Kernmitglied", "status": "Zugang zu #vip-strategie, regelmaessige Voice-Calls mit Niklas"},
+        {"month": "2024-10", "messages_sent": 950, "channels_active": 8, "voice_hours": 60, "role": "Innerer Kreis", "status": "Moderator-Rechte, plant Content mit Niklas"},
+        {"month": "2024-12", "messages_sent": 1200, "channels_active": 8, "voice_hours": 80, "role": "Innerer Kreis", "status": "Rekrutiert selbst neue Mitglieder"},
+        {"month": "2025-01", "messages_sent": 850, "channels_active": 6, "voice_hours": 55, "role": "Innerer Kreis", "status": "Kommunikation verlagert sich auf Telegram/Signal"}
+      ],
+      "description": "Max' Aktivitaet im Sturmfront-Discord zeigt eine klassische Rekrutierungskurve. Von 15 Nachrichten im Februar 2024 auf ueber 1200 im Dezember. Er durchlief alle Stufen: Neuling → Mitglied → Vertrauenswuerdig → Kernmitglied → Innerer Kreis. Im Januar 2025 sinkt die Discord-Aktivitaet - die Kommunikation verlagert sich auf verschluesselte Kanaele (Telegram, Signal)."
+    },
+    "analysis": {
+      "context": "Die Discord-Statistiken zeigen das systematische Rekrutierungsmodell. Der Server hat ein Stufensystem, das Mitglieder schrittweise tiefer hineinzieht.",
+      "significance": "Max wurde nicht zufaellig radikalisiert. Der Sturmfront-Server hat ein strukturiertes System mit Rollen und Zugangsstufen, das gezielt neue Mitglieder einbindet.",
+      "intervention_points": ["Discord haette das Stufensystem als potenzielle Radikalisierungsstruktur erkennen koennen", "Eltern haetten die exzessiven Voice-Chat-Stunden bemerken koennen"]
+    }
+  },
+  {
+    "id": "analytics-youtube-watchtime",
+    "type": "analytics",
+    "spur": "algorithmus",
+    "source": "YouTube Watch-History (Browser-Verlauf)",
+    "date": "2025-01-28",
+    "title": "YouTube Watch-History - Radikalisierungs-Pipeline",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["rabbit-hole", "algorithm-pipeline", "content-escalation"],
+    "content": {
+      "metric": "youtube_watch_categories",
+      "monthly_breakdown": [
+        {"month": "2023-11", "total_hours": 15, "categories": {"gaming": 70, "musik": 15, "comedy": 10, "sonstiges": 5}},
+        {"month": "2024-01", "total_hours": 20, "categories": {"gaming": 55, "gaming_commentary": 20, "musik": 15, "comedy": 10}},
+        {"month": "2024-03", "total_hours": 28, "categories": {"gaming_commentary": 35, "kultur_kritik": 25, "gaming": 20, "politik_light": 15, "sonstiges": 5}},
+        {"month": "2024-06", "total_hours": 40, "categories": {"kultur_kritik": 30, "politik_radikal": 25, "gaming_commentary": 20, "verschwoerung": 15, "gaming": 10}},
+        {"month": "2024-09", "total_hours": 55, "categories": {"politik_radikal": 35, "verschwoerung": 30, "ideologie": 20, "kultur_kritik": 10, "gaming": 5}},
+        {"month": "2024-12", "total_hours": 65, "categories": {"ideologie": 40, "verschwoerung": 30, "politik_radikal": 20, "propaganda": 10}},
+        {"month": "2025-01", "total_hours": 70, "categories": {"ideologie": 45, "propaganda": 25, "verschwoerung": 20, "aktion": 10}}
+      ],
+      "notable_channels_watched": [
+        {"name": "RedPillNiklas", "first_watched": "2024-02", "total_videos": 85, "category": "ideologie"},
+        {"name": "WahrheitsSucher_DE", "first_watched": "2024-04", "total_videos": 45, "category": "verschwoerung"},
+        {"name": "KulturKrieger", "first_watched": "2024-03", "total_videos": 60, "category": "kultur_kritik"},
+        {"name": "DerWiderstand", "first_watched": "2024-07", "total_videos": 35, "category": "politik_radikal"},
+        {"name": "FreieMedien_DE", "first_watched": "2024-08", "total_videos": 50, "category": "propaganda"}
+      ],
+      "description": "Max' YouTube-Verlauf dokumentiert die Radikalisierungs-Pipeline in Reinform. Von Gaming-Videos (70% im Nov 2023) ueber Kulturkritik zu reiner Ideologie und Propaganda (70% im Jan 2025). Die Gesamtzeit stieg von 15 auf 70 Stunden pro Monat. YouTube empfahl systematisch extremere Inhalte basierend auf Watch-Time und Engagement."
+    },
+    "analysis": {
+      "context": "Die YouTube-Watch-History ist einer der staerksten Beweise fuer die algorithmische Radikalisierungspipeline. Jede Kategorie fuehrte zur naechsten, extremeren.",
+      "significance": "YouTube's Empfehlungsalgorithmus hat Max schrittweise von harmlosen Gaming-Videos zu extremistischer Propaganda gefuehrt. Die 'Naechstes Video'-Funktion war der Motor der Radikalisierung.",
+      "intervention_points": ["YouTube koennte die Empfehlungskette bei politisch radikalen Inhalten unterbrechen", "Browser-Verlauf waere fuer Eltern einsehbar gewesen"]
+    }
+  },
+  {
+    "id": "analytics-follower-network",
+    "type": "analytics",
+    "spur": "social-media",
+    "source": "Cross-Platform Follower-Analyse",
+    "date": "2025-01-22",
+    "title": "Follower-Ueberschneidungen zwischen Plattformen",
+    "importance": 3,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["network-overlap", "coordinated-audience"],
+    "content": {
+      "metric": "cross_platform_overlap",
+      "platforms": {
+        "twitch_followers": 4200,
+        "tiktok_followers": 12500,
+        "youtube_subscribers": 2800,
+        "discord_members": 380,
+        "instagram_followers": 1900
+      },
+      "overlap_analysis": {
+        "discord_to_twitch": "78% der Discord-Mitglieder folgen auch auf Twitch",
+        "discord_to_tiktok": "65% der Discord-Mitglieder folgen auch auf TikTok",
+        "twitch_to_discord": "12% der Twitch-Follower sind auch im Discord",
+        "tiktok_to_youtube": "8% der TikTok-Follower haben auch YouTube abonniert"
+      },
+      "audience_demographics_estimate": {
+        "age_14_17": "45%",
+        "age_18_24": "35%",
+        "age_25_plus": "20%",
+        "male": "92%",
+        "german_speaking": "88%"
+      },
+      "description": "Die Plattform-uebergreifende Analyse zeigt ein koordiniertes Netzwerk. Der Discord-Server ist der Kern: 78% der Discord-Mitglieder folgen Max auch auf Twitch. Das Publikum ist zu 92% maennlich und zu 45% minderjaehrig. Dies zeigt, dass Max' Content gezielt junge Maenner erreicht — die Hauptzielgruppe fuer Radikalisierung."
+    },
+    "analysis": {
+      "context": "Die Cross-Platform-Analyse zeigt, dass Max' Reichweite kein Zufall ist. Die Plattformen verstaerken sich gegenseitig, mit dem Discord als Zentrum.",
+      "significance": "45% des Publikums sind minderjaehrig. Max erreicht und beeinflusst aktiv andere Jugendliche — er ist vom Opfer zum Taeter geworden.",
+      "intervention_points": ["Plattformen koennten koordinierte Netzwerke erkennen und kennzeichnen", "Jugendschutz-Behoerden koennten bei hohem Minderjaehrigen-Anteil einschreiten"]
+    }
+  },
+  {
+    "id": "analytics-sentiment-shift",
+    "type": "analytics",
+    "spur": "algorithmus",
+    "source": "Sentiment-Analyse aller Posts",
+    "date": "2025-01-30",
+    "title": "Sentiment-Analyse: Von positiv zu aggressiv",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["language-shift", "aggression-increase"],
+    "content": {
+      "metric": "sentiment_over_time",
+      "data_points": [
+        {"month": "2023-11", "positiv": 65, "neutral": 25, "negativ": 8, "aggressiv": 2, "dominant_emotion": "Freude/Begeisterung"},
+        {"month": "2024-01", "positiv": 55, "neutral": 30, "negativ": 12, "aggressiv": 3, "dominant_emotion": "Freude/Neugier"},
+        {"month": "2024-03", "positiv": 35, "neutral": 25, "negativ": 30, "aggressiv": 10, "dominant_emotion": "Frustration"},
+        {"month": "2024-06", "positiv": 20, "neutral": 15, "negativ": 40, "aggressiv": 25, "dominant_emotion": "Wut/Empoerung"},
+        {"month": "2024-09", "positiv": 10, "neutral": 10, "negativ": 35, "aggressiv": 45, "dominant_emotion": "Wut/Verachtung"},
+        {"month": "2024-12", "positiv": 5, "neutral": 5, "negativ": 30, "aggressiv": 60, "dominant_emotion": "Hass/Ueberlegenheit"},
+        {"month": "2025-01", "positiv": 3, "neutral": 7, "negativ": 25, "aggressiv": 65, "dominant_emotion": "Hass/Handlungsbereitschaft"}
+      ],
+      "key_vocabulary_changes": [
+        {"phase": "frueh", "words": ["nice", "gg", "lol", "Bro", "krass", "geil"]},
+        {"phase": "mitte", "words": ["Wahrheit", "aufwachen", "System", "Mainstream", "Manipulation"]},
+        {"phase": "spaet", "words": ["Kampf", "Widerstand", "Verraeter", "entartet", "Volksfeind", "Aktion"]}
+      ],
+      "description": "Die Sentiment-Analyse aller oeffentlichen Posts und Nachrichten zeigt eine dramatische Verschiebung. Im November 2023 waren 65% der Inhalte positiv. Im Januar 2025 sind 65% aggressiv. Die Sprache veraenderte sich von Gaming-Slang zu politischem Vokabular und schliesslich zu Hass-Sprache. Besonders alarmierend: Im Januar 2025 dominiert 'Handlungsbereitschaft' als Emotion."
+    },
+    "analysis": {
+      "context": "Die Sentiment-Analyse ist ein objektives Mass fuer die Radikalisierung. Sie zeigt nicht nur, WAS Max sagt, sondern WIE er es sagt.",
+      "significance": "Der Uebergang von 'Freude' zu 'Handlungsbereitschaft' als dominante Emotion ist das gefaehrlichste Warnsignal. Es deutet darauf hin, dass Max bereit ist, von Worten zu Taten ueberzugehen.",
+      "intervention_points": ["NLP-basierte Sentiment-Analyse koennte automatisch Alarm schlagen bei solchen Verschiebungen", "Lehrer koennten Sprachveraenderungen in Aufsaetzen bemerken"]
+    }
+  }
+]

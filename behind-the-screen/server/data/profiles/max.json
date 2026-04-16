@@ -1,0 +1,120 @@
+{
+  "id": "max",
+  "name": "Max Hartmann",
+  "age": 17,
+  "role": "Hauptperson - Radikalisierungsopfer",
+  "online_aliases": ["MaxGamer_official", "IceWolf88"],
+  "platforms": ["TikTok", "Instagram", "YouTube", "Twitch", "Discord", "Steam", "CS2", "Valorant"],
+  "description": "17-jaehriger Schueler aus einer Kleinstadt in Thueringen. Introvertiert, unsicher, auf der Suche nach Zugehoerigkeit. Guter Schueler bis Mitte 2024, dann deutlicher Leistungsabfall. Eltern geschieden (Vater ausgezogen 2023), lebt bei der Mutter. Gaming ist sein Haupthobby und sozialer Anker. Ueber Online-Gaming-Communities geraet er in den Einflussbereich rechtsextremer Rekrutierer.",
+  "personality": ["introvertiert", "loyal", "beeinflussbar", "intelligent", "unsicher", "konfliktscheu", "anerkennungsbeduerftig"],
+  "background": "Max waechst als Einzelkind in einer Kleinstadt in Thueringen auf. Bis zur Trennung seiner Eltern im Fruehjahr 2023 ist er ein unauffaelliger, guter Schueler mit einem kleinen, aber stabilen Freundeskreis. Der Wegzug seines Vaters trifft ihn hart - er zieht sich zurueck, verbringt immer mehr Zeit online. Gaming wird zum Zufluchtsort: Hier kann er jemand sein, hier zaehlt Leistung, hier findet er Anerkennung. Ueber CS2-Matches lernt er Niklas kennen, der ihm Aufmerksamkeit, Struktur und eine Gemeinschaft bietet. Was als harmloses Gaming beginnt, entwickelt sich schrittweise zu einer ideologischen Vereinnahmung. Max merkt nicht, wie sich seine Sprache, seine Werte und sein Weltbild veraendern.",
+  "timeline": [
+    {
+      "date": "2023-03",
+      "event": "Trennung der Eltern. Vater zieht aus. Max zieht sich zurueck, Noten bleiben zunaechst stabil."
+    },
+    {
+      "date": "2023-06",
+      "event": "Beginnt intensiver CS2 zu spielen, erste Ranked-Matches. Verbringt 3-4 Stunden taeglich online."
+    },
+    {
+      "date": "2023-10",
+      "event": "Startet einen kleinen Twitch-Kanal ('MaxGamer_official'). Timo wird sein erster und einziger Moderator."
+    },
+    {
+      "date": "2023-11",
+      "event": "Erstes CS2-Match mit Niklas ('WolfCommander'). Niklas lobt Max' Spielweise ueberschwaenglich. Erster Kontakt im Voice-Chat."
+    },
+    {
+      "date": "2023-12",
+      "event": "Niklas laedt Max in seinen Discord-Server 'Sturmfront Gaming' ein. Max tritt bei, findet eine aktive Community."
+    },
+    {
+      "date": "2024-01",
+      "event": "Regelmaessige Gaming-Sessions mit Niklas und der Sturmfront-Crew. Max fuehlt sich erstmals seit der Trennung wieder zugehoerig."
+    },
+    {
+      "date": "2024-03",
+      "event": "Niklas beginnt, politische Inhalte in Gespraeche einzustreuen: 'Witze' ueber Migranten, Links zu 'kulturkritischen' YouTube-Videos."
+    },
+    {
+      "date": "2024-04",
+      "event": "Max teilt erste 'Memes' mit fragwuerdigem Inhalt in der Discord-Gruppe. Bekommt viel Zuspruch und Likes."
+    },
+    {
+      "date": "2024-05",
+      "event": "Leon spricht Max auf veraenderte Sprache an ('Du redest anders als frueher'). Max reagiert abweisend."
+    },
+    {
+      "date": "2024-06",
+      "event": "Max wechselt seinen Discord-Namen zu 'IceWolf88'. Erste Verwendung szenetypischer Codes. Noten verschlechtern sich deutlich."
+    },
+    {
+      "date": "2024-07",
+      "event": "Sommerferien: Max verbringt fast den gesamten Tag online. Kaum noch Kontakt zu Offline-Freunden. Mutter arbeitet viel, bemerkt wenig."
+    },
+    {
+      "date": "2024-08",
+      "event": "Niklas gibt Max eine 'Moderatoren'-Rolle im Discord. Max fuehlt sich geehrt und wichtig. Identifikation mit der Gruppe waechst."
+    },
+    {
+      "date": "2024-09",
+      "event": "Schuljahresbeginn: Herr Berger bemerkt Verhaltensaenderungen, fuehrt sie auf die Scheidung zurueck. Leon wird aus der Gaming-Gruppe ausgeschlossen."
+    },
+    {
+      "date": "2024-10",
+      "event": "Max postet ein TikTok-Video mit versteckter rechtsextremer Symbolik (Zahlencodes, bestimmte Musik). Video bekommt unerwartet viele Views."
+    },
+    {
+      "date": "2024-11",
+      "event": "Max verwendet in einem CS2-Match rassistische Beleidigungen im Voice-Chat. Timo loescht kritische Kommentare auf Twitch."
+    },
+    {
+      "date": "2024-12",
+      "event": "Niklas schlaegt ein 'echtes Treffen' der Community vor. Max ist begeistert, plant heimlich hinzufahren."
+    },
+    {
+      "date": "2025-01",
+      "event": "Max' Mutter findet rechtsextreme Aufkleber in seinem Zimmer. Konfrontation endet im Streit. Max blockt ab."
+    },
+    {
+      "date": "2025-02",
+      "event": "Vorfall an der Schule: Max verbreitet rechtsextremes Bildmaterial im Klassenchat. Schulleitung wird eingeschaltet. Investigation beginnt."
+    }
+  ],
+  "relationships": {
+    "timo": "Bester Freund seit der Grundschule. Timo wird sein Twitch-Moderator und ist die einzige Bruecke zwischen Max' Online- und Offline-Welt. Timo laeuft mit, ohne wirklich zu hinterfragen.",
+    "niklas": "Online-Mentor und Rekrutierer. Trifft ihn November 2023 im CS2. Niklas wird zur wichtigsten Bezugsperson - er gibt Max Anerkennung, Struktur und eine Ideologie. Die Beziehung ist asymmetrisch und manipulativ.",
+    "leon": "Ehemaliger enger Freund aus der Gaming-Gruppe. Leon erkennt die Veraenderungen frueh und spricht sie an, wird dafuer ausgegrenzt und schliesslich aus dem Discord gebannt. Repraesentiert die gescheiterte Intervention.",
+    "sandra_mutter": "Alleinerziehende Mutter, arbeitet in Vollzeit als Krankenschwester. Liebt Max, versteht aber seine Online-Welt nicht. Bemerkt Veraenderungen zu spaet und weiss nicht, wie sie reagieren soll.",
+    "thomas_vater": "Nach der Trennung 2023 nur sporadischer Kontakt. Max fuehlt sich verlassen. Die fehlende Vaterfigur macht ihn anfaellig fuer Niklas' Mentoring.",
+    "herr_berger": "Klassenlehrer, bemerkt den Leistungsabfall und die Verhaltensaenderung, ordnet beides aber der Scheidungssituation zu. Verpasst die eigentlichen Warnsignale."
+  },
+  "warnsignale": [
+    "Rueckzug von alten Freunden und Offline-Aktivitaeten",
+    "Sprachveraenderung: Verwendung von Szene-Jargon und Codes (z.B. 'basiert', 'rotgepillt', Zahlencodes)",
+    "Aenderung des Online-Namens zu 'IceWolf88' (88 = szenetypischer Code)",
+    "Deutlicher Leistungsabfall in der Schule ab Mitte 2024",
+    "Zunehmend aggressives Verhalten bei Widerspruch",
+    "Teilen von Memes mit versteckter rechtsextremer Symbolik",
+    "Rassistische Aeusserungen im Voice-Chat und Spielen",
+    "Abwertung von 'Mainstream-Medien' und 'dem System'",
+    "Veraenderter Kleidungsstil (bestimmte Marken, Zahlencodes auf Kleidung)",
+    "Geheimhaltung: Loescht Chatverlaeufe, verwendet alternative Accounts",
+    "Schwarz-Weiss-Denken: 'Wir gegen die'"
+  ],
+  "key_evidence": [
+    "ingame-cs2-nov-2023-01",
+    "discord-general-mar-2024-01",
+    "discord-general-apr-2024-01",
+    "discord-memes-apr-2024-01",
+    "tiktok-post-oct-2024-01",
+    "twitch-stream-nov-2024-01",
+    "ingame-cs2-nov-2024-01",
+    "discord-dm-niklas-dec-2024-01",
+    "whatsapp-klassenchat-feb-2025-01",
+    "instagram-story-jan-2025-01",
+    "youtube-history-2024",
+    "steam-profile-screenshot-2024"
+  ]
+}

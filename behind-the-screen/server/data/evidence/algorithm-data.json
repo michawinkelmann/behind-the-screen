@@ -1,0 +1,241 @@
+[
+  {
+    "id": "algo-feed-nov-2023",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "TikTok Algorithmus-Log",
+    "date": "2023-11-30",
+    "title": "Feed-Zusammensetzung November 2023 - Normal",
+    "importance": 2,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "month": "November 2023",
+      "feed_composition": {"Gaming": 40, "Musik/Tanz": 30, "Memes": 15, "Zufaellig viral": 10, "Freunde": 5},
+      "avg_watch_time_minutes": 14,
+      "videos_watched_per_week": 240,
+      "recommended_content_pct": 45,
+      "controversial_content_pct": 0,
+      "top_categories_engaged": ["Gaming Tips", "Funny Fails", "Popular Sounds"],
+      "description": "Max' Feed ist vollkommen normal fuer einen 17-jaehrigen Gamer: Gaming-Content, Musik, Memes und Inhalte von Freunden. Keine politischen oder problematischen Inhalte."
+    },
+    "analysis": {
+      "context": "Baseline des Algorithmus. Max' Feed spiegelt normale Teenager-Interessen wider.",
+      "significance": "Wichtig als Vergleichspunkt: So sah ein gesunder, diverser Feed aus, bevor die Radikalisierung begann.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "algo-feed-mar-2024",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "TikTok Algorithmus-Log",
+    "date": "2024-03-31",
+    "title": "Feed-Shift beginnt - Gaming-Kultur-Kritik erscheint",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 1,
+    "warnsignale_tags": ["feed-shift", "algorithm-drift"],
+    "content": {
+      "month": "Maerz 2024",
+      "feed_composition": {"Gaming": 35, "Gaming + Kulturkritik": 20, "Musik/Tanz": 15, "Politik/Philosophie": 12, "Competitive Gaming": 10, "Sonstiges": 8},
+      "avg_watch_time_minutes": 22,
+      "videos_watched_per_week": 350,
+      "recommended_content_pct": 62,
+      "controversial_content_pct": 8,
+      "top_categories_engaged": ["Gaming Culture", "Industry Criticism", "Competitive Clips"],
+      "trigger_event": "Max hat 3 Videos von 'GamerGate 2.0' geliked. Algorithmus empfiehlt jetzt aehnliche Channels.",
+      "recommendation_chain": [
+        {"step": 1, "video": "Top 10 Gaming Fails 2024", "type": "harmlos"},
+        {"step": 2, "video": "Warum Gaming-Studios uns verraten", "type": "grenzwertig"},
+        {"step": 3, "video": "Die Wahrheit ueber Diversity in Games", "type": "problematisch"}
+      ],
+      "description": "Erste Verschiebung: Der Algorithmus hat erkannt, dass Max laenger bei kultur-kritischen Gaming-Videos verweilt. 12% des Feeds sind jetzt politisch/philosophisch - ein signifikanter Anstieg von 0%."
+    },
+    "analysis": {
+      "context": "Der Algorithmus beginnt, Max' Feed zu verschieben. Weil er laenger bei kritischen Videos verweilt und sie liket, empfiehlt der Algorithmus mehr davon.",
+      "significance": "Beginn des 'Rabbit Holes'. Der Algorithmus optimiert auf Engagement, nicht auf Inhaltsqualitaet. Kritische Gaming-Videos sind das Tor zu politischem Content.",
+      "intervention_points": ["Algorithmus-Diversifikation haette hier helfen koennen: Auch Gegeninhalte zeigen"]
+    }
+  },
+  {
+    "id": "algo-feed-jun-2024",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "TikTok Algorithmus-Log",
+    "date": "2024-06-30",
+    "title": "Feed stark verschoben - Politik dominiert",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 1,
+    "warnsignale_tags": ["echo-chamber-forming", "algorithm-amplification", "rabbit-hole"],
+    "content": {
+      "month": "Juni 2024",
+      "feed_composition": {"Gaming": 25, "Politik/Ideologie": 25, "Gaming + Kulturkritik": 20, "Maennlichkeits-Content": 15, "Philosophie": 10, "Sonstiges": 5},
+      "avg_watch_time_minutes": 35,
+      "videos_watched_per_week": 480,
+      "recommended_content_pct": 78,
+      "controversial_content_pct": 35,
+      "top_categories_engaged": ["Masculinity", "Anti-Woke", "Political Commentary", "Gaming Politics"],
+      "trigger_event": "Max' TikTok-Video 'Diversity Rant' ging viral (5000 Views). Algorithmus pushed jetzt stark ideologischen Content.",
+      "recommendation_chain": [
+        {"step": 1, "video": "Warum Maenner schweigen muessen", "type": "grenzwertig"},
+        {"step": 2, "video": "Die Maennlichkeitskrise erklaert", "type": "problematisch"},
+        {"step": 3, "video": "Was Feminismus wirklich will", "type": "radikal"},
+        {"step": 4, "video": "Die Wahrheit ueber die westliche Gesellschaft", "type": "extrem"}
+      ],
+      "description": "Der Feed ist jetzt stark politisch. 35% der empfohlenen Inhalte werden von der Plattform intern als 'kontrovers' geflaggt, werden aber trotzdem angezeigt weil sie Engagement erzeugen. Max schaut taeglich fast 70 Videos und verbringt immer mehr Zeit mit ideologischem Content."
+    },
+    "analysis": {
+      "context": "Die Echokammer ist fast geschlossen. 78% des Contents sind algorithmisch empfohlen. Max sieht kaum noch diversifizierte Inhalte.",
+      "significance": "Klassischer Rabbit-Hole-Effekt: Von Gaming-Kritik ueber Maennlichkeits-Content zu politischer Ideologie. Der Algorithmus beschleunigt die Radikalisierung massiv.",
+      "intervention_points": ["TikTok haette die schnelle Feed-Verschiebung als Warnsignal erkennen koennen", "Zeitlimits haetten Max' Konsum einschraenken koennen"]
+    }
+  },
+  {
+    "id": "algo-feed-aug-2024",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "TikTok Algorithmus-Log",
+    "date": "2024-08-31",
+    "title": "Echokammer geschlossen - Radikaler Feed",
+    "importance": 5,
+    "phase": "normalisierung",
+    "day_available": 1,
+    "warnsignale_tags": ["echo-chamber-complete", "radicalized-feed", "extreme-content"],
+    "content": {
+      "month": "August 2024",
+      "feed_composition": {"Politik/Verschwoerung": 45, "Gaming (politisiert)": 25, "Ideologische Philosophie": 15, "Extreme Inhalte": 10, "Sonstiges": 5},
+      "avg_watch_time_minutes": 47,
+      "videos_watched_per_week": 600,
+      "recommended_content_pct": 89,
+      "controversial_content_pct": 67,
+      "top_categories_engaged": ["Political Extremism", "Conspiracy", "Masculinity Crisis", "Anti-Establishment"],
+      "engagement_metrics": {
+        "likes_per_video": 8245,
+        "share_rate_pct": 38,
+        "return_rate_pct": 87,
+        "avg_video_length_minutes": 28
+      },
+      "description": "Die Echokammer ist vollstaendig geschlossen. 89% des Contents ist algorithmisch empfohlen, 67% davon intern als kontrovers geflaggt. Max konsumiert fast ausschliesslich radikalen Content. Die Videos werden laenger (28 Min Durchschnitt) - ein Zeichen fuer tiefe ideologische Beschaeftigung statt schnellem Scrollen."
+    },
+    "analysis": {
+      "context": "Max' Feed ist eine reine Echokammer. Er sieht keine Gegeninhalte, keine Vielfalt, keine moderaten Stimmen mehr.",
+      "significance": "Der Algorithmus hat Max in eine informative Blase eingeschlossen. Seine gesamte Online-Realitaet bestaetigt seine radikale Weltsicht. Dies ist der Punkt, an dem Deradikalisierung extrem schwierig wird.",
+      "intervention_points": ["Plattformen koennten bei extremer Feed-Homogenitaet automatisch diversifizieren", "Content-Labels ('Dieses Video wird oft in extremistischen Kontexten geteilt') haetten helfen koennen"]
+    }
+  },
+  {
+    "id": "algo-feed-nov-2024",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "TikTok Algorithmus-Log",
+    "date": "2024-11-30",
+    "title": "Peak-Radikalisierung im Feed",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["peak-radicalization", "recruitment-content", "action-oriented"],
+    "content": {
+      "month": "November 2024",
+      "feed_composition": {"Radikale Politik": 50, "Ideologische Videos": 20, "Gaming (Szene)": 15, "Verschwoerung": 10, "Sonstiges": 5},
+      "avg_watch_time_minutes": 52,
+      "videos_watched_per_week": 650,
+      "recommended_content_pct": 92,
+      "controversial_content_pct": 75,
+      "follower_growth_per_week": 200,
+      "follower_demographics": "Ueberwiegend 16-24 Jahre, maennlich, konzentriert in bestimmten Regionen",
+      "description": "Max' Feed besteht zu 50% aus radikaler Politik. Er konsumiert jetzt auch Inhalte, die zu realen Aktionen aufrufen. Seine eigenen Videos erreichen groessere Zielgruppen durch algorithmische Promotion kontroverser Inhalte."
+    },
+    "analysis": {
+      "context": "Der Feed zeigt jetzt Inhalte, die ueber Online-Diskurs hinausgehen und zu realweltlichem Handeln aufrufen.",
+      "significance": "Der Algorithmus unterscheidet nicht zwischen 'kontrovers diskutieren' und 'zu Aktionen aufrufen'. Beides erzeugt Engagement und wird gleichermassen promoted.",
+      "intervention_points": ["Automatische Erkennung von Action-Calls in Videos", "Meldung an Behoerden bei bestimmten Content-Mustern"]
+    }
+  },
+  {
+    "id": "algo-youtube-recommendations",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "YouTube Empfehlungs-Log",
+    "date": "2024-05-15",
+    "title": "YouTube Rabbit Hole - Von Gaming zu Extremismus",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 1,
+    "warnsignale_tags": ["rabbit-hole", "cross-platform", "youtube-pipeline"],
+    "content": {
+      "platform": "YouTube",
+      "recommendation_pipeline": [
+        {"month": 1, "content": "Gaming-Tipps und Pro-Spieler-Analysen", "type": "harmlos", "avg_length": "8 Min"},
+        {"month": 2, "content": "Competitive Gaming und Esports-Kultur", "type": "harmlos", "avg_length": "12 Min"},
+        {"month": 3, "content": "Gaming-Kultur-Kritik und Industrie-Kommentare", "type": "grenzwertig", "avg_length": "15 Min"},
+        {"month": 4, "content": "Gamer-Bro-Kultur und Anti-Woke-Gaming", "type": "problematisch", "avg_length": "20 Min"},
+        {"month": 5, "content": "Maennlichkeits-Videos und Selbstoptimierung", "type": "problematisch", "avg_length": "25 Min"},
+        {"month": 6, "content": "Pseudointellektuelle Gesellschaftskritik", "type": "radikal", "avg_length": "35 Min"},
+        {"month": 7, "content": "Verschwoerungstheorien und alternative Geschichte", "type": "extrem", "avg_length": "45 Min"}
+      ],
+      "key_channel": "Eurasian Philosophy (50K Abonnenten) - akademisch klingende Videos ueber Race Science, IQ und Hierarchie",
+      "description": "YouTube-Empfehlungen ueber 7 Monate: Von harmlosen Gaming-Tipps zu extremistischer Ideologie. Jeder Schritt ist klein genug, um nicht aufzufallen, aber die kumulative Richtung ist eindeutig."
+    },
+    "analysis": {
+      "context": "YouTube hat eine dokumentierte 'Radikalisierungs-Pipeline': Mainstream-Content fuehrt ueber mehrere Schritte zu extremem Content.",
+      "significance": "Die YouTube-Pipeline ist eines der am besten erforschten Phaenomene der Online-Radikalisierung. Jeder einzelne Empfehlungsschritt wirkt harmlos, aber die Gesamtrichtung ist dramatisch.",
+      "intervention_points": ["YouTube koennte die Empfehlungskette unterbrechen, wenn sie eine ideologische Drift erkennt", "Kontext-Labels auf Videos ('Aehnliche Videos werden oft in extremistischen Kreisen geteilt')"]
+    }
+  },
+  {
+    "id": "algo-engagement-comparison",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "Plattform-Analytics",
+    "date": "2024-07-15",
+    "title": "Engagement-Vergleich: Sachlich vs. Emotional vs. Extrem",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["engagement-optimization", "truth-vs-engagement"],
+    "content": {
+      "comparison": [
+        {"type": "Sachlich/Informativ", "example": "Die Geschichte von Esports erklaert", "views": 1000, "likes": 45, "comments": 12, "shares": 5, "watch_time_pct": 35},
+        {"type": "Emotional/Dramatisch", "example": "WARUM Gaming STIRBT!!!", "views": 50000, "likes": 4200, "comments": 890, "shares": 1200, "watch_time_pct": 72},
+        {"type": "Extrem/Kontrovers", "example": "Die WAHRHEIT die NIEMAND hoeren will", "views": 250000, "likes": 28000, "comments": 5400, "shares": 8900, "watch_time_pct": 85}
+      ],
+      "conclusion": "Extreme Inhalte erzeugen 250x mehr Views, 600x mehr Likes und 450x mehr Shares als sachliche Inhalte. Der Algorithmus bevorzugt sie, weil sie mehr Engagement bringen.",
+      "description": "Direkter Vergleich: Warum der Algorithmus extreme Inhalte bevorzugt. Sachliche Videos bekommen 1000 Views, dramatische 50.000, extreme 250.000. Der Algorithmus ist nicht 'boese' - er optimiert auf Engagement. Und Engagement kommt von starken Emotionen."
+    },
+    "analysis": {
+      "context": "Dieses Diagramm zeigt das Kernproblem der Attention Economy: Wahrheit und Nuance erzeugen weniger Engagement als Emotion und Extremismus.",
+      "significance": "Die zentrale Erkenntnis: Algorithmen sind nicht 'boese', sondern optimiert auf ein Ziel (Engagement), das unbeabsichtigte Konsequenzen hat. Diese Erkenntnis ist wichtig fuer die Debatte ueber Plattform-Verantwortung.",
+      "intervention_points": ["Algorithmen koennten auf 'informative Qualitaet' statt nur auf 'Engagement' optimiert werden", "Nutzer koennten sehen, WARUM ihnen ein Video empfohlen wurde"]
+    }
+  },
+  {
+    "id": "algo-cross-platform-sync",
+    "type": "algorithm_data",
+    "spur": "algorithmus",
+    "source": "Cross-Platform-Analyse",
+    "date": "2024-09-01",
+    "title": "Cross-Platform-Verstaerkung: TikTok+YouTube+Discord",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["cross-platform", "amplification-loop"],
+    "content": {
+      "platforms": {
+        "TikTok": "Algorithmus empfiehlt radikale Kurzvideos → Max liked → mehr davon",
+        "YouTube": "Empfiehlt lange ideologische Video-Essays basierend auf TikTok-Interessen",
+        "Discord": "Niklas teilt Links zu TikTok/YouTube-Videos → Max schaut → Algorithmen lernen",
+        "Twitch": "Max streamt ideologischen Content → Zuschauer kommen von TikTok → Feedback-Loop"
+      },
+      "amplification_cycle": "Discord → YouTube Video schauen → TikTok liked → Algorithmus empfiehlt mehr → Max teilt in Discord → Clan diskutiert → noch mehr Videos → TikTok eigene Videos posten → Viral → mehr Follower → mehr Validation",
+      "description": "Die Plattformen verstaerken sich gegenseitig. Was Max auf Discord empfohlen bekommt, schaut er auf YouTube. Was er auf YouTube schaut, beeinflusst seinen TikTok-Feed. Was er auf TikTok postet, bringt ihm Follower, die in seinen Discord kommen. Ein perfekter Verstaerkungskreislauf."
+    },
+    "analysis": {
+      "context": "Die Cross-Platform-Verstaerkung ist ein oft uebersehener Faktor bei Online-Radikalisierung. Keine einzelne Plattform sieht das Gesamtbild.",
+      "significance": "Selbst wenn eine Plattform moderiert, kann die Radikalisierung ueber andere Plattformen weitergehen. Die Loesung muss plattformuebergreifend sein.",
+      "intervention_points": ["Plattformen koennten Daten teilen, um Cross-Platform-Radikalisierung zu erkennen", "Nutzer koennten ein 'Digital Wellbeing Dashboard' bekommen, das ihr Verhalten ueber alle Plattformen zeigt"]
+    }
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "id": "module-3.0",
+  "title": "Warnsignale erkennen",
+  "description": "Konkrete Warnsignale im Online-Verhalten: Profilveränderungen, Sprachwandel und Verhaltensänderungen",
+  "day_available": 3,
+  "order": 1,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Woran erkennt man eine mögliche Radikalisierung?"
+    },
+    {
+      "type": "text",
+      "content": "Radikalisierung ist ein schleichender Prozess — und genau das macht es so schwer, sie frühzeitig zu erkennen. Es gibt kein einzelnes, eindeutiges Warnsignal. Stattdessen ist es ein Muster aus verschiedenen Veränderungen, die zusammengenommen auf eine problematische Entwicklung hindeuten können. Wichtig ist: Ein einzelnes Merkmal macht noch keine Radikalisierung. Erst die Kombination und die Richtung der Veränderung sollten aufmerksam machen."
+    },
+    {
+      "type": "heading",
+      "content": "Veränderungen im Online-Verhalten"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Plötzlicher Wechsel von Benutzernamen und Profilbildern mit ideologischem Bezug",
+        "Zunehmende Aktivität in geschlossenen oder geheimen Gruppen",
+        "Teilen von extremen oder verschwörungstheoretischen Inhalten",
+        "Verwendung szenetypischer Sprache, Codes und Symbole",
+        "Aggressive Reaktion auf Widerspruch oder kritische Nachfragen",
+        "Löschung oder Blockierung alter Freunde und Kontakte"
+      ]
+    },
+    {
+      "type": "heading",
+      "content": "Veränderungen im Offline-Verhalten"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Rückzug aus dem Freundeskreis und von Familienaktivitäten",
+        "Nachlassende schulische Leistungen und zunehmendes Schwänzen",
+        "Veränderter Kleidungsstil oder neue Symbole am Körper",
+        "Zunehmende Schwarz-Weiß-Argumentation im Gespräch",
+        "Abwertung Andersdenkender und Feindbildkonstruktionen",
+        "Geheimhaltung: Passwörter ändern, Bildschirm verbergen, ausweichendes Verhalten"
+      ]
+    },
+    {
+      "type": "heading",
+      "content": "Der Sprachwandel"
+    },
+    {
+      "type": "text",
+      "content": "Eine der deutlichsten Veränderungen zeigt sich in der Sprache. Radikalisierte Personen übernehmen den Jargon ihrer Gruppe und verwenden zunehmend Begriffe, die eine klare Feindbildkonstruktion erkennen lassen. Wörter wie 'Systemmedien', 'Schlafschafe', 'Erwachte' oder szenetypische Codes signalisieren, dass jemand tief in eine bestimmte Ideologie eingetaucht ist."
+    },
+    {
+      "type": "example",
+      "title": "Max' Sprachwandel in den Chats",
+      "content": "In frühen Chat-Nachrichten schrieb Max normal und umgangssprachlich: 'Das regt mich auf' oder 'Die Lehrer sind unfair'. Nach wenigen Monaten in der Gruppe klangen seine Nachrichten anders: 'Die Systemlinge merken nicht, wie sie manipuliert werden' und 'Wir sind die Einzigen, die den Durchblick haben'. Dieser Wandel vollzog sich schrittweise — jede einzelne Nachricht klang nur minimal anders als die vorherige."
+    },
+    {
+      "type": "reflection",
+      "question": "Stellt euch vor, ein enger Freund zeigt einige der beschriebenen Warnsignale. Was würde euch davon abhalten, etwas zu unternehmen — und wie könnte man diese Hürden überwinden?"
+    }
+  ]
+}

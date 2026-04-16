@@ -1,0 +1,86 @@
+{
+  "id": "lehrer",
+  "name": "Markus Berger",
+  "age": 38,
+  "role": "Klassenlehrer - Institutioneller blinder Fleck",
+  "title": "Herr Berger",
+  "beruf": "Klassenlehrer (Deutsch und Geschichte), Vertrauenslehrer",
+  "schule": "Friedrich-Schiller-Gymnasium",
+  "description": "38-jaehriger engagierter Lehrer, der Max' Klasse seit der 9. Klasse leitet. Bemerkt den Leistungsabfall und die Verhaltensaenderungen bei Max, ordnet sie aber der Scheidungssituation zu. Hat guten Draht zu seinen Schuelern, versteht aber die Online-Welt nur oberflaechlich. Repraesentiert die institutionellen Grenzen der Schule bei der Erkennung von Online-Radikalisierung.",
+  "personality": ["engagiert", "empathisch", "ueberlastet", "wohlmeinend", "analog denkend", "pflichtbewusst"],
+  "background": "Markus Berger ist seit zehn Jahren Lehrer und gilt als einer der beliebtesten an der Schule. Er kennt seine Schueler gut, nimmt sich Zeit fuer Einzelgespraeche und ist auch als Vertrauenslehrer ansprechbar. Doch seine Ausbildung und Erfahrung beziehen sich auf die analoge Welt: Schulhofkonflikte, Familienprobleme, Lernschwaeden. Fuer die digitalen Lebensraeume seiner Schueler fehlt ihm das Wissen und das Handwerkszeug. Er weiss, dass seine Schueler 'viel am Handy sind' und 'irgendwelche Spiele spielen', aber die Mechanismen von Discord-Servern, Gaming-Communities und Online-Radikalisierung sind ihm fremd. Als Max sich veraendert, greift Herr Berger auf das zurueck, was er kennt: die Scheidung als Erklaerung.",
+  "timeline": [
+    {
+      "date": "2023-09",
+      "event": "Schuljahresbeginn. Max ist ein guter, unauffaelliger Schueler. Herr Berger weiss von der Scheidung und behaelt Max im Auge."
+    },
+    {
+      "date": "2024-03",
+      "event": "Bemerkt, dass Max im Unterricht unkonzentrierter wird. Muede, abwesend. Notiert es als 'Folge der haeuslichen Situation'."
+    },
+    {
+      "date": "2024-06",
+      "event": "Zwischenzeugnis: Deutlicher Notenabfall bei Max. Herr Berger fuehrt ein Elterngespraech mit Sandra Hartmann. Empfiehlt Nachhilfe und 'mehr Struktur zu Hause'."
+    },
+    {
+      "date": "2024-09",
+      "event": "Neues Schuljahr: Max hat sich optisch veraendert (andere Kleidung, bestimmte Marken). Herr Berger nimmt es wahr, ordnet es als 'neue Phase' ein."
+    },
+    {
+      "date": "2024-09",
+      "event": "Ruft Sandra Hartmann an: Berichtet von Verhaltensaenderungen - Max ist aggressiver, zieht sich zurueck, hat einen neuen Freundeskreis. Sandra erklaert es mit der Scheidung."
+    },
+    {
+      "date": "2024-10",
+      "event": "Ein Schueler meldet, dass Max im Pausenhof 'komische Sprueche' gemacht hat. Herr Berger fuehrt ein Gespraech mit Max. Max ist verschlossen, sagt 'War nur ein Witz'. Berger ermahnt ihn."
+    },
+    {
+      "date": "2024-11",
+      "event": "Bemerkt, dass Max in einer Geschichtsstunde ueber den Nationalsozialismus provokante Kommentare macht ('War ja nicht alles schlecht'). Fuehrt ein ernstes Einzelgespraech, aber Max blockt ab."
+    },
+    {
+      "date": "2024-12",
+      "event": "Herr Berger bespricht den Fall in der Lehrerkonferenz. Einigung: Weitere Beobachtung und erneutes Elterngespraech im neuen Jahr."
+    },
+    {
+      "date": "2025-01",
+      "event": "Elterngespraech mit Sandra nach den Weihnachtsferien. Sandra erzaehlt von den Aufklebern. Herr Berger ist alarmiert, weiss aber nicht, an wen er sich wenden soll."
+    },
+    {
+      "date": "2025-02",
+      "event": "Max verbreitet rechtsextremes Bildmaterial im Klassenchat. Herr Berger entdeckt es und schaltet die Schulleitung ein. Empfindet tiefe Schuldgefuehle: 'Ich haette frueher handeln muessen'."
+    }
+  ],
+  "relationships": {
+    "max": "Herr Berger mag Max und sieht sein Potenzial. Er hat Verstaendnis fuer die schwierige Familiensituation, unterschaetzt aber das Ausmass der Probleme. Als die Wahrheit ans Licht kommt, fragt er sich, ob er die Zeichen haette frueher deuten muessen.",
+    "sandra_hartmann": "Regelmaessiger, aber oberflaechlicher Kontakt. Beide sind sich einig, dass 'die Scheidung' das Problem ist. Keiner sieht tiefer.",
+    "leon": "Leon haette ein wichtiger Hinweisgeber sein koennen, hat sich aber nie an Herrn Berger gewandt. Herr Berger wusste nicht, dass Leon Informationen hatte.",
+    "kollegium": "Andere Lehrer haben ebenfalls Veraenderungen bemerkt, aber niemand hat die Einzelbeobachtungen zusammengesetzt."
+  },
+  "institutionelle_grenzen": [
+    "Keine Fortbildungen zum Thema Online-Radikalisierung",
+    "Kein Wissen ueber Gaming-Kultur, Discord, Twitch oder Online-Subkulturen",
+    "Keine etablierten Meldewege fuer Radikalisierungsverdacht an der Schule",
+    "Ueberbelastung: 28 Schueler in der Klasse, davon mehrere mit Foerderbedarf",
+    "Datenschutzbedenken: Darf die Schule Online-Aktivitaeten von Schuelern ueberhaupt thematisieren?",
+    "Fehlende Kooperation mit Jugendarbeit, Polizei oder Beratungsstellen",
+    "Tendenz, Verhaltensaenderungen auf bekannte Ursachen (Scheidung, Pubertaet) zurueckzufuehren"
+  ],
+  "was_er_haette_tun_koennen": [
+    "Fruehzeitig Beratungsstellen wie die Fachstelle Rechtsextremismus kontaktieren",
+    "Leons Beobachtungen aktiv einholen (z.B. Vertrauensschueler-System)",
+    "Fortbildung zum Thema Online-Radikalisierung besuchen",
+    "Die provokanten Kommentare im Geschichtsunterricht als Warnsignal ernst nehmen",
+    "Schulpsychologischen Dienst frueher einschalten",
+    "Einzelbeobachtungen systematisch dokumentieren und mit Kollegen abgleichen"
+  ],
+  "key_evidence": [
+    "schulbericht-jun-2024",
+    "elterngespraech-sep-2024",
+    "elterngespraech-jan-2025",
+    "lehrerkonferenz-protokoll-dec-2024",
+    "klassenchat-vorfall-feb-2025",
+    "gespraechsnotizen-berger-2024"
+  ],
+  "paedagogische_funktion": "Herr Berger repraesentiert den institutionellen blinden Fleck: Eine Schule, die fuer analoge Probleme ausgebildet ist, aber fuer digitale Radikalisierung kein Fruehwarnsystem hat. Er ist kein schlechter Lehrer - im Gegenteil, er ist engagiert und empathisch. Aber ihm fehlen Wissen, Werkzeuge und Strukturen. Sein Beispiel soll Lehrkraefte im Publikum sensibilisieren: Welche Fortbildungen gibt es? An wen kann man sich wenden? Wie erkenne ich die Zeichen?"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "module-2.1",
+  "title": "Algorithmen und Filter-Bubbles",
+  "description": "Wie Empfehlungsalgorithmen funktionieren, Engagement-Optimierung und Rabbit Holes",
+  "day_available": 2,
+  "order": 2,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Was sind Empfehlungsalgorithmen?"
+    },
+    {
+      "type": "text",
+      "content": "Jedes Mal, wenn ihr auf YouTube ein Video schaut, auf TikTok scrollt oder auf Instagram einen Beitrag liked, lernt ein Algorithmus etwas über euch. Empfehlungsalgorithmen analysieren euer Verhalten — was ihr anklickt, wie lange ihr schaut, was ihr teilt — und zeigen euch Inhalte, die euch möglichst lange auf der Plattform halten. Das Ziel ist nicht, euch zu informieren, sondern euer Engagement zu maximieren."
+    },
+    {
+      "type": "heading",
+      "content": "Engagement-Optimierung: Warum Extreme besser 'klicken'"
+    },
+    {
+      "type": "text",
+      "content": "Studien zeigen, dass emotionale und polarisierende Inhalte mehr Engagement erzeugen als sachliche Informationen. Wut, Empörung und Angst halten Menschen länger am Bildschirm als Zufriedenheit. Das bedeutet: Algorithmen bevorzugen systematisch Inhalte, die starke Emotionen auslösen — und das sind häufig extreme, vereinfachende oder verschwörungstheoretische Inhalte."
+    },
+    {
+      "type": "heading",
+      "content": "Das Rabbit Hole — Der Kaninchenbau"
+    },
+    {
+      "type": "text",
+      "content": "Ein 'Rabbit Hole' beschreibt den Effekt, wenn Empfehlungsalgorithmen euch schrittweise zu immer extremeren Inhalten führen. Es beginnt mit einem harmlosen Video — etwa über Geschichte oder Gaming — und endet nach einigen Klicks bei Verschwörungstheorien oder extremistischer Propaganda. Jeder einzelne Schritt wirkt dabei nachvollziehbar; erst der gesamte Weg zeigt, wie weit man sich vom Ausgangspunkt entfernt hat."
+    },
+    {
+      "type": "example",
+      "title": "Max' Rabbit Hole",
+      "content": "Max schaute zunächst Gaming-Videos auf YouTube. Der Algorithmus empfahl ihm daraufhin Videos über 'verborgene Geschichte' und 'unbequeme Wahrheiten'. Von dort gelangte er zu Kanälen, die Verschwörungstheorien verbreiteten, und schließlich zu Inhalten mit klar extremistischem Hintergrund. In seinem Browser-Verlauf lässt sich diese schrittweise Eskalation über mehrere Wochen hinweg nachvollziehen."
+    },
+    {
+      "type": "heading",
+      "content": "Filter-Bubbles: Wenn die Welt schrumpft"
+    },
+    {
+      "type": "text",
+      "content": "Wenn der Algorithmus euch nur noch Inhalte zeigt, die eure bestehende Meinung bestätigen, entsteht eine sogenannte Filter-Bubble. Ihr bekommt den Eindruck, dass 'alle' so denken wie ihr, weil abweichende Perspektiven aus eurem Feed verschwinden. Für jemanden wie Max bedeutete das: Je mehr er sich mit extremen Inhalten beschäftigte, desto mehr solcher Inhalte wurden ihm vorgeschlagen — und desto weniger Gegenargumente erreichten ihn."
+    },
+    {
+      "type": "reflection",
+      "question": "Überprüft eure eigenen Empfehlungen auf YouTube, TikTok oder Instagram: Seht ihr hauptsächlich Inhalte, die eure Meinung bestätigen? Was könnte passieren, wenn ihr bewusst nach Gegenpositionen sucht?"
+    }
+  ]
+}

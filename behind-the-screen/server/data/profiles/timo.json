@@ -1,0 +1,84 @@
+{
+  "id": "timo",
+  "name": "Timo Weber",
+  "age": 17,
+  "role": "Mitlaeufer und Enabler",
+  "online_aliases": ["ShadowTimo"],
+  "platforms": ["Twitch", "Discord", "Steam", "CS2", "Instagram", "WhatsApp"],
+  "description": "17-jaehriger Schueler und Max' bester Freund seit der Grundschule. Moderiert Max' Twitch-Kanal und ist die Bruecke zwischen dessen Online- und Offline-Welt. Laeuft bei der Radikalisierung mit, ohne sie aktiv voranzutreiben. Loescht kritische Kommentare, schafft eine Echokammer und versaeumt es, Widerstand zu leisten. Klassischer Enabler.",
+  "personality": ["loyal", "konfliktscheu", "mitlaeuferhaft", "gutmuetig", "unselbststaendig", "ueberangepasst"],
+  "background": "Timo und Max kennen sich seit der ersten Klasse. Timo ist Max' engster Vertrauter und einziger konstanter Freund. Als Max nach der Scheidung seiner Eltern immer mehr in die Gaming-Welt abdriftet, folgt Timo ihm - nicht aus eigener Ueberzeugung, sondern aus Angst, seinen besten Freund zu verlieren. Timo uebernimmt die Rolle des Twitch-Moderators und wird so zum Gatekeeper: Er loescht kritische Kommentare, verteidigt Max oeffentlich und schafft damit unbewusst eine Echokammer. Timo selbst uebernimmt die rechtsextremen Inhalte nur oberflaechlich - er 'liked' Memes und lacht ueber Witze mit, hinterfragt aber nie ernsthaft. Seine Passivitaet ist sein groesster Beitrag zur Radikalisierung.",
+  "timeline": [
+    {
+      "date": "2023-10",
+      "event": "Wird Max' Twitch-Moderator. Freut sich ueber die Aufgabe, sieht es als gemeinsames Projekt."
+    },
+    {
+      "date": "2023-12",
+      "event": "Tritt Max zuliebe dem 'Sturmfront Gaming'-Discord bei. Findet die Community 'ganz cool', hinterfragt den Namen nicht."
+    },
+    {
+      "date": "2024-02",
+      "event": "Beginnt regelmaessig mit Max und Niklas CS2 zu spielen. Findet Niklas 'irgendwie beeindruckend'."
+    },
+    {
+      "date": "2024-04",
+      "event": "Loescht erstmals kritische Kommentare auf Max' Twitch-Kanal ('Die verstehen halt keinen Humor')."
+    },
+    {
+      "date": "2024-05",
+      "event": "Leon spricht Timo an: 'Merkst du nicht, wie sich Max veraendert?' Timo weicht aus: 'Ist doch alles nur Spass'."
+    },
+    {
+      "date": "2024-07",
+      "event": "Verbringt die Sommerferien fast taeglich mit Max online. Uebernimmt unbewusst Teile des Jargons."
+    },
+    {
+      "date": "2024-09",
+      "event": "Unterstuetzt Max dabei, Leon aus der Gruppe auszuschliessen. Innerlich unwohl, sagt aber nichts."
+    },
+    {
+      "date": "2024-11",
+      "event": "Loescht mehrfach Beschwerden von Zuschauern ueber rassistische Aeusserungen auf Max' Twitch-Stream."
+    },
+    {
+      "date": "2025-01",
+      "event": "Bemerkt die rechtsextremen Aufkleber bei Max, redet sich ein, es sei 'nur eine Phase'."
+    },
+    {
+      "date": "2025-02",
+      "event": "Nach dem Vorfall an der Schule bricht Timos Fassade zusammen. Er wird als Zeuge befragt und beginnt, das Ausmass zu begreifen."
+    }
+  ],
+  "relationships": {
+    "max": "Bester Freund seit der Grundschule. Timo wuerde alles fuer Max tun - genau das wird zum Problem. Seine bedingungslose Loyalitaet verhindert, dass er kritische Fragen stellt.",
+    "niklas": "Timo bewundert Niklas anfaenglich fuer sein Selbstbewusstsein, fuehlt sich aber auch eingeschuechtert. Er ist nie Teil des inneren Kreises, sondern bleibt Randfigur.",
+    "leon": "Ehemaliger Freund. Timo mag Leon, aber als er zwischen Leon und Max waehlen muss, entscheidet er sich fuer Max. Fuehlt sich schuldig, verdraengt es.",
+    "eltern_timo": "Timos Eltern sind zusammen und praesent, bekommen aber von seinem Online-Leben wenig mit. Sie halten Max fuer einen 'netten Jungen'."
+  },
+  "rolle_in_radikalisierung": {
+    "aktive_enabler_handlungen": [
+      "Loescht kritische Kommentare und Beschwerden auf Max' Twitch-Kanal",
+      "Verteidigt Max oeffentlich gegen jede Kritik",
+      "Unterstuetzt den Ausschluss von Leon aus der Gruppe",
+      "Normalisiert fragwuerdige Inhalte ('Ist doch nur ein Witz')",
+      "Teilt Max' Memes weiter, auch wenn ihm unwohl ist"
+    ],
+    "passive_enabler_handlungen": [
+      "Ignoriert deutliche Warnsignale bei Max",
+      "Weicht Leons Bedenken aus, statt zuuzuhoeren",
+      "Hinterfragt Niklas' Motive nie",
+      "Spricht mit niemandem ueber seine eigenen Zweifel",
+      "Redet sich ein, alles sei 'nur eine Phase' oder 'Spass'"
+    ]
+  },
+  "key_evidence": [
+    "twitch-stream-nov-2024-01",
+    "twitch-modlog-2024",
+    "discord-general-various-2024",
+    "whatsapp-timo-leon-may-2024",
+    "whatsapp-klassenchat-feb-2025-01",
+    "instagram-dm-timo-max-2024"
+  ],
+  "paedagogische_funktion": "Timo repraesentiert die Rolle des Mitlaeufers - eine der haeufigsten und zugleich am wenigsten beachteten Rollen in Radikalisierungsprozessen. Er zeigt, wie Passivitaet, falsch verstandene Loyalitaet und Konfliktvermeidung zur Radikalisierung beitragen koennen, ohne dass man selbst zum Ueberzeugungstaeter wird."
+}

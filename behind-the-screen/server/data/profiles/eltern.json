@@ -1,0 +1,112 @@
+{
+  "id": "eltern",
+  "name": "Familie Hartmann",
+  "role": "Eltern - Blinde Flecken",
+  "members": {
+    "mutter": {
+      "name": "Sandra Hartmann",
+      "age": 44,
+      "geb_name": "Sandra Koenig",
+      "beruf": "Krankenschwester (Vollzeit, Schichtdienst)",
+      "description": "Alleinerziehende Mutter, die nach der Trennung versucht, Familie und Beruf unter einen Hut zu bringen. Liebt Max sehr, ist aber durch den Schichtdienst oft abwesend. Versteht Max' Online-Welt nicht und hat keinen Zugang dazu. Bemerkt Veraenderungen, deutet sie aber als 'normale Pubertaet' und Folge der Scheidung.",
+      "personality": ["fuersorgend", "ueberfordert", "ahnungslos", "schuldbeladen", "erschoepft"],
+      "relationship_to_max": "Sandra kaempft taeglich darum, genug fuer Max da zu sein, scheitert aber an den Realitaeten ihres Berufs. Wenn sie abends nach Hause kommt, sitzt Max mit Kopfhoerern vor dem PC und reagiert einsilbig. Sie interpretiert das als typisches Teenagerverhalten. Ueber Gaming weiss sie fast nichts - fuer sie ist es 'dieses Computerspielen'. Sie hat kein Verstaendnis dafuer, dass sich hinter dem Bildschirm eine ganze Sozialwelt verbirgt, in der ihr Sohn lebt.",
+      "timeline": [
+        {
+          "date": "2023-03",
+          "event": "Trennung von Thomas. Sandra uebernimmt allein die Verantwortung fuer Max und den Haushalt."
+        },
+        {
+          "date": "2023-06",
+          "event": "Bemerkt, dass Max mehr Zeit am Computer verbringt. Denkt: 'Wenigstens ist er zu Hause und nicht draussen'."
+        },
+        {
+          "date": "2024-01",
+          "event": "Max erwaehnt beilaeufig, dass er 'online neue Freunde' hat. Sandra ist erleichtert, dass er nicht allein ist."
+        },
+        {
+          "date": "2024-06",
+          "event": "Erhaelt den Zwischenbericht der Schule: Notenverschlechterung. Fuehrt ein Gespraech mit Max, das ergebnislos bleibt."
+        },
+        {
+          "date": "2024-09",
+          "event": "Herr Berger ruft an und berichtet von Verhaltensaenderungen. Sandra erklaert es mit der Scheidung und verspricht, 'mit Max zu reden'."
+        },
+        {
+          "date": "2024-11",
+          "event": "Hoert beim Vorbeigehen an Max' Zimmer einen aggressiven Voice-Chat. Denkt: 'So reden die halt beim Spielen'."
+        },
+        {
+          "date": "2025-01",
+          "event": "Findet rechtsextreme Aufkleber in Max' Schreibtischschublade. Konfrontation: Max streitet alles ab, wird laut. Sandra ist entsetzt, aber hilflos."
+        },
+        {
+          "date": "2025-02",
+          "event": "Wird von der Schule ueber den Vorfall informiert. Bricht zusammen. Fragt sich: 'Wie konnte ich das nicht sehen?'"
+        }
+      ],
+      "blinde_flecken": [
+        "Keine Kenntnis ueber Gaming-Kultur, Discord, Twitch oder Online-Communities",
+        "Sieht den Computer als harmloses Hobby, nicht als soziale Welt",
+        "Kann Max' Online-Sprache und Symbole nicht einordnen",
+        "Verwechselt Rueckzug mit 'normaler Pubertaet'",
+        "Schuldgefuehle wegen der Scheidung verhindern konsequentes Nachfragen",
+        "Kein soziales Netzwerk, das sie auf Warnsignale hinweisen koennte"
+      ]
+    },
+    "vater": {
+      "name": "Thomas Hartmann",
+      "age": 46,
+      "beruf": "Maschinenbauingenieur",
+      "description": "Nach der Trennung 2023 in eine andere Stadt gezogen. Hat alle zwei Wochen Umgangsrecht, nimmt dieses aber unregelmaessig wahr. Neigt dazu, bei den seltenen Besuchen 'der coole Vater' zu sein und Konflikte zu vermeiden. Weiss noch weniger ueber Max' Online-Leben als Sandra.",
+      "personality": ["distanziert", "konfliktvermeidend", "schuldbeladen", "abwesend", "oberflaechlich"],
+      "relationship_to_max": "Thomas' Wegzug hat Max tief getroffen, auch wenn er es nicht zeigt. Thomas kompensiert seine Schuldgefuehle mit materiellen Geschenken (neuer Gaming-PC zu Weihnachten 2023) und vermeidet schwierige Gespraeche. Bei seinen Besuchen fragt er oberflaechlich 'Na, wie laeuft's?', gibt sich mit einsilbigen Antworten zufrieden und ist erleichtert, wenn Max 'okay' sagt. Die emotionale Distanz zwischen Vater und Sohn ist ein wesentlicher Faktor fuer Max' Vulnerabilitaet.",
+      "timeline": [
+        {
+          "date": "2023-03",
+          "event": "Zieht aus der gemeinsamen Wohnung aus. Verspricht Max, regelmaessig da zu sein."
+        },
+        {
+          "date": "2023-06",
+          "event": "Besuche werden unregelmaessig. Sagt mehrfach kurzfristig ab."
+        },
+        {
+          "date": "2023-12",
+          "event": "Schenkt Max zu Weihnachten einen neuen Gaming-PC. Max freut sich, aber die emotionale Distanz bleibt."
+        },
+        {
+          "date": "2024-06",
+          "event": "Sandra informiert Thomas ueber die Notenverschlechterung. Thomas sagt: 'Jungs in dem Alter, das ist normal'. Unternimmt nichts."
+        },
+        {
+          "date": "2024-10",
+          "event": "Bei einem seltenen Besuch bemerkt Thomas einen rechtsextremen Aufkleber an Max' Laptop. Spricht es nicht an."
+        },
+        {
+          "date": "2025-01",
+          "event": "Sandra ruft Thomas an wegen der Aufkleber. Thomas reagiert geschockt, kommt aber nicht nach Hause. Verspricht 'naechstes Wochenende zu reden'."
+        },
+        {
+          "date": "2025-02",
+          "event": "Wird ueber den Schulvorfall informiert. Faehrt sofort hin. Erste ernsthafte Auseinandersetzung mit Max' Situation."
+        }
+      ],
+      "blinde_flecken": [
+        "Physische und emotionale Abwesenheit seit der Trennung",
+        "Kompensiert fehlende Praesenz mit materiellen Geschenken",
+        "Vermeidet schwierige Gespraeche konsequent",
+        "Neuer Gaming-PC als unbeabsichtigter Radikalisierungsbeschleuniger",
+        "Bagatellisiert Warnsignale, um sich nicht verantwortlich fuehlen zu muessen",
+        "Sieht Aufkleber, spricht es nicht an - klassische Konfliktvermeidung"
+      ]
+    }
+  },
+  "key_evidence": [
+    "schulbericht-jun-2024",
+    "elterngespraech-sep-2024",
+    "foto-aufkleber-jan-2025",
+    "whatsapp-sandra-thomas-jan-2025",
+    "schulkonferenz-feb-2025"
+  ],
+  "paedagogische_funktion": "Die Eltern repraesentieren den 'blinden Fleck' vieler Familien: Erwachsene, die die Online-Welt ihrer Kinder nicht verstehen und deshalb Warnsignale nicht erkennen koennen. Sandra steht fuer die ueberforderte, aber liebevolle Alleinerziehende; Thomas fuer den abwesenden Vater, dessen Distanz die Vulnerabilitaet des Kindes erhoeht. Beide Figuren sollen Eltern im Publikum zum Nachdenken anregen: Wissen Sie, was Ihr Kind online tut? Kennen Sie seine Online-Freunde?"
+}

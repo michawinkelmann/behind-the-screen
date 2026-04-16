@@ -1,0 +1,56 @@
+{
+  "id": "module-2.0",
+  "title": "Phasen der Radikalisierung",
+  "description": "Die Phasen Isolation, Normalisierung und Indoktrination — und wie sie auf Max zutreffen",
+  "day_available": 2,
+  "order": 1,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Radikalisierung ist ein Prozess"
+    },
+    {
+      "type": "text",
+      "content": "Radikalisierung geschieht nicht über Nacht. Es ist ein schrittweiser Prozess, bei dem eine Person nach und nach extremere Überzeugungen annimmt. Forschende beschreiben diesen Prozess häufig in mehreren Phasen. Diese Phasen verlaufen nicht immer linear — manche Menschen durchlaufen sie schnell, andere langsam, und nicht jeder, der in eine frühe Phase gerät, wird vollständig radikalisiert. Das Verständnis dieser Phasen hilft uns jedoch, den Prozess zu erkennen und einzugreifen."
+    },
+    {
+      "type": "heading",
+      "content": "Phase 1: Isolation"
+    },
+    {
+      "type": "text",
+      "content": "Am Anfang steht oft die Isolation von bestehenden sozialen Kontakten. Der Betroffene zieht sich von Freunden und Familie zurück und verbringt immer mehr Zeit in einer neuen, geschlossenen Gruppe. Diese Isolation kann von außen herbeigeführt werden ('Deine alten Freunde verstehen dich nicht') oder aus eigenem Frust entstehen. Das Ergebnis ist das Gleiche: Die neue Gruppe wird zur wichtigsten sozialen Bezugsgruppe."
+    },
+    {
+      "type": "example",
+      "title": "Max' Isolation",
+      "content": "Max distanzierte sich zunehmend von seinem besten Freund Leon und seiner Fußballmannschaft. Auf Nachfragen reagierte er abweisend. In Chat-Nachrichten an Niklas schrieb er: 'Die kapieren einfach nicht, was wirklich abgeht. Nur hier fühle ich mich verstanden.' Die Gruppe auf dem Discord-Server wurde zu seinem einzigen sozialen Ankerpunkt."
+    },
+    {
+      "type": "heading",
+      "content": "Phase 2: Normalisierung"
+    },
+    {
+      "type": "text",
+      "content": "In dieser Phase werden extreme Ansichten schrittweise normalisiert. Was zunächst als Provokation oder Humor beginnt, wird durch ständige Wiederholung zur akzeptierten Meinung. Memes, Insiderwitze und gruppenspezifische Sprache schaffen ein Gefühl von Zugehörigkeit und machen radikale Positionen 'normal'. Wer Widerspruch äußert, wird als Außenseiter markiert."
+    },
+    {
+      "type": "heading",
+      "content": "Phase 3: Indoktrination"
+    },
+    {
+      "type": "text",
+      "content": "In der letzten Phase übernimmt die Person das Weltbild der Gruppe vollständig. Sie sieht die Welt nur noch in Schwarz und Weiß — 'Wir gegen die Anderen'. Kritisches Denken wird ersetzt durch Gruppenideologie. In dieser Phase ist die Person bereit, im Namen der Gruppe zu handeln, und empfindet alternative Sichtweisen als Bedrohung."
+    },
+    {
+      "type": "example",
+      "title": "Max' Wandlung",
+      "content": "In seinen letzten Forenbeiträgen verwendete Max ausschließlich die Sprache und Argumentationsmuster der Gruppe. Er teilte Propaganda-Videos und bezeichnete Andersdenkende als 'Schlafschafe'. Timo, der Moderator des Servers, lobte ihn öffentlich für seinen 'klaren Blick'. Max war zu diesem Zeitpunkt vollständig in das Weltbild der Gruppe eingetaucht."
+    },
+    {
+      "type": "reflection",
+      "question": "In welcher Phase hätte man Max eurer Meinung nach am effektivsten erreichen können? Was hätte zu diesem Zeitpunkt konkret geholfen?"
+    }
+  ]
+}

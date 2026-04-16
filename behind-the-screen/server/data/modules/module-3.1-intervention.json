@@ -1,0 +1,68 @@
+{
+  "id": "module-3.1",
+  "title": "Intervention und Hilfe",
+  "description": "Was kann man tun, an wen kann man sich wenden, wie spricht man Betroffene an?",
+  "day_available": 3,
+  "order": 2,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Was tun, wenn man Radikalisierung beobachtet?"
+    },
+    {
+      "type": "text",
+      "content": "Viele Menschen, die Warnsignale bei Freunden oder Familienmitgliedern bemerken, wissen nicht, was sie tun sollen. Sie haben Angst, die Beziehung zu zerstören, sich zu irren oder die Situation zu verschlimmern. Diese Unsicherheit ist verständlich — aber Nichtstun ist fast immer die schlechtere Option. Je früher eine Intervention erfolgt, desto größer sind die Chancen, dass die betroffene Person den Ausstieg schafft."
+    },
+    {
+      "type": "heading",
+      "content": "Dos und Don'ts im Gespräch"
+    },
+    {
+      "type": "list",
+      "items": [
+        "DO: Zeige echtes Interesse an der Person, nicht nur Kritik an ihren Ansichten",
+        "DO: Stelle offene Fragen statt Vorwürfe zu machen ('Mir ist aufgefallen, dass...')",
+        "DO: Höre zu und versuche zu verstehen, welches Bedürfnis hinter der Radikalisierung steckt",
+        "DO: Biete Alternativen an — andere Communities, Aktivitäten, Gesprächspartner",
+        "DON'T: Verurteile die Person frontal oder stelle Ultimaten",
+        "DON'T: Versuche, mit Gegenargumenten zu 'gewinnen' — das verstärkt oft die Abwehrhaltung",
+        "DON'T: Ignoriere die Situation in der Hoffnung, dass sie sich von selbst löst",
+        "DON'T: Handle allein, wenn du dich überfordert fühlst — hole dir Unterstützung"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Was hätte bei Max helfen können?",
+      "content": "Max' Freund Leon bemerkte die Veränderungen, wusste aber nicht, wie er reagieren sollte. Er versuchte es mit einem direkten Konfrontationsgespräch: 'Du bist denen auf den Leim gegangen!' Max blockierte ihn daraufhin. Ein anderer Ansatz hätte besser funktionieren können: 'Hey Max, wir vermissen dich beim Training. Ist alles okay bei dir? Ich bin da, wenn du reden willst.' So bleibt die Tür offen, ohne Druck aufzubauen."
+    },
+    {
+      "type": "heading",
+      "content": "An wen kann man sich wenden?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Vertrauenslehrer oder Schulpsychologen — niedrigschwellig und vertraulich",
+        "Eltern oder andere erwachsene Vertrauenspersonen",
+        "Online-Beratung: jugend.support oder Nummer gegen Kummer (116 111)",
+        "Beratungsstelle Radikalisierung beim BAMF: 0911 / 943 43 43",
+        "Hayat Deutschland — Beratungsstelle Deradikalisierung",
+        "Violence Prevention Network — Ausstiegsberatung",
+        "In akuten Gefahrensituationen: Polizei (110)"
+      ]
+    },
+    {
+      "type": "heading",
+      "content": "Du musst das nicht alleine schaffen"
+    },
+    {
+      "type": "text",
+      "content": "Der wichtigste Punkt: Niemand erwartet von euch, dass ihr Radikalisierung alleine stoppt. Eure Aufgabe ist es, aufmerksam zu sein, die Beziehung aufrechtzuerhalten und euch Hilfe zu holen. Professionelle Beratungsstellen haben Erfahrung mit genau diesen Situationen und können euch konkret sagen, was der nächste Schritt ist. Es ist kein Verrat, sich Hilfe zu suchen — es ist ein Zeichen von Verantwortung und Freundschaft."
+    },
+    {
+      "type": "reflection",
+      "question": "Welche Hürden seht ihr in eurem eigenen Umfeld, wenn es darum geht, Hilfe zu holen? Was müsste sich ändern, damit Jugendliche sich leichter trauen, professionelle Unterstützung zu suchen?"
+    }
+  ]
+}

@@ -1,0 +1,1449 @@
+[
+  {
+    "id": "profile-tiktok-max-2023-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @MaxGamer_official",
+    "date": "2023-11-01",
+    "title": "Max' TikTok-Profil: Normaler Gamer-Auftritt",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "TikTok",
+      "username": "MaxGamer_official",
+      "display_name": "Max",
+      "avatar_description": "Selfie mit Gaming-Headset, laechelnd, heller Hintergrund",
+      "bio": "Gamer | CS2 | Valorant \ud83c\udfae | 16 y/o | Streaming bald auf Twitch!",
+      "follower": 124,
+      "following": 89,
+      "following_accounts": ["@CS2clips_de", "@ValorantDE", "@Twitch_Highlights", "@reloadzGaming", "@TimoShadow"],
+      "posts_count": 18,
+      "joined": "2023-10",
+      "recent_posts": [
+        "CS2 Ace-Clip mit Reaktion von Timo",
+        "Mein neues Setup \u2013 Unboxing-Video",
+        "Lustiger Fail-Moment in Valorant"
+      ],
+      "bio_history": [
+        { "date": "2023-10", "bio": "Max | Gamer \ud83c\udfae" }
+      ],
+      "description": "Typisches Gamer-Profil eines 16-Jaehrigen. Helle, freundliche Aesthetik, Gaming-Content, Interaktion mit Schulfreunden. Keine auffaelligen Inhalte."
+    },
+    "analysis": {
+      "context": "Ausgangszustand vor der Radikalisierung. Max ist ein normaler Teenager mit Gaming-Interessen.",
+      "significance": "Dient als Referenzpunkt fuer spaetere Veraenderungen im Profil.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "profile-instagram-max-2023-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Instagram Profil @maxgamer_official",
+    "date": "2023-11-01",
+    "title": "Max' Instagram: Alltag und Gaming",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "Instagram",
+      "username": "maxgamer_official",
+      "display_name": "Max \ud83c\udfae",
+      "avatar_description": "Selfie im Park, Sonnenbrille, entspannter Blick",
+      "bio": "16 | NRW | Zocken & Chillen \ud83c\udfae\ud83c\udfb6\nCS2 & Valorant\nTwitch kommt bald \ud83d\udc40",
+      "follower": 213,
+      "following": 198,
+      "following_accounts": ["@cs2official", "@valorant_dach", "@timo_rl", "@reloadzgaming", "@nike", "@bundesliga"],
+      "posts_count": 34,
+      "joined": "2022-06",
+      "recent_posts": [
+        "Story: Screenshot von gewonnenem CS2-Match",
+        "Foto vom Schulausflug mit Klassenkameraden",
+        "Reel: Lustiges Gaming-Moment mit Timo"
+      ],
+      "bio_history": [
+        { "date": "2022-06", "bio": "Max aus NRW \ud83c\udfae" }
+      ],
+      "description": "Normales Instagram-Profil eines Jugendlichen. Mix aus Gaming-Content, Schulfreunden und Alltagsfotos. Gesunder sozialer Kreis sichtbar."
+    },
+    "analysis": {
+      "context": "Max nutzt Instagram hauptsaechlich fuer den Kontakt mit Schulfreunden und zum Teilen von Gaming-Momenten.",
+      "significance": "Zeigt ein intaktes soziales Umfeld vor Beginn der Isolation.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "profile-steam-max-2023-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Steam Profil MaxGamer_official",
+    "date": "2023-11-01",
+    "title": "Max' Steam-Profil: Standard-Gamer",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "Steam",
+      "username": "MaxGamer_official",
+      "display_name": "MaxGamer",
+      "avatar_description": "Standard-CS2-Operator als Profilbild",
+      "bio": "CS2 & Valorant Grinder \ud83d\udcaa Rank: Faceit Level 5",
+      "follower": 42,
+      "following": 31,
+      "following_accounts": ["TimoShadow", "reloadzGaming", "CS2ProClips"],
+      "posts_count": 0,
+      "joined": "2022-03",
+      "recent_posts": [
+        "Screenshot: Ace im Competitive-Match",
+        "Neues CS2-Skin-Showcase"
+      ],
+      "bio_history": [
+        { "date": "2022-03", "bio": "CS:GO Player" }
+      ],
+      "description": "Unauffaelliges Steam-Profil. Fokus auf CS2, regelmaessige Spielaktivitaet, normale Freundesliste mit Schulkameraden."
+    },
+    "analysis": {
+      "context": "Steam ist Max' primaere Gaming-Plattform. Normales Spielverhalten, keine auffaelligen Gruppen.",
+      "significance": "Baseline fuer Gaming-Verhalten vor der Veraenderung.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "profile-tiktok-timo-2023-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @ShadowTimo",
+    "date": "2023-11-15",
+    "title": "Timos TikTok-Profil: Unauffaelliger Gamer",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "TikTok",
+      "username": "ShadowTimo",
+      "display_name": "Timo",
+      "avatar_description": "Cartoon-Avatar im Anime-Stil, dunkle Haare",
+      "bio": "Gaming & Memes \ud83c\udfae | CS2 mit @MaxGamer_official | 15 y/o",
+      "follower": 67,
+      "following": 112,
+      "following_accounts": ["@MaxGamer_official", "@CS2clips_de", "@maboroshi_memes", "@fortnite_de"],
+      "posts_count": 9,
+      "joined": "2023-09",
+      "recent_posts": [
+        "Lustiges Duo-Match mit Max",
+        "Meme-Compilation Gaming-Fails"
+      ],
+      "bio_history": [
+        { "date": "2023-09", "bio": "Timo | Gamer" }
+      ],
+      "description": "Kleines, unauffaelliges Profil. Timo ist Max' engster Gaming-Freund. Hauptsaechlich Gaming-Memes und gemeinsame Clips mit Max."
+    },
+    "analysis": {
+      "context": "Timo ist Teil von Max' engstem Freundeskreis. Beide teilen Gaming-Interessen.",
+      "significance": "Timo wird spaeter Max' Veraenderungen spiegeln, was die soziale Dynamik der Radikalisierung zeigt.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "profile-discord-timo-2023-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil ShadowTimo#4821",
+    "date": "2023-11-15",
+    "title": "Timos Discord: Gaming-Community-Mitglied",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "Discord",
+      "username": "ShadowTimo#4821",
+      "display_name": "Timo \ud83c\udfae",
+      "avatar_description": "Gleicher Anime-Avatar wie auf TikTok",
+      "bio": "CS2 & Valorant | Immer am Zocken",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2023-04",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2023-04", "bio": "Timo" }
+      ],
+      "description": "Standard-Discord-Profil. Mitglied in Gaming-Servern, aktivste Interaktion mit Max und anderen Schulfreunden."
+    },
+    "analysis": {
+      "context": "Discord ist Timos Hauptkommunikationsplattform fuer Gaming. Normale Serveraktivitaeten.",
+      "significance": "Spaeter wird Timo ueber Discord in extremistische Server eingeladen.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "profile-steam-timo-2023-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Steam Profil ShadowTimo",
+    "date": "2023-11-15",
+    "title": "Timos Steam-Profil: Casual Gamer",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "Steam",
+      "username": "ShadowTimo",
+      "display_name": "ShadowTimo",
+      "avatar_description": "CS2-Operator-Bild, Standard-Skin",
+      "bio": "Casual Gamer | CS2 & Valorant",
+      "follower": 19,
+      "following": 15,
+      "following_accounts": ["MaxGamer_official", "reloadzGaming"],
+      "posts_count": 0,
+      "joined": "2023-01",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2023-01", "bio": "" }
+      ],
+      "description": "Kleines Steam-Profil mit wenigen Freunden, hauptsaechlich aus der Schule. Spielzeit konzentriert sich auf CS2."
+    },
+    "analysis": {
+      "context": "Timos Steam-Profil zeigt normales Spielverhalten eines 15-Jaehrigen.",
+      "significance": "Spaeter werden neue Gruppen und Freunde aus extremistischen Kreisen hinzukommen.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "profile-tiktok-max-2024-02",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @MaxGamer_official",
+    "date": "2024-02-01",
+    "title": "Max' TikTok: Erste subtile Veraenderungen",
+    "importance": 2,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": ["interessenverschiebung", "isolation"],
+    "content": {
+      "platform": "TikTok",
+      "username": "MaxGamer_official",
+      "display_name": "Max",
+      "avatar_description": "Dunkleres Selfie, kein Laecheln, Kapuzenpulli",
+      "bio": "Gamer | CS2 | Manchmal Streaming \ud83c\udfae | Die Welt ist nicht das, was sie scheint",
+      "follower": 156,
+      "following": 134,
+      "following_accounts": ["@CS2clips_de", "@ValorantDE", "@reloadzGaming", "@TimoShadow", "@redpilled_fakten", "@DarkMemes_DE"],
+      "posts_count": 31,
+      "joined": "2023-10",
+      "recent_posts": [
+        "CS2-Clip mit aggressiverem Kommentar",
+        "Repost eines 'gesellschaftskritischen' Memes",
+        "Video: 'Warum Schule Zeitverschwendung ist'"
+      ],
+      "bio_history": [
+        { "date": "2023-10", "bio": "Max | Gamer \ud83c\udfae" },
+        { "date": "2023-11", "bio": "Gamer | CS2 | Valorant \ud83c\udfae | 16 y/o | Streaming bald auf Twitch!" },
+        { "date": "2024-01", "bio": "Gamer | CS2 | Manchmal Streaming \ud83c\udfae | Die Welt ist nicht das, was sie scheint" }
+      ],
+      "description": "Erste Veraenderungen sichtbar: dunklere Aesthetik, kryptischer Bio-Text, neue Accounts in der Following-Liste, die 'Red Pill'-Inhalte verbreiten. Weniger Interaktion mit alten Freunden."
+    },
+    "analysis": {
+      "context": "Max hat begonnen, sich von seinem bisherigen Freundeskreis zurueckzuziehen. Schulprobleme und familiaere Spannungen foerdern die Isolation.",
+      "significance": "Erste Warnsignale: Die Bio wird kryptischer, neue fragwuerdige Accounts tauchen in der Following-Liste auf.",
+      "intervention_points": ["Gespraech ueber die Bio-Aenderung", "Nachfrage zu neuen Online-Kontakten"]
+    }
+  },
+  {
+    "id": "profile-instagram-max-2024-02",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Instagram Profil @maxgamer_official",
+    "date": "2024-02-01",
+    "title": "Max' Instagram: Rueckzug aus dem Sozialleben",
+    "importance": 2,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": ["isolation", "stimmungsveraenderung"],
+    "content": {
+      "platform": "Instagram",
+      "username": "maxgamer_official",
+      "display_name": "Max",
+      "avatar_description": "Dunkles Profilbild, Gesicht kaum erkennbar, Gegenlicht",
+      "bio": "16 | NRW | \ud83c\udfae\nEs gibt mehr als das, was man uns erzaehlt.",
+      "follower": 201,
+      "following": 167,
+      "following_accounts": ["@cs2official", "@timo_rl", "@redpilled_fakten", "@sigma_mindset_de", "@stoic_warrior_quotes"],
+      "posts_count": 36,
+      "joined": "2022-06",
+      "recent_posts": [
+        "Story: Schwarzes Bild mit Zitat 'Vertraue niemandem'",
+        "Kein neuer Feed-Post seit 3 Wochen",
+        "Story: Screenshot von Spotify-Playlist 'Dark Phonk'"
+      ],
+      "bio_history": [
+        { "date": "2022-06", "bio": "Max aus NRW \ud83c\udfae" },
+        { "date": "2023-11", "bio": "16 | NRW | Zocken & Chillen \ud83c\udfae\ud83c\udfb6\nCS2 & Valorant\nTwitch kommt bald \ud83d\udc40" },
+        { "date": "2024-01", "bio": "16 | NRW | \ud83c\udfae\nEs gibt mehr als das, was man uns erzaehlt." }
+      ],
+      "description": "Deutlicher Rueckzug: Weniger Posts, dunklere Aesthetik, kryptische Stories. Schulfreunde werden entfolgt, neue 'Sigma'-Accounts folgen. Twitch-Erwaehnung aus Bio entfernt."
+    },
+    "analysis": {
+      "context": "Instagram zeigt den sozialen Rueckzug am deutlichsten. Keine Fotos mit Freunden mehr, zunehmend nihilistische Zitate.",
+      "significance": "Das Entfernen von Schulfreunden und die neuen Following-Accounts deuten auf den Beginn einer Neuorientierung hin.",
+      "intervention_points": ["Auf fehlende soziale Inhalte ansprechen", "Dunklere Stimmung in Stories thematisieren"]
+    }
+  },
+  {
+    "id": "profile-twitch-max-2024-02",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Twitch Profil MaxGamer_official",
+    "date": "2024-02-15",
+    "title": "Max' Twitch: Inaktiv und vernachlaessigt",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": ["interessenverschiebung"],
+    "content": {
+      "platform": "Twitch",
+      "username": "MaxGamer_official",
+      "display_name": "MaxGamer",
+      "avatar_description": "Altes Gaming-Headset-Bild, nicht aktualisiert",
+      "bio": "CS2 Streams | Kommt bald mehr!",
+      "follower": 23,
+      "following": 45,
+      "following_accounts": ["@reloadzGaming", "@CS2_StreamsDE", "@TimoShadow"],
+      "posts_count": 0,
+      "joined": "2023-11",
+      "recent_posts": [
+        "Letzter Stream vor 8 Wochen: CS2 Competitive"
+      ],
+      "bio_history": [
+        { "date": "2023-11", "bio": "CS2 Streams | Kommt bald mehr!" }
+      ],
+      "description": "Twitch-Profil wurde seit November nicht aktualisiert. Max hat das Streaming-Projekt aufgegeben. Der Kanal ist inaktiv."
+    },
+    "analysis": {
+      "context": "Das aufgegebene Twitch-Projekt zeigt Max' nachlassendes Interesse an seinen bisherigen Hobbys.",
+      "significance": "Verlust konstruktiver Freizeitbeschaeftigung schafft Raum fuer problematische Inhalte.",
+      "intervention_points": ["Nachfragen, warum das Streaming aufgehoert hat"]
+    }
+  },
+  {
+    "id": "profile-youtube-niklas-2024-03",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "YouTube Kanal @RedPillNiklas",
+    "date": "2024-03-01",
+    "title": "Niklas' YouTube: Etablierter Szene-Kanal",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["rekrutierung", "ideologische_inhalte", "szene_kontakt"],
+    "content": {
+      "platform": "YouTube",
+      "username": "RedPillNiklas",
+      "display_name": "Niklas | WolfCommander",
+      "avatar_description": "Stilisierter Wolf in Schwarz-Rot, militaerischer Look",
+      "bio": "Die Wahrheit wird nicht im Mainstream erzaehlt. \ud83d\udc3a\nTelegram: @WolfCommander_real\nWir sind die stille Mehrheit.",
+      "follower": 4823,
+      "following": 34,
+      "following_accounts": ["@MartinSellner_official", "@Compact_Magazin", "@Kriegsreporter_Z", "@TraditionUndEhre"],
+      "posts_count": 187,
+      "joined": "2022-08",
+      "recent_posts": [
+        "Video: 'Warum das System dich klein halten will' (48k Views)",
+        "Video: 'Gaming-Community aufwachen! Red Pill Talk #23' (12k Views)",
+        "Video: 'Die wahre Geschichte Deutschlands - Was sie uns verschweigen' (67k Views)"
+      ],
+      "bio_history": [
+        { "date": "2022-08", "bio": "Niklas | Gaming & Meinungen" },
+        { "date": "2023-01", "bio": "RedPillNiklas | Die unbequeme Wahrheit" },
+        { "date": "2023-09", "bio": "Die Wahrheit wird nicht im Mainstream erzaehlt. \ud83d\udc3a\nTelegram: @WolfCommander_real\nWir sind die stille Mehrheit." }
+      ],
+      "description": "Niklas betreibt seit ueber einem Jahr einen YouTube-Kanal mit zunehmend extremistischen Inhalten. Getarnt als 'Gaming-Community-Kanal' verbreitet er rechtsextreme Narrative. Professionelle Aufmachung, etablierte Reichweite."
+    },
+    "analysis": {
+      "context": "Niklas ist kein Opfer, sondern ein aktiver Rekrutierer. Sein Kanal nutzt Gaming als Einstieg, um junge Maenner zu radikalisieren.",
+      "significance": "Dies ist der Kanal, ueber den Max erstmals mit extremistischen Inhalten in Beruehrung kommt. Die hohe Professionalitaet macht die Inhalte fuer Jugendliche attraktiv.",
+      "intervention_points": ["Meldung des Kanals wegen Radikalisierungsinhalten", "Aufklaerung ueber Rekrutierungsstrategien"]
+    }
+  },
+  {
+    "id": "profile-discord-niklas-2024-03",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil WolfCommander#0001",
+    "date": "2024-03-01",
+    "title": "Niklas' Discord: Serveradmin der 'Bruderschaft'",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["rekrutierung", "szene_kontakt", "geschlossene_gruppen"],
+    "content": {
+      "platform": "Discord",
+      "username": "WolfCommander#0001",
+      "display_name": "\ud83d\udc3a WolfCommander | Admin",
+      "avatar_description": "Schwarzer Wolf vor Sonnenrad-Symbol, rot-schwarz",
+      "bio": "Admin @Bruderschaft des Nordens | Die Woelfe erwachen | DM fuer Aufnahme",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2021-12",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2021-12", "bio": "Niklas | Gaming" },
+        { "date": "2022-06", "bio": "WolfCommander | RedPill & Gaming" },
+        { "date": "2023-03", "bio": "Admin @Bruderschaft des Nordens | Die Woelfe erwachen | DM fuer Aufnahme" }
+      ],
+      "description": "Niklas ist Admin eines Discord-Servers namens 'Bruderschaft des Nordens' mit ca. 340 Mitgliedern. Der Server kombiniert Gaming mit ideologischer Indoktrination. Hierarchische Struktur mit Raengen."
+    },
+    "analysis": {
+      "context": "Der Discord-Server dient als Rekrutierungsplattform. Neue Mitglieder werden ueber Gaming-Inhalte angelockt und schrittweise radikalisiert.",
+      "significance": "Max wird auf diesen Server eingeladen und durchlaeuft dort den Grossteil seiner Radikalisierung.",
+      "intervention_points": ["Server bei Discord melden", "Eltern ueber geschlossene Serverstrukturen aufklaeren"]
+    }
+  },
+  {
+    "id": "profile-telegram-niklas-2024-03",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Telegram Kanal @WolfCommander_real",
+    "date": "2024-03-01",
+    "title": "Niklas' Telegram: Unzensierter Propaganda-Kanal",
+    "importance": 5,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["propaganda", "extremismus", "rekrutierung"],
+    "content": {
+      "platform": "Telegram",
+      "username": "WolfCommander_real",
+      "display_name": "WolfCommander | Uncensored",
+      "avatar_description": "Schwarz-Weiss-Bild eines Wolfsrudels, Runen-Schriftzug",
+      "bio": "Was YouTube loescht, findest du hier. \ud83d\udc3a\nDie Wahrheit stirbt nicht.\nBackup-Kanal: @WolfPack_reserve\nBruderschaft: DM",
+      "follower": 2341,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 892,
+      "joined": "2023-02",
+      "recent_posts": [
+        "Verschwoerungsvideo ueber 'Great Replacement' (weitergeleitet von Compact)",
+        "Aufruf: 'Jeder von euch muss 3 neue Brueder bringen'",
+        "Bild-Collage: 'Vorher/Nachher deutsche Staedte' mit rassistischer Botschaft"
+      ],
+      "bio_history": [
+        { "date": "2023-02", "bio": "Niklas | Meinungsfreiheit" },
+        { "date": "2023-06", "bio": "Was YouTube loescht, findest du hier." },
+        { "date": "2023-11", "bio": "Was YouTube loescht, findest du hier. \ud83d\udc3a\nDie Wahrheit stirbt nicht.\nBackup-Kanal: @WolfPack_reserve\nBruderschaft: DM" }
+      ],
+      "description": "Niklas' Telegram-Kanal ist der unzensierte Ableger seines YouTube-Kanals. Hier werden offen rechtsextreme, antisemitische und rassistische Inhalte geteilt. Der Kanal dient als Trichter zur weiteren Radikalisierung."
+    },
+    "analysis": {
+      "context": "Telegram wird bewusst gewaehlt, weil die Plattform kaum moderiert. Inhalte, die auf YouTube geloescht wuerden, finden hier ungehindert Verbreitung.",
+      "significance": "Max wird spaeter auf diesen Kanal verwiesen, um 'die Wahrheit' zu sehen, die angeblich auf anderen Plattformen zensiert wird.",
+      "intervention_points": ["Eltern ueber Telegram als Radikalisierungsplattform aufklaeren", "Meldung an BKA-Meldestelle"]
+    }
+  },
+  {
+    "id": "profile-tiktok-max-2024-05",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @IceWolf88",
+    "date": "2024-05-01",
+    "title": "Max' TikTok: Neuer Username, neue Identitaet",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["identitaetswechsel", "szene_aesthetik", "szene_codes"],
+    "content": {
+      "platform": "TikTok",
+      "username": "IceWolf88",
+      "display_name": "IceWolf",
+      "avatar_description": "Stilisierter Eiskristall-Wolf, schwarz-blau, aggressiver Look",
+      "bio": "\ud83d\udc3a Wolf unter Schafen | Red Pill seit '24\nDie Augen sind offen.\nGaming | Wahrheit | Ehre",
+      "follower": 487,
+      "following": 203,
+      "following_accounts": ["@RedPillNiklas", "@WolfCommander_real", "@sigma_grindset_de", "@DarkMemes_DE", "@tradwerte_deutsch", "@patriot_gaming_de", "@ShadowTimo"],
+      "posts_count": 58,
+      "joined": "2023-10",
+      "recent_posts": [
+        "Video: Duett mit @RedPillNiklas ueber 'Meinungsfreiheit'",
+        "Edit: Phonk-Musik mit historischen Bildern",
+        "Meme: 'NPCs vs. Aufgewachte' mit blauer/roter Pille"
+      ],
+      "bio_history": [
+        { "date": "2023-10", "bio": "Max | Gamer \ud83c\udfae" },
+        { "date": "2023-11", "bio": "Gamer | CS2 | Valorant \ud83c\udfae | 16 y/o | Streaming bald auf Twitch!" },
+        { "date": "2024-01", "bio": "Gamer | CS2 | Manchmal Streaming \ud83c\udfae | Die Welt ist nicht das, was sie scheint" },
+        { "date": "2024-03", "bio": "\ud83d\udc3a Aufgewacht | Gaming & Wahrheit" },
+        { "date": "2024-05", "bio": "\ud83d\udc3a Wolf unter Schafen | Red Pill seit '24\nDie Augen sind offen.\nGaming | Wahrheit | Ehre" }
+      ],
+      "description": "Massiver Wandel: Max hat seinen Username zu 'IceWolf88' geaendert \u2013 '88' ist ein bekannter Szene-Code. Wolf-Symbolik ueberall. Bio verwendet typische Radikalisierungsbegriffe ('Red Pill', 'Aufgewacht'). Follower steigen durch Interaktion mit extremen Accounts."
+    },
+    "analysis": {
+      "context": "Die Umbenennung markiert einen Identitaetswechsel. Max distanziert sich bewusst von seinem alten Gamer-Image und uebernimmt Szene-Aesthetik.",
+      "significance": "Der Username '88' ist ein eindeutiger Szene-Code (steht fuer 'HH'). Die Wolf-Symbolik stammt direkt von Niklas' Branding. Max uebernimmt die Identitaetsmarker der Gruppe.",
+      "intervention_points": ["Username-Aenderung ansprechen", "Bedeutung von '88' erklaeren", "Ueber Wolf-Symbolik in rechten Szenen aufklaeren"]
+    }
+  },
+  {
+    "id": "profile-instagram-max-2024-05",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Instagram Profil @icewolf_88",
+    "date": "2024-05-01",
+    "title": "Max' Instagram: Aesthetischer Umbruch",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["szene_aesthetik", "identitaetswechsel", "kontaktabbruch"],
+    "content": {
+      "platform": "Instagram",
+      "username": "icewolf_88",
+      "display_name": "IceWolf \ud83d\udc3a",
+      "avatar_description": "Schwarz-Weiss-Foto, Kapuze tief im Gesicht, nur Kinn sichtbar",
+      "bio": "Die Wahrheit liegt nicht in der Mitte. \ud83d\udc3a\nBruder der Woelfe.",
+      "follower": 312,
+      "following": 98,
+      "following_accounts": ["@redpillniklas", "@sigma_mindset_de", "@tradwerte_deutsch", "@ShadowTimo", "@patriot_quotes_de"],
+      "posts_count": 41,
+      "joined": "2022-06",
+      "recent_posts": [
+        "Schwarzweisses Landschaftsbild mit Zitat: 'Staerke kommt aus der Einsamkeit'",
+        "Repost von @tradwerte_deutsch ueber 'Deutsche Tugenden'",
+        "Story: Screenshot von Niklas' YouTube-Video mit \ud83d\udcaa\ud83d\udc3a"
+      ],
+      "bio_history": [
+        { "date": "2022-06", "bio": "Max aus NRW \ud83c\udfae" },
+        { "date": "2023-11", "bio": "16 | NRW | Zocken & Chillen \ud83c\udfae\ud83c\udfb6\nCS2 & Valorant\nTwitch kommt bald \ud83d\udc40" },
+        { "date": "2024-01", "bio": "16 | NRW | \ud83c\udfae\nEs gibt mehr als das, was man uns erzaehlt." },
+        { "date": "2024-04", "bio": "Die Wahrheit liegt nicht in der Mitte. \ud83d\udc3a\nBruder der Woelfe." }
+      ],
+      "description": "Instagram komplett umgestaltet: Alte Fotos mit Freunden geloescht, nur noch dunkle Aesthetik. Schulfreunde entfolgt, stattdessen Szene-Accounts. 'Bruder der Woelfe' ist Bezug auf Niklas' Gruppe."
+    },
+    "analysis": {
+      "context": "Die bewusste Loeschung alter Fotos und der vollstaendige aesthetische Wandel zeigen einen identitaeren Bruch mit dem frueheren Selbstbild.",
+      "significance": "Max hat sich sichtbar von seinem alten sozialen Umfeld geloest und identifiziert sich nun mit der Gruppe um Niklas.",
+      "intervention_points": ["Geloeschte Freundschaftsfotos ansprechen", "Neue Following-Liste analysieren"]
+    }
+  },
+  {
+    "id": "profile-youtube-max-2024-05",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "YouTube Kanal @IceWolf88",
+    "date": "2024-05-15",
+    "title": "Max startet eigenen YouTube-Kanal",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["ideologische_inhalte", "szene_kontakt", "content_produktion"],
+    "content": {
+      "platform": "YouTube",
+      "username": "IceWolf88",
+      "display_name": "IceWolf88",
+      "avatar_description": "Gleicher Eiskristall-Wolf wie auf TikTok",
+      "bio": "Gaming & Wahrheit \ud83d\udc3a\nWolf unter Schafen. Die Community waechst.\nTelegram: folgt bald",
+      "follower": 89,
+      "following": 12,
+      "following_accounts": ["@RedPillNiklas", "@Compact_Magazin", "@patriot_gaming_de"],
+      "posts_count": 4,
+      "joined": "2024-04",
+      "recent_posts": [
+        "Video: 'Mein Red Pill Moment \u2013 Warum ich aufgewacht bin' (2.1k Views)",
+        "Video: 'CS2 Ranked aber wir reden ueber die Wahrheit' (890 Views)",
+        "Video: 'Reaktion auf Mainstream-Medien LUEGEN' (3.4k Views)"
+      ],
+      "bio_history": [
+        { "date": "2024-04", "bio": "Gaming & Wahrheit \ud83d\udc3a\nWolf unter Schafen. Die Community waechst." }
+      ],
+      "description": "Max hat einen eigenen YouTube-Kanal gestartet, der Niklas' Format imitiert: Gaming als Rahmen fuer ideologische Inhalte. Niklas promoted den Kanal aktiv in seinem Netzwerk, daher die schnell wachsenden Views."
+    },
+    "analysis": {
+      "context": "Max wird vom Konsumenten zum Produzenten extremer Inhalte. Niklas foerdert dies aktiv als Teil der Rekrutierungsstrategie.",
+      "significance": "Die eigene Content-Produktion vertieft die Bindung an die Ideologie und die Gruppe erheblich.",
+      "intervention_points": ["YouTube-Kanal melden", "Ueber Konsequenzen extremer Online-Inhalte aufklaeren"]
+    }
+  },
+  {
+    "id": "profile-discord-max-2024-05",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil IceWolf88#7734",
+    "date": "2024-05-01",
+    "title": "Max' Discord: Aufstieg in der Server-Hierarchie",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["szene_kontakt", "geschlossene_gruppen", "rangstruktur"],
+    "content": {
+      "platform": "Discord",
+      "username": "IceWolf88#7734",
+      "display_name": "\ud83d\udc3a IceWolf | Krieger",
+      "avatar_description": "Eiskristall-Wolf, animiert, blaue Augen leuchtend",
+      "bio": "Bruderschaft des Nordens | Rang: Krieger \ud83d\udc3a\u2694\ufe0f\n'Wer die Wahrheit kennt, kann nicht schweigen'",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2023-08",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2023-08", "bio": "Max | CS2 & Valorant" },
+        { "date": "2024-01", "bio": "MaxGamer | Gaming" },
+        { "date": "2024-03", "bio": "IceWolf | Bruderschaft des Nordens" },
+        { "date": "2024-05", "bio": "Bruderschaft des Nordens | Rang: Krieger \ud83d\udc3a\u2694\ufe0f\n'Wer die Wahrheit kennt, kann nicht schweigen'" }
+      ],
+      "description": "Max hat den Rang 'Krieger' in Niklas' Discord-Server erreicht. Sein Profil zeigt die vollstaendige Integration in die Gruppenstruktur. Der alte Username ist komplett verschwunden."
+    },
+    "analysis": {
+      "context": "Die Rangstruktur im Discord-Server funktioniert als Belohnungssystem und verstaerkt die Gruppenbindung.",
+      "significance": "Max investiert zunehmend Zeit und Identitaet in die Hierarchie. Der Rang 'Krieger' zeigt ein fortgeschrittenes Stadium der Integration.",
+      "intervention_points": ["Ueber manipulative Gruppenstrukturen aufklaeren", "Rang-Systeme als Bindungsmechanismus erkennen"]
+    }
+  },
+  {
+    "id": "profile-steam-max-2024-05",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Steam Profil IceWolf88",
+    "date": "2024-05-01",
+    "title": "Max' Steam: Szene-Symbole im Gaming-Profil",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["szene_codes", "szene_aesthetik"],
+    "content": {
+      "platform": "Steam",
+      "username": "IceWolf88",
+      "display_name": "IceWolf88 \ud83d\udc3a",
+      "avatar_description": "Weisser Wolf im Schneesturm, Schwarze-Sonne-Symbol dezent im Hintergrund",
+      "bio": "Wolf unter Schafen. Ehre, Treue, Staerke. \u2694\ufe0f\ud83d\udc3a\nBruderschaft des Nordens",
+      "follower": 78,
+      "following": 56,
+      "following_accounts": ["WolfCommander", "ShadowTimo", "NordKrieger_88", "ValhallaSturm"],
+      "posts_count": 0,
+      "joined": "2022-03",
+      "recent_posts": [
+        "Artwork-Showcase: Wolf-Symbolik mit Runen",
+        "Screenshot: CS2-Clan-Tag '[BdN]' fuer Bruderschaft des Nordens"
+      ],
+      "bio_history": [
+        { "date": "2022-03", "bio": "CS:GO Player" },
+        { "date": "2023-11", "bio": "CS2 & Valorant Grinder \ud83d\udcaa Rank: Faceit Level 5" },
+        { "date": "2024-03", "bio": "IceWolf | Gaming & mehr" },
+        { "date": "2024-05", "bio": "Wolf unter Schafen. Ehre, Treue, Staerke. \u2694\ufe0f\ud83d\udc3a\nBruderschaft des Nordens" }
+      ],
+      "description": "Steam-Profil zeigt Szene-Symbole: Schwarze Sonne im Hintergrund, Runen-Artwork, Clan-Tag der Bruderschaft. Neue Freunde aus dem extremistischen Netzwerk. 'Ehre, Treue, Staerke' paraphrasiert SS-Motto."
+    },
+    "analysis": {
+      "context": "Gaming-Plattformen werden haeufig als Einstieg genutzt, weil Symbole dort weniger auffallen und weniger moderiert werden.",
+      "significance": "Die Verwendung von Szene-Codes wie '88' und paraphrasierten NS-Slogans zeigt eine bewusste Identifikation mit rechtsextremer Symbolik.",
+      "intervention_points": ["Symbole auf dem Steam-Profil erkennen und einordnen", "Eltern ueber Gaming-Profile als Radikalisierungsindikator aufklaeren"]
+    }
+  },
+  {
+    "id": "profile-tiktok-timo-2024-06",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @ShadowTimo",
+    "date": "2024-06-01",
+    "title": "Timos TikTok: Beginnt Max' Wandel zu spiegeln",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["szene_aesthetik", "interessenverschiebung", "peer_einfluss"],
+    "content": {
+      "platform": "TikTok",
+      "username": "ShadowTimo",
+      "display_name": "ShadowWolf \ud83d\udc3a",
+      "avatar_description": "Dunkler Wolf-Avatar, aehnlich Max' Stil aber weniger extrem",
+      "bio": "Gaming & Wahrheit \ud83c\udfae\ud83d\udc3a | CS2\nFolgt @IceWolf88\n'Augen auf'",
+      "follower": 134,
+      "following": 156,
+      "following_accounts": ["@IceWolf88", "@RedPillNiklas", "@DarkMemes_DE", "@sigma_grindset_de", "@CS2clips_de"],
+      "posts_count": 22,
+      "joined": "2023-09",
+      "recent_posts": [
+        "Duett mit @IceWolf88: Red-Pill-Meme",
+        "Repost: 'Sigma Male Grindset' Edit mit Phonk-Musik",
+        "CS2-Clip mit Bruderschaft-Clan-Tag"
+      ],
+      "bio_history": [
+        { "date": "2023-09", "bio": "Timo | Gamer" },
+        { "date": "2023-11", "bio": "Gaming & Memes \ud83c\udfae | CS2 mit @MaxGamer_official | 15 y/o" },
+        { "date": "2024-04", "bio": "Gaming \ud83c\udfae\ud83d\udc3a | Folgt @IceWolf88" },
+        { "date": "2024-06", "bio": "Gaming & Wahrheit \ud83c\udfae\ud83d\udc3a | CS2\nFolgt @IceWolf88\n'Augen auf'" }
+      ],
+      "description": "Timo beginnt Max' Veraenderungen zu uebernehmen: Wolf-Symbolik, 'Wahrheit' in der Bio, gleiche Accounts in der Following-Liste. Zeitversetzt um ca. 2-3 Monate."
+    },
+    "analysis": {
+      "context": "Timo folgt Max' Entwicklung mit Verzoegerung. Die Peer-Dynamik zeigt, wie Radikalisierung sich im Freundeskreis ausbreitet.",
+      "significance": "Timo ist weniger ueberzeugt als Max, folgt aber aus Loyalitaet zum Freund. Diese Dynamik ist typisch fuer sekundaere Radikalisierung.",
+      "intervention_points": ["Timo als moeglichen Ansprechpartner identifizieren", "Peer-Druck thematisieren"]
+    }
+  },
+  {
+    "id": "profile-discord-timo-2024-06",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil ShadowTimo#4821",
+    "date": "2024-06-01",
+    "title": "Timos Discord: Neues Mitglied der Bruderschaft",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["geschlossene_gruppen", "peer_einfluss", "szene_kontakt"],
+    "content": {
+      "platform": "Discord",
+      "username": "ShadowTimo#4821",
+      "display_name": "ShadowWolf | Rekrut",
+      "avatar_description": "Wolf-Avatar im gleichen Stil wie Max und Niklas",
+      "bio": "Bruderschaft des Nordens | Rekrut \ud83d\udc3a\nCS2 & Wahrheit",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2023-04",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2023-04", "bio": "Timo" },
+        { "date": "2023-11", "bio": "Timo \ud83c\udfae | CS2 & Valorant | Immer am Zocken" },
+        { "date": "2024-05", "bio": "ShadowWolf | Gaming & Community" },
+        { "date": "2024-06", "bio": "Bruderschaft des Nordens | Rekrut \ud83d\udc3a\nCS2 & Wahrheit" }
+      ],
+      "description": "Timo ist dem Discord-Server 'Bruderschaft des Nordens' beigetreten, auf Einladung von Max. Rang 'Rekrut' zeigt, dass er neu in der Hierarchie ist."
+    },
+    "analysis": {
+      "context": "Timo wurde von Max in die Gruppe gebracht \u2013 Max reproduziert damit unbewusst Niklas' Rekrutierungsmuster.",
+      "significance": "Der Schneeballeffekt der Radikalisierung: Opfer werden zu Rekrutierern ihrer eigenen Freunde.",
+      "intervention_points": ["Timos Eltern informieren", "Gruppenstruktur offenlegen"]
+    }
+  },
+  {
+    "id": "profile-steam-timo-2024-06",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Steam Profil ShadowTimo",
+    "date": "2024-06-01",
+    "title": "Timos Steam: Clan-Beitritt und neue Aesthetik",
+    "importance": 2,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["szene_aesthetik", "peer_einfluss"],
+    "content": {
+      "platform": "Steam",
+      "username": "ShadowTimo",
+      "display_name": "ShadowWolf_BdN",
+      "avatar_description": "Wolf-Avatar, aehnlicher Stil wie IceWolf88 aber gruentoenig",
+      "bio": "CS2 Krieger | Bruderschaft des Nordens | [BdN] Clan",
+      "follower": 34,
+      "following": 41,
+      "following_accounts": ["IceWolf88", "WolfCommander", "NordKrieger_88"],
+      "posts_count": 0,
+      "joined": "2023-01",
+      "recent_posts": [
+        "Screenshot: CS2-Match mit vollem BdN-Team"
+      ],
+      "bio_history": [
+        { "date": "2023-01", "bio": "" },
+        { "date": "2023-11", "bio": "Casual Gamer | CS2 & Valorant" },
+        { "date": "2024-06", "bio": "CS2 Krieger | Bruderschaft des Nordens | [BdN] Clan" }
+      ],
+      "description": "Timo hat den Bruderschaft-Clan-Tag uebernommen und spielt jetzt primaer mit Gruppenmitgliedern. Alte Schulfreunde verschwinden aus der Freundesliste."
+    },
+    "analysis": {
+      "context": "Gaming wird zum Bindemittel der Gruppe. Gemeinsames Spielen verstaerkt das Zugehoerigkeitsgefuehl.",
+      "significance": "Timo ersetzt sein altes soziales Gaming-Netzwerk durch die Bruderschaft-Gruppe.",
+      "intervention_points": ["Veraenderung der Gaming-Kontakte beobachten"]
+    }
+  },
+  {
+    "id": "profile-tiktok-max-2024-08",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @IceWolf88",
+    "date": "2024-08-01",
+    "title": "Max' TikTok: Offene ideologische Positionierung",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "ideologische_inhalte", "propaganda", "gewaltverherrlichung"],
+    "content": {
+      "platform": "TikTok",
+      "username": "IceWolf88",
+      "display_name": "IceWolf \u2694\ufe0f\ud83d\udc3a",
+      "avatar_description": "Kriegerischer Wolf mit Stahlhelm-Silhouette, schwarz-rot-weiss",
+      "bio": "Krieger der Wahrheit \u2694\ufe0f\ud83d\udc3a\nDeutschland erwache. Die Woelfe sind bereit.\nBackup: @IceWolf_reserve\nTG: @IceWolf88_real",
+      "follower": 2847,
+      "following": 167,
+      "following_accounts": ["@RedPillNiklas", "@WolfCommander_real", "@tradwerte_deutsch", "@patriot_gaming_de", "@remigration_jetzt", "@heimat_verteidiger", "@identitaere_aktion", "@ShadowTimo"],
+      "posts_count": 112,
+      "joined": "2023-10",
+      "recent_posts": [
+        "Edit: Historische Kriegsbilder mit Phonk und Zitat 'Unsere Vorfahren schauen zu'",
+        "Video: 'Strassenumfrage ZERSTOERT \u2013 System-NPCs haben keine Argumente'",
+        "Meme: 'Deutsche Jugend 1940 vs 2024' mit abwertender Botschaft"
+      ],
+      "bio_history": [
+        { "date": "2023-10", "bio": "Max | Gamer \ud83c\udfae" },
+        { "date": "2023-11", "bio": "Gamer | CS2 | Valorant \ud83c\udfae | 16 y/o | Streaming bald auf Twitch!" },
+        { "date": "2024-01", "bio": "Gamer | CS2 | Manchmal Streaming \ud83c\udfae | Die Welt ist nicht das, was sie scheint" },
+        { "date": "2024-03", "bio": "\ud83d\udc3a Aufgewacht | Gaming & Wahrheit" },
+        { "date": "2024-05", "bio": "\ud83d\udc3a Wolf unter Schafen | Red Pill seit '24\nDie Augen sind offen.\nGaming | Wahrheit | Ehre" },
+        { "date": "2024-08", "bio": "Krieger der Wahrheit \u2694\ufe0f\ud83d\udc3a\nDeutschland erwache. Die Woelfe sind bereit.\nBackup: @IceWolf_reserve\nTG: @IceWolf88_real" }
+      ],
+      "description": "Massive Eskalation: 'Deutschland erwache' ist ein direktes NS-Zitat. Follower-Explosion durch extremen Content. Backup-Account und Telegram-Verweis zeigen Bewusstsein, dass Inhalte geloescht werden koennten. Historische Kriegsverherrlichung und NS-Aesthetik."
+    },
+    "analysis": {
+      "context": "Max ist nun vollstaendig in der Indoktrinationsphase. Er produziert aktiv extremistische Inhalte und hat eine signifikante Reichweite aufgebaut.",
+      "significance": "'Deutschland erwache' war eine zentrale NS-Parole. Die Verwendung zeigt, dass Max tief in rechtsextremer Ideologie verwurzelt ist. Die Follower-Zahl zeigt, dass er selbst zum Multiplikator geworden ist.",
+      "intervention_points": ["Sofortige Meldung der Inhalte", "Professionelle Beratungsstelle einschalten", "Eltern dringend informieren"]
+    }
+  },
+  {
+    "id": "profile-instagram-max-2024-08",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Instagram Profil @icewolf_88",
+    "date": "2024-08-01",
+    "title": "Max' Instagram: Militante Aesthetik",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "szene_aesthetik", "gewaltverherrlichung"],
+    "content": {
+      "platform": "Instagram",
+      "username": "icewolf_88",
+      "display_name": "IceWolf \u2694\ufe0f",
+      "avatar_description": "Schwarz-weisse Krieger-Silhouette, Rueckenansicht mit Fahne",
+      "bio": "Krieger | Patriot | Wolf \ud83d\udc3a\u2694\ufe0f\n'Wer sein Volk nicht ehrt, ist seiner nicht wert.'\nLinks = Gesperrt",
+      "follower": 891,
+      "following": 67,
+      "following_accounts": ["@redpillniklas", "@tradwerte_deutsch", "@remigration_jetzt", "@heimat_verteidiger", "@stoic_warrior_quotes"],
+      "posts_count": 52,
+      "joined": "2022-06",
+      "recent_posts": [
+        "Bild: Schwarzweisses Landschaftsfoto mit Runen-Overlay und 'Heimat'",
+        "Reel: Fitness-Video mit Text 'Stark fuer Deutschland'",
+        "Story-Highlight 'Red Pill': Sammlung von Propaganda-Memes"
+      ],
+      "bio_history": [
+        { "date": "2022-06", "bio": "Max aus NRW \ud83c\udfae" },
+        { "date": "2023-11", "bio": "16 | NRW | Zocken & Chillen \ud83c\udfae\ud83c\udfb6\nCS2 & Valorant\nTwitch kommt bald \ud83d\udc40" },
+        { "date": "2024-01", "bio": "16 | NRW | \ud83c\udfae\nEs gibt mehr als das, was man uns erzaehlt." },
+        { "date": "2024-04", "bio": "Die Wahrheit liegt nicht in der Mitte. \ud83d\udc3a\nBruder der Woelfe." },
+        { "date": "2024-08", "bio": "Krieger | Patriot | Wolf \ud83d\udc3a\u2694\ufe0f\n'Wer sein Volk nicht ehrt, ist seiner nicht wert.'\nLinks = Gesperrt" }
+      ],
+      "description": "Instagram vollstaendig umgebaut: Militante Aesthetik, voelkische Zitate, 'Links = Gesperrt' zeigt Abschottung gegen Andersdenkende. Fitness-Content wird mit nationalistischer Botschaft verbunden. Story-Highlights sammeln Propaganda."
+    },
+    "analysis": {
+      "context": "Die Instagram-Transformation zeigt die vollstaendige Uebernahme einer rechtsextremen Identitaet in allen sozialen Medien.",
+      "significance": "Das Sperren von Kritikern und die offensive Positionierung zeigen, dass Max nicht mehr offen fuer Gegenargumente ist.",
+      "intervention_points": ["Professionelle Deradikalisierungshilfe", "Instagram-Profil melden"]
+    }
+  },
+  {
+    "id": "profile-youtube-max-2024-08",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "YouTube Kanal @IceWolf88",
+    "date": "2024-08-01",
+    "title": "Max' YouTube: Wachsender Propagandakanal",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["propaganda", "ideologische_inhalte", "rekrutierung"],
+    "content": {
+      "platform": "YouTube",
+      "username": "IceWolf88",
+      "display_name": "IceWolf88 | Krieger der Wahrheit",
+      "avatar_description": "Animierter Wolf mit Eiskristallen, Banner im Hintergrund mit Runen",
+      "bio": "Gaming & Aufklaerung \ud83d\udc3a\u2694\ufe0f\nWas der Mainstream verschweigt.\nTelegram fuer unzensierte Inhalte: @IceWolf88_real\nBruderschaft des Nordens",
+      "follower": 1243,
+      "following": 18,
+      "following_accounts": ["@RedPillNiklas", "@Compact_Magazin", "@patriot_gaming_de", "@TraditionUndEhre"],
+      "posts_count": 23,
+      "joined": "2024-04",
+      "recent_posts": [
+        "Video: 'ENTLARVT: So manipulieren sie euch in der Schule' (28k Views)",
+        "Video: 'Gaming-Talk: Warum die Community aufwachen MUSS' (9k Views)",
+        "Video: 'Deutsche Geschichte \u2013 Die WAHRE Version' (41k Views)"
+      ],
+      "bio_history": [
+        { "date": "2024-04", "bio": "Gaming & Wahrheit \ud83d\udc3a\nWolf unter Schafen. Die Community waechst." },
+        { "date": "2024-06", "bio": "Gaming & Aufklaerung \ud83d\udc3a\nWas der Mainstream verschweigt.\nBruderschaft des Nordens" },
+        { "date": "2024-08", "bio": "Gaming & Aufklaerung \ud83d\udc3a\u2694\ufe0f\nWas der Mainstream verschweigt.\nTelegram fuer unzensierte Inhalte: @IceWolf88_real\nBruderschaft des Nordens" }
+      ],
+      "description": "Max' YouTube-Kanal waechst rasant durch Niklas' Netzwerk-Promotion. Geschichtsrevisionismus und Verschwoerungsnarrative, verpackt als 'Aufklaerung'. Verweis auf Telegram fuer extremere Inhalte, die auf YouTube geloescht wuerden."
+    },
+    "analysis": {
+      "context": "Max hat Niklas' Rekrutierungsmodell vollstaendig uebernommen: Gaming als Koeder, Ideologie als Inhalt, Telegram als Fallback.",
+      "significance": "Mit ueber 1000 Abonnenten erreicht Max nun selbst eine relevante Zielgruppe und wird zum aktiven Multiplikator.",
+      "intervention_points": ["Kanal bei YouTube melden", "Videos als Beweis sichern"]
+    }
+  },
+  {
+    "id": "profile-youtube-niklas-2024-08",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "YouTube Kanal @RedPillNiklas",
+    "date": "2024-08-01",
+    "title": "Niklas' YouTube: Wachsende Reichweite und haertere Inhalte",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "propaganda", "netzwerk_aufbau"],
+    "content": {
+      "platform": "YouTube",
+      "username": "RedPillNiklas",
+      "display_name": "Niklas | WolfCommander \u2694\ufe0f",
+      "avatar_description": "Stilisierter Wolf mit Schwert, Flammen im Hintergrund, professionelles Design",
+      "bio": "Die Wahrheit kennt keine Kompromisse. \u2694\ufe0f\ud83d\udc3a\nTelegram: @WolfCommander_real\nDiscord: Bruderschaft des Nordens (DM fuer Invite)\nWir wachsen. Jeden Tag.",
+      "follower": 8934,
+      "following": 28,
+      "following_accounts": ["@MartinSellner_official", "@Compact_Magazin", "@IceWolf88", "@TraditionUndEhre", "@Kriegsreporter_Z"],
+      "posts_count": 267,
+      "joined": "2022-08",
+      "recent_posts": [
+        "Video: 'IceWolf88 Interview \u2013 Vom Gamer zum Krieger' (89k Views)",
+        "Video: 'Die grosse Luege der Integration \u2013 Zahlen und Fakten' (134k Views)",
+        "Video: 'Bruderschaft Aufnahmeritual \u2013 So werden Woelfe geboren' (23k Views)"
+      ],
+      "bio_history": [
+        { "date": "2022-08", "bio": "Niklas | Gaming & Meinungen" },
+        { "date": "2023-01", "bio": "RedPillNiklas | Die unbequeme Wahrheit" },
+        { "date": "2023-09", "bio": "Die Wahrheit wird nicht im Mainstream erzaehlt. \ud83d\udc3a\nTelegram: @WolfCommander_real\nWir sind die stille Mehrheit." },
+        { "date": "2024-08", "bio": "Die Wahrheit kennt keine Kompromisse. \u2694\ufe0f\ud83d\udc3a\nTelegram: @WolfCommander_real\nDiscord: Bruderschaft des Nordens (DM fuer Invite)\nWir wachsen. Jeden Tag." }
+      ],
+      "description": "Niklas' Kanal ist deutlich gewachsen. Er nutzt Max als Erfolgsgeschichte ('Vom Gamer zum Krieger') fuer die Rekrutierung. Inhalte werden zunehmend expliziter: Rassismus, Geschichtsrevisionismus, Aufnahmerituale der Gruppe."
+    },
+    "analysis": {
+      "context": "Niklas nutzt Max' Geschichte bewusst als Rekrutierungstool: 'Schau, ein normaler Gamer wie du hat den Weg gefunden.'",
+      "significance": "Das Interview-Video zeigt, wie Max' Radikalisierung als Erfolgsgeschichte instrumentalisiert wird, um weitere Jugendliche anzulocken.",
+      "intervention_points": ["Kanal melden", "Jugendschutz einschalten", "Netzwerkanalyse durchfuehren"]
+    }
+  },
+  {
+    "id": "profile-discord-niklas-2024-08",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil WolfCommander#0001",
+    "date": "2024-08-01",
+    "title": "Niklas' Discord: Server waechst, Strukturen verhaerten",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["netzwerk_aufbau", "geschlossene_gruppen", "extremismus"],
+    "content": {
+      "platform": "Discord",
+      "username": "WolfCommander#0001",
+      "display_name": "\u2694\ufe0f WolfCommander | Anfuehrer",
+      "avatar_description": "Wolf mit Krone und Schwert, rot-schwarz, Banner der Bruderschaft",
+      "bio": "Anfuehrer der Bruderschaft des Nordens | 520+ Woelfe\n'Ehre. Treue. Bruderschaft.'\nNur auf Einladung. Verraeter werden entfernt.",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2021-12",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2021-12", "bio": "Niklas | Gaming" },
+        { "date": "2022-06", "bio": "WolfCommander | RedPill & Gaming" },
+        { "date": "2023-03", "bio": "Admin @Bruderschaft des Nordens | Die Woelfe erwachen | DM fuer Aufnahme" },
+        { "date": "2024-08", "bio": "Anfuehrer der Bruderschaft des Nordens | 520+ Woelfe\n'Ehre. Treue. Bruderschaft.'\nNur auf Einladung. Verraeter werden entfernt." }
+      ],
+      "description": "Server ist auf ueber 520 Mitglieder gewachsen. Drohung gegen 'Verraeter' zeigt zunehmend autoritaere Struktur. Nur-Einladungs-Politik verschaerft die Abschottung."
+    },
+    "analysis": {
+      "context": "Der Discord-Server wird zunehmend wie eine sektenaehnliche Struktur gefuehrt: Hierarchie, Loyalitaetsdruck, Bestrafung von Abweichlern.",
+      "significance": "Die 'Verraeter'-Drohung zeigt, dass der Ausstieg aus der Gruppe gezielt erschwert wird.",
+      "intervention_points": ["Aussteigerprogramme anbieten", "Server bei Discord melden"]
+    }
+  },
+  {
+    "id": "profile-telegram-niklas-2024-08",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Telegram Kanal @WolfCommander_real",
+    "date": "2024-08-01",
+    "title": "Niklas' Telegram: Eskalation der Propaganda",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "propaganda", "gewaltverherrlichung", "gewaltaufrufe"],
+    "content": {
+      "platform": "Telegram",
+      "username": "WolfCommander_real",
+      "display_name": "WolfCommander \u2694\ufe0f\ud83d\udc3a UNCENSORED",
+      "avatar_description": "Wolf im Kampf, Blitz und Flammen, Schwarz-Weiss-Rot",
+      "bio": "Die letzte Bastion der Wahrheit. \ud83d\udc3a\u2694\ufe0f\nHier wird nicht zensiert.\nBruderschaft: @BdN_Eingang\nNotfall: @WolfPack_reserve\n'Der Tag wird kommen.'",
+      "follower": 4712,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 1456,
+      "joined": "2023-02",
+      "recent_posts": [
+        "Gewaltverherrlichendes Propagandavideo mit Kampfszenen und nationalistischer Musik",
+        "Aufruf zur 'Aktion' bei lokaler Demonstration mit Treffpunkt-Koordinaten",
+        "Doxxing-Post: Persoenliche Daten eines 'Verraeters' der die Gruppe verlassen hat"
+      ],
+      "bio_history": [
+        { "date": "2023-02", "bio": "Niklas | Meinungsfreiheit" },
+        { "date": "2023-06", "bio": "Was YouTube loescht, findest du hier." },
+        { "date": "2023-11", "bio": "Was YouTube loescht, findest du hier. \ud83d\udc3a\nDie Wahrheit stirbt nicht.\nBackup-Kanal: @WolfPack_reserve\nBruderschaft: DM" },
+        { "date": "2024-08", "bio": "Die letzte Bastion der Wahrheit. \ud83d\udc3a\u2694\ufe0f\nHier wird nicht zensiert.\nBruderschaft: @BdN_Eingang\nNotfall: @WolfPack_reserve\n'Der Tag wird kommen.'" }
+      ],
+      "description": "Telegram-Kanal eskaliert: Gewaltaufrufe, Doxxing von Aussteigern, Koordination realer Aktionen. 'Der Tag wird kommen' ist eine apokalyptische Drohung. Follower-Zahl verdoppelt sich in 5 Monaten."
+    },
+    "analysis": {
+      "context": "Der Telegram-Kanal ist die gefaehrlichste Plattform im Netzwerk. Hier findet der Uebergang von Online-Radikalisierung zu realer Gewaltbereitschaft statt.",
+      "significance": "Doxxing von Aussteigern und Koordination realer Aktionen zeigen eine direkte Bedrohungslage.",
+      "intervention_points": ["Sofortige Meldung an Sicherheitsbehoerden", "Beweise sichern", "Betroffene des Doxxings warnen"]
+    }
+  },
+  {
+    "id": "profile-twitch-max-2024-08",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Twitch Profil IceWolf88",
+    "date": "2024-08-15",
+    "title": "Max' Twitch: Reaktiviert fuer Propaganda-Streams",
+    "importance": 3,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["propaganda", "rekrutierung", "ideologische_inhalte"],
+    "content": {
+      "platform": "Twitch",
+      "username": "IceWolf88",
+      "display_name": "IceWolf88 \ud83d\udc3a\u2694\ufe0f",
+      "avatar_description": "Animierter Eiskristall-Wolf, Bruderschaft-Banner als Overlay",
+      "bio": "CS2 & Wahrheit \ud83d\udc3a\nBruderschaft des Nordens\nTelegram: @IceWolf88_real\n'Wer schweigt, stimmt zu.'",
+      "follower": 312,
+      "following": 14,
+      "following_accounts": ["@RedPillNiklas", "@patriot_gaming_de", "@WolfCommander_Twitch"],
+      "posts_count": 0,
+      "joined": "2023-11",
+      "recent_posts": [
+        "Stream: CS2 Ranked mit Bruderschaft-Team, politische Diskussion im Voice",
+        "Stream: 'Nachtwache' \u2013 4-Stunden-Talkstream ueber 'Systemkritik'",
+        "Stream: Reaktion auf Nachrichtensendung mit Kommentar"
+      ],
+      "bio_history": [
+        { "date": "2023-11", "bio": "CS2 Streams | Kommt bald mehr!" },
+        { "date": "2024-07", "bio": "IceWolf88 | Gaming & Aufklaerung \ud83d\udc3a" },
+        { "date": "2024-08", "bio": "CS2 & Wahrheit \ud83d\udc3a\nBruderschaft des Nordens\nTelegram: @IceWolf88_real\n'Wer schweigt, stimmt zu.'" }
+      ],
+      "description": "Max hat Twitch reaktiviert, aber nicht mehr fuer Gaming-Streams. Stattdessen 'Talk-Streams' mit ideologischen Diskussionen. CS2-Streams dienen als Rahmen fuer politische Indoktrination im Voice-Chat."
+    },
+    "analysis": {
+      "context": "Twitch wird als weitere Rekrutierungsplattform genutzt. Die Live-Interaktion ermoeglicht direkte Beeinflussung von Zuschauern.",
+      "significance": "Talk-Formate zeigen, dass Gaming fuer Max nur noch Mittel zum Zweck ist. Die eigentliche Aktivitaet ist Propagandaverbreitung.",
+      "intervention_points": ["Streams bei Twitch melden", "Aufzeichnungen als Beweise sichern"]
+    }
+  },
+  {
+    "id": "profile-tiktok-max-2024-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @IceWolf88_v2",
+    "date": "2024-11-01",
+    "title": "Max' TikTok: Account gesperrt und neu erstellt",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["plattformwechsel", "extremismus", "zensurumgehung"],
+    "content": {
+      "platform": "TikTok",
+      "username": "IceWolf88_v2",
+      "display_name": "IceWolf \u2694\ufe0f\ud83d\udc3a [BACKUP]",
+      "avatar_description": "Gleicher Wolf-Avatar, jetzt mit Kettenpanzer-Overlay",
+      "bio": "Hauptaccount ZENSIERT \ud83d\udeab\nDie Wahrheit laesst sich nicht loeschen.\nTelegram: @IceWolf88_real\n@RedPillNiklas promoted uns",
+      "follower": 1203,
+      "following": 89,
+      "following_accounts": ["@RedPillNiklas", "@ShadowTimo", "@tradwerte_deutsch", "@remigration_jetzt", "@patriot_gaming_de", "@identitaere_aktion", "@WolfPack_community"],
+      "posts_count": 34,
+      "joined": "2024-10",
+      "recent_posts": [
+        "Video: 'Sie haben meinen Account geloescht \u2013 WARUM wohl?' (14k Views)",
+        "Video: 'Die Zensur beweist, dass wir RECHT haben' (21k Views)",
+        "Repost: Niklas' Video ueber 'Meinungsfreiheit in Deutschland'"
+      ],
+      "bio_history": [
+        { "date": "2024-10", "bio": "IceWolf88 ist zurueck. Man kann uns nicht stoppen. \ud83d\udc3a" },
+        { "date": "2024-11", "bio": "Hauptaccount ZENSIERT \ud83d\udeab\nDie Wahrheit laesst sich nicht loeschen.\nTelegram: @IceWolf88_real\n@RedPillNiklas promoted uns" }
+      ],
+      "description": "Max' urspruenglicher TikTok-Account wurde wegen Verstoessen gegen Community-Richtlinien gesperrt. Er hat sofort einen Backup-Account erstellt und nutzt die Sperrung als 'Beweis' fuer Zensur. Die Community migriert schnell zum neuen Account."
+    },
+    "analysis": {
+      "context": "Account-Sperrungen werden in der Szene als Bestaetigung umgedeutet: 'Wenn sie uns zensieren, muessen wir recht haben.'",
+      "significance": "Die schnelle Wiederherstellung zeigt, wie schwer es ist, extremistische Inhalte dauerhaft zu entfernen. Die Sperrung verstaerkt paradoxerweise die Opfernarrative.",
+      "intervention_points": ["Plattformuebergreifende Meldung", "Jugendschutzbeauftragten einschalten"]
+    }
+  },
+  {
+    "id": "profile-discord-max-2024-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil IceWolf88#7734",
+    "date": "2024-11-01",
+    "title": "Max' Discord: Rang 'Leutnant' in der Bruderschaft",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["rangstruktur", "extremismus", "rekrutierung"],
+    "content": {
+      "platform": "Discord",
+      "username": "IceWolf88#7734",
+      "display_name": "\u2694\ufe0f IceWolf | Leutnant",
+      "avatar_description": "Eiskristall-Wolf mit Leutnant-Abzeichen, animierter Rahmen",
+      "bio": "Bruderschaft des Nordens | Leutnant \u2694\ufe0f\ud83d\udc3a\nVerantwortlich fuer Rekrutierung West\n'Staerke durch Einheit'",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2023-08",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2023-08", "bio": "Max | CS2 & Valorant" },
+        { "date": "2024-01", "bio": "MaxGamer | Gaming" },
+        { "date": "2024-03", "bio": "IceWolf | Bruderschaft des Nordens" },
+        { "date": "2024-05", "bio": "Bruderschaft des Nordens | Rang: Krieger \ud83d\udc3a\u2694\ufe0f\n'Wer die Wahrheit kennt, kann nicht schweigen'" },
+        { "date": "2024-11", "bio": "Bruderschaft des Nordens | Leutnant \u2694\ufe0f\ud83d\udc3a\nVerantwortlich fuer Rekrutierung West\n'Staerke durch Einheit'" }
+      ],
+      "description": "Max ist zum 'Leutnant' aufgestiegen und verantwortlich fuer 'Rekrutierung West' \u2013 er soll aktiv neue Mitglieder aus Westdeutschland anwerben. Vom Rekrutierten zum Rekrutierer in weniger als einem Jahr."
+    },
+    "analysis": {
+      "context": "Max hat in der Hierarchie den Sprung vom passiven Mitglied zur aktiven Fuehrungsrolle geschafft.",
+      "significance": "Die Rekrutierungsverantwortung zeigt die volle Integration. Max gibt die Radikalisierung nun selbst weiter \u2013 ein klassisches Muster in extremistischen Gruppen.",
+      "intervention_points": ["Deradikalisierungsprogramm mit Fokus auf Verantwortungsbewusstsein", "Beweise fuer aktive Rekrutierung sichern"]
+    }
+  },
+  {
+    "id": "profile-steam-max-2024-11",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Steam Profil IceWolf88",
+    "date": "2024-11-01",
+    "title": "Max' Steam: Gaming als Ideologie-Plattform",
+    "importance": 3,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["szene_codes", "extremismus", "netzwerk_aufbau"],
+    "content": {
+      "platform": "Steam",
+      "username": "IceWolf88",
+      "display_name": "\u2694\ufe0f IceWolf88 | BdN Leutnant",
+      "avatar_description": "Eiskristall-Wolf, Schwarze-Sonne im Hintergrund deutlich sichtbar",
+      "bio": "Bruderschaft des Nordens | Leutnant\nEhre. Treue. Bruderschaft. \u2694\ufe0f\ud83d\udc3a\nNur Woelfe auf meiner Freundesliste.",
+      "follower": 156,
+      "following": 89,
+      "following_accounts": ["WolfCommander", "ShadowTimo", "NordKrieger_88", "ValhallaSturm", "Berserker_West", "EisAdler_14"],
+      "posts_count": 0,
+      "joined": "2022-03",
+      "recent_posts": [
+        "Artwork: Bruderschaft-Banner mit Runen und Woelfen",
+        "Screenshot: 5er-Stack mit BdN-Clan-Tags, alle im Voice-Chat"
+      ],
+      "bio_history": [
+        { "date": "2022-03", "bio": "CS:GO Player" },
+        { "date": "2023-11", "bio": "CS2 & Valorant Grinder \ud83d\udcaa Rank: Faceit Level 5" },
+        { "date": "2024-03", "bio": "IceWolf | Gaming & mehr" },
+        { "date": "2024-05", "bio": "Wolf unter Schafen. Ehre, Treue, Staerke. \u2694\ufe0f\ud83d\udc3a\nBruderschaft des Nordens" },
+        { "date": "2024-11", "bio": "Bruderschaft des Nordens | Leutnant\nEhre. Treue. Bruderschaft. \u2694\ufe0f\ud83d\udc3a\nNur Woelfe auf meiner Freundesliste." }
+      ],
+      "description": "Steam-Profil vollstaendig im Szene-Look. Freundesliste enthaelt ausschliesslich Gruppenmitglieder mit Szene-Namen ('14', '88', Runen-Referenzen). Schwarze Sonne als Hintergrundbild. 'EisAdler_14' verweist auf die '14 Words'."
+    },
+    "analysis": {
+      "context": "Alle Plattformen sind nun konsistent mit der extremistischen Identitaet gestaltet. Gaming dient nur noch als Gemeinschaftsaktivitaet der Gruppe.",
+      "significance": "Die 'Nur Woelfe'-Policy zeigt die vollstaendige Abschottung. Usernames wie 'EisAdler_14' verwenden weitere bekannte Szene-Codes.",
+      "intervention_points": ["Steam-Profil und -Gruppen melden", "Eltern auf Steam-Profile aufmerksam machen"]
+    }
+  },
+  {
+    "id": "profile-tiktok-timo-2024-12",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @ShadowWolf_BdN",
+    "date": "2024-12-01",
+    "title": "Timos TikTok: Tief in der Szene angekommen",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "szene_aesthetik", "ideologische_inhalte"],
+    "content": {
+      "platform": "TikTok",
+      "username": "ShadowWolf_BdN",
+      "display_name": "ShadowWolf \u2694\ufe0f\ud83d\udc3a",
+      "avatar_description": "Dunkler Wolf mit Schattenwurf, Runen-Rahmen",
+      "bio": "Bruderschaft des Nordens | Krieger \u2694\ufe0f\ud83d\udc3a\nDer Schatten wird zum Wolf.\nMit @IceWolf88 seit Tag 1",
+      "follower": 567,
+      "following": 98,
+      "following_accounts": ["@IceWolf88_v2", "@RedPillNiklas", "@tradwerte_deutsch", "@sigma_grindset_de", "@patriot_gaming_de", "@remigration_jetzt"],
+      "posts_count": 48,
+      "joined": "2023-09",
+      "recent_posts": [
+        "Edit: Phonk-Video mit 'Krieger'-Aesthetik und Bruderschaft-Symbolen",
+        "Duett mit @IceWolf88_v2 ueber 'Zensur beweist die Wahrheit'",
+        "Meme: 'Normies vs. Aufgewachte' mit verherrlichender Darstellung"
+      ],
+      "bio_history": [
+        { "date": "2023-09", "bio": "Timo | Gamer" },
+        { "date": "2023-11", "bio": "Gaming & Memes \ud83c\udfae | CS2 mit @MaxGamer_official | 15 y/o" },
+        { "date": "2024-04", "bio": "Gaming \ud83c\udfae\ud83d\udc3a | Folgt @IceWolf88" },
+        { "date": "2024-06", "bio": "Gaming & Wahrheit \ud83c\udfae\ud83d\udc3a | CS2\nFolgt @IceWolf88\n'Augen auf'" },
+        { "date": "2024-12", "bio": "Bruderschaft des Nordens | Krieger \u2694\ufe0f\ud83d\udc3a\nDer Schatten wird zum Wolf.\nMit @IceWolf88 seit Tag 1" }
+      ],
+      "description": "Timo hat Max' Entwicklung vollstaendig nachvollzogen, mit ca. 6 Monaten Verzoegerung. Username geaendert, Bruderschaft-Zugehoerigkeit offen, Rang 'Krieger'. Die Loyalitaet zu Max wird als identitaetsstiftend dargestellt."
+    },
+    "analysis": {
+      "context": "Timo folgt Max aus persoenlicher Loyalitaet. Die Freundschaft wird von der Gruppe instrumentalisiert, um beide staerker zu binden.",
+      "significance": "Timos Radikalisierung zeigt den Schneeballeffekt: Jedes neue Mitglied wird zum Rekrutierer im eigenen Freundeskreis.",
+      "intervention_points": ["Timo als Person ansprechen, die noch erreichbar sein koennte", "Freundschaft zu Max als Hebel fuer Deradikalisierung nutzen"]
+    }
+  },
+  {
+    "id": "profile-discord-timo-2024-12",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil ShadowWolf#4821",
+    "date": "2024-12-01",
+    "title": "Timos Discord: Aufstieg zum Krieger-Rang",
+    "importance": 3,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["rangstruktur", "szene_kontakt", "extremismus"],
+    "content": {
+      "platform": "Discord",
+      "username": "ShadowWolf#4821",
+      "display_name": "\u2694\ufe0f ShadowWolf | Krieger",
+      "avatar_description": "Dunkler Wolf, gleicher Stil wie die anderen Bruderschafts-Mitglieder",
+      "bio": "Bruderschaft des Nordens | Krieger \u2694\ufe0f\ud83d\udc3a\nCS2 Squad: BdN West\nIceWolf hat mir die Augen geoeffnet.",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2023-04",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2023-04", "bio": "Timo" },
+        { "date": "2023-11", "bio": "Timo \ud83c\udfae | CS2 & Valorant | Immer am Zocken" },
+        { "date": "2024-05", "bio": "ShadowWolf | Gaming & Community" },
+        { "date": "2024-06", "bio": "Bruderschaft des Nordens | Rekrut \ud83d\udc3a\nCS2 & Wahrheit" },
+        { "date": "2024-12", "bio": "Bruderschaft des Nordens | Krieger \u2694\ufe0f\ud83d\udc3a\nCS2 Squad: BdN West\nIceWolf hat mir die Augen geoeffnet." }
+      ],
+      "description": "Timo ist vom Rekrut zum Krieger aufgestiegen. Die Bio zeigt offene Dankbarkeit gegenueber Max ('IceWolf hat mir die Augen geoeffnet') \u2013 typische Sprache fuer Rekrutierungs-Erfolge."
+    },
+    "analysis": {
+      "context": "Timos Aufstieg belohnt Max' Rekrutierungserfolg und verstaerkt dessen Position in der Hierarchie.",
+      "significance": "Die gegenseitige Abhaengigkeit \u2013 Timo verdankt Max die 'Erleuchtung', Max verdankt Timo seinen Status \u2013 schafft eine schwer zu durchbrechende Bindung.",
+      "intervention_points": ["Beide gleichzeitig ansprechen", "Gemeinsame Deradikalisierung als Freundschaftspaar"]
+    }
+  },
+  {
+    "id": "profile-steam-timo-2024-12",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Steam Profil ShadowWolf_BdN",
+    "date": "2024-12-01",
+    "title": "Timos Steam: Vollstaendig in Bruderschaft integriert",
+    "importance": 2,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["szene_codes", "netzwerk_aufbau"],
+    "content": {
+      "platform": "Steam",
+      "username": "ShadowWolf_BdN",
+      "display_name": "ShadowWolf \u2694\ufe0f [BdN]",
+      "avatar_description": "Schattenwolf mit BdN-Clan-Emblem",
+      "bio": "Bruderschaft des Nordens | Krieger\nCS2 Main | Squad BdN West\nGemeinsam sind wir Woelfe. \u2694\ufe0f\ud83d\udc3a",
+      "follower": 67,
+      "following": 54,
+      "following_accounts": ["IceWolf88", "WolfCommander", "NordKrieger_88", "Berserker_West"],
+      "posts_count": 0,
+      "joined": "2023-01",
+      "recent_posts": [
+        "Screenshot: BdN-Turnier, 5er-Team mit Clan-Tags"
+      ],
+      "bio_history": [
+        { "date": "2023-01", "bio": "" },
+        { "date": "2023-11", "bio": "Casual Gamer | CS2 & Valorant" },
+        { "date": "2024-06", "bio": "CS2 Krieger | Bruderschaft des Nordens | [BdN] Clan" },
+        { "date": "2024-12", "bio": "Bruderschaft des Nordens | Krieger\nCS2 Main | Squad BdN West\nGemeinsam sind wir Woelfe. \u2694\ufe0f\ud83d\udc3a" }
+      ],
+      "description": "Timos Steam zeigt die vollstaendige Integration in die Bruderschaft-Struktur. Gaming findet nur noch im Gruppenkontext statt. Alle alten Freunde durch Gruppenmitglieder ersetzt."
+    },
+    "analysis": {
+      "context": "Steam als letzte Plattform zeigt den Abschluss der Transformation: Alle sozialen Raeume sind nun von der Gruppe kontrolliert.",
+      "significance": "Timo hat keinen Kontakt mehr zu Personen ausserhalb der Bruderschaft. Die soziale Isolation ist vollstaendig.",
+      "intervention_points": ["Timos alte Schulfreunde als Bruecke nutzen"]
+    }
+  },
+  {
+    "id": "profile-tiktok-max-2025-01",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "TikTok Profil @IceWolf88_v2",
+    "date": "2025-01-15",
+    "title": "Max' TikTok: Endkampf-Rhetorik",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "gewaltverherrlichung", "eskalation", "plattformwechsel"],
+    "content": {
+      "platform": "TikTok",
+      "username": "IceWolf88_v2",
+      "display_name": "IceWolf \u2694\ufe0f\ud83d\udc3a ZENSIERT",
+      "avatar_description": "Wolf im Flammen-Ring, aggressive Pose, Totenkopf-Elemente",
+      "bio": "Die Wahrheit kennt keine Kompromisse \u2694\ufe0f\n2x zensiert \u2013 wir kommen immer zurueck \ud83d\udc3a\nEndkampf. Telegram: @IceWolf88_real\nBdN fuer immer.",
+      "follower": 1876,
+      "following": 56,
+      "following_accounts": ["@RedPillNiklas", "@ShadowWolf_BdN", "@tradwerte_deutsch", "@remigration_jetzt", "@identitaere_aktion", "@reconquista_de", "@heimat_krieger_official"],
+      "posts_count": 67,
+      "joined": "2024-10",
+      "recent_posts": [
+        "Video: 'Der Endkampf beginnt \u2013 Seid ihr bereit, Brueder?' (32k Views)",
+        "Video: 'Unsere Feinde werden fallen \u2013 Phonk Edit' (18k Views)",
+        "Video: Zusammenschnitt von Bruderschafts-Aktionen mit martialischer Musik"
+      ],
+      "bio_history": [
+        { "date": "2024-10", "bio": "IceWolf88 ist zurueck. Man kann uns nicht stoppen. \ud83d\udc3a" },
+        { "date": "2024-11", "bio": "Hauptaccount ZENSIERT \ud83d\udeab\nDie Wahrheit laesst sich nicht loeschen.\nTelegram: @IceWolf88_real" },
+        { "date": "2025-01", "bio": "Die Wahrheit kennt keine Kompromisse \u2694\ufe0f\n2x zensiert \u2013 wir kommen immer zurueck \ud83d\udc3a\nEndkampf. Telegram: @IceWolf88_real\nBdN fuer immer." }
+      ],
+      "description": "Maximale Eskalation: 'Endkampf'-Rhetorik, Gewaltverherrlichung, apokalyptische Sprache. Die Zensur-Erfahrung hat Max nicht gebremst, sondern radikalisiert. Der Ton ist zunehmend bedrohlich. Verweis auf Telegram als Hauptplattform."
+    },
+    "analysis": {
+      "context": "Max befindet sich im fortgeschrittensten Stadium der Radikalisierung. 'Endkampf'-Sprache deutet auf Gewaltbereitschaft hin.",
+      "significance": "Die Eskalation der Sprache von 'Aufwachen' ueber 'Kampf' zu 'Endkampf' zeigt den typischen Radikalisierungsverlauf. Dies ist ein ernstzunehmender Hinweis auf moegliche Gewaltbereitschaft.",
+      "intervention_points": ["Sofortige Meldung an Behoerden", "Gefaehrdungseinschaetzung durch Experten", "Notfall-Intervention ueber Schule/Eltern"]
+    }
+  },
+  {
+    "id": "profile-youtube-niklas-2025-01",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "YouTube Kanal @RedPillNiklas",
+    "date": "2025-01-15",
+    "title": "Niklas' YouTube: Netzwerk auf dem Hoehepunkt",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "netzwerk_aufbau", "propaganda", "rekrutierung"],
+    "content": {
+      "platform": "YouTube",
+      "username": "RedPillNiklas",
+      "display_name": "WolfCommander | Endzeit \u2694\ufe0f\ud83d\udc3a",
+      "avatar_description": "Professionelles Banner: Wolf-Rudel vor brennendem Horizont, Schwarz-Weiss-Rot",
+      "bio": "Anfuehrer der Bruderschaft des Nordens. 850+ Woelfe. \u2694\ufe0f\ud83d\udc3a\nDer Kampf wird nicht im Internet gewonnen.\nTelegram: @WolfCommander_real\n'Der Tag ist nah.'",
+      "follower": 14523,
+      "following": 21,
+      "following_accounts": ["@MartinSellner_official", "@Compact_Magazin", "@IceWolf88", "@TraditionUndEhre"],
+      "posts_count": 312,
+      "joined": "2022-08",
+      "recent_posts": [
+        "Video: 'Bruderschaft 2025 \u2013 Das Jahr der Entscheidung' (156k Views)",
+        "Video: 'Unsere Bewegung waechst \u2013 Jahresrueckblick der Woelfe' (89k Views)",
+        "Video: 'Aufruf an alle Woelfe: Offline-Treffen Fruehjahr 2025' (34k Views)"
+      ],
+      "bio_history": [
+        { "date": "2022-08", "bio": "Niklas | Gaming & Meinungen" },
+        { "date": "2023-01", "bio": "RedPillNiklas | Die unbequeme Wahrheit" },
+        { "date": "2023-09", "bio": "Die Wahrheit wird nicht im Mainstream erzaehlt. \ud83d\udc3a" },
+        { "date": "2024-08", "bio": "Die Wahrheit kennt keine Kompromisse. \u2694\ufe0f\ud83d\udc3a\nWir wachsen. Jeden Tag." },
+        { "date": "2025-01", "bio": "Anfuehrer der Bruderschaft des Nordens. 850+ Woelfe. \u2694\ufe0f\ud83d\udc3a\nDer Kampf wird nicht im Internet gewonnen.\nTelegram: @WolfCommander_real\n'Der Tag ist nah.'" }
+      ],
+      "description": "Niklas' Kanal ist auf dem Hoehepunkt: 14.500+ Abonnenten, professionelle Produktion, konkrete Aufrufe zu Offline-Treffen. 'Der Kampf wird nicht im Internet gewonnen' zeigt den bewussten Uebergang zur realen Aktion."
+    },
+    "analysis": {
+      "context": "Niklas orchestriert den Uebergang von der Online-Radikalisierung zur realen Mobilisierung.",
+      "significance": "Die Ankuendigung von Offline-Treffen und die '850+ Woelfe'-Zahl zeigen ein strukturiertes extremistisches Netzwerk mit erheblichem Mobilisierungspotenzial.",
+      "intervention_points": ["Verfassungsschutz informieren", "Netzwerkanalyse durchfuehren", "Plattformuebergreifende Sperrung anstreben"]
+    }
+  },
+  {
+    "id": "profile-discord-niklas-2025-01",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Discord Profil WolfCommander#0001",
+    "date": "2025-01-15",
+    "title": "Niklas' Discord: Operative Kommandostruktur",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["extremismus", "netzwerk_aufbau", "gewaltbereitschaft", "operative_planung"],
+    "content": {
+      "platform": "Discord",
+      "username": "WolfCommander#0001",
+      "display_name": "\u2694\ufe0f\ud83d\udc3a WolfCommander | Oberbefehl",
+      "avatar_description": "Schwarz-weisser Wolf mit Eisernem Kreuz, Kommandeur-Insignien",
+      "bio": "Oberbefehl | Bruderschaft des Nordens | 850+ Woelfe\n'Der Winter kommt. Und wir sind die Kaelte.'\nVerraeter: Ihr wisst, was passiert.\nNeue Woelfe: Pruefung erforderlich.",
+      "follower": 0,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 0,
+      "joined": "2021-12",
+      "recent_posts": [],
+      "bio_history": [
+        { "date": "2021-12", "bio": "Niklas | Gaming" },
+        { "date": "2022-06", "bio": "WolfCommander | RedPill & Gaming" },
+        { "date": "2023-03", "bio": "Admin @Bruderschaft des Nordens | Die Woelfe erwachen | DM fuer Aufnahme" },
+        { "date": "2024-08", "bio": "Anfuehrer der Bruderschaft des Nordens | 520+ Woelfe\n'Ehre. Treue. Bruderschaft.'\nNur auf Einladung. Verraeter werden entfernt." },
+        { "date": "2025-01", "bio": "Oberbefehl | Bruderschaft des Nordens | 850+ Woelfe\n'Der Winter kommt. Und wir sind die Kaelte.'\nVerraeter: Ihr wisst, was passiert.\nNeue Woelfe: Pruefung erforderlich." }
+      ],
+      "description": "Discord-Server hat sich zu einer operativen Kommandostruktur entwickelt. 'Oberbefehl' als Titel, offene Drohungen gegen Aussteiger, Aufnahmepruefungen fuer neue Mitglieder."
+    },
+    "analysis": {
+      "context": "Die Discord-Struktur gleicht einer paramilitaerischen Organisation. Die Aufnahmepruefung dient als Loyalitaetstest und Kompromittierung.",
+      "significance": "Die offene Drohung gegen 'Verraeter' und die Pruefungsanforderung zeigen, dass der Server weit ueber eine Online-Community hinausgeht.",
+      "intervention_points": ["Sofortige Meldung an Sicherheitsbehoerden", "Discord-Trust-and-Safety-Team einschalten", "Beweissicherung fuer strafrechtliche Ermittlungen"]
+    }
+  },
+  {
+    "id": "profile-telegram-niklas-2025-01",
+    "type": "profile",
+    "spur": "social-media",
+    "source": "Telegram Kanal @WolfCommander_real",
+    "date": "2025-01-15",
+    "title": "Niklas' Telegram: Mobilisierung fuer reale Aktionen",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["gewaltbereitschaft", "operative_planung", "extremismus", "mobilisierung"],
+    "content": {
+      "platform": "Telegram",
+      "username": "WolfCommander_real",
+      "display_name": "\u2694\ufe0f WolfCommander | ENDZEIT",
+      "avatar_description": "Wolf-Rudel in Angriffsformation, apokalyptischer Himmel, Schwarz-Weiss-Rot",
+      "bio": "Bruderschaft des Nordens \u2013 Oberkommando \u2694\ufe0f\ud83d\udc3a\nDer Tag ist gekommen.\nOffline-Koordination: @BdN_Operativ\nKeine Kompromisse. Kein Zurueck. Kein Erbarmen.",
+      "follower": 6234,
+      "following": 0,
+      "following_accounts": [],
+      "posts_count": 2134,
+      "joined": "2023-02",
+      "recent_posts": [
+        "Operative Anweisung: Treffpunkte und Zeitplaene fuer 'Aktion Fruehjahr'",
+        "Video: Trainingscamp-Aufnahmen mit vermummten Teilnehmern",
+        "Aufruf: 'Jeder Wolf muss bereit sein. Die Zeit des Redens ist vorbei.'"
+      ],
+      "bio_history": [
+        { "date": "2023-02", "bio": "Niklas | Meinungsfreiheit" },
+        { "date": "2023-06", "bio": "Was YouTube loescht, findest du hier." },
+        { "date": "2023-11", "bio": "Was YouTube loescht, findest du hier. \ud83d\udc3a" },
+        { "date": "2024-08", "bio": "Die letzte Bastion der Wahrheit. \ud83d\udc3a\u2694\ufe0f\nHier wird nicht zensiert.\n'Der Tag wird kommen.'" },
+        { "date": "2025-01", "bio": "Bruderschaft des Nordens \u2013 Oberkommando \u2694\ufe0f\ud83d\udc3a\nDer Tag ist gekommen.\nOffline-Koordination: @BdN_Operativ\nKeine Kompromisse. Kein Zurueck. Kein Erbarmen." }
+      ],
+      "description": "Telegram zeigt die gefaehrlichste Eskalationsstufe: Koordination realer Aktionen, Trainingscamp-Videos, operative Anweisungen. Von 'Der Tag wird kommen' zu 'Der Tag ist gekommen' \u2013 die Rhetorik signalisiert unmittelbar bevorstehende Handlungen."
+    },
+    "analysis": {
+      "context": "Der Telegram-Kanal ist zum operativen Kommunikationskanal einer gewaltbereiten extremistischen Gruppe geworden.",
+      "significance": "Trainingscamp-Videos und operative Anweisungen zeigen eine unmittelbare Bedrohungslage. Der sprachliche Wechsel von Zukunft ('wird kommen') zu Gegenwart ('ist gekommen') ist ein bekannter Eskalationsindikator.",
+      "intervention_points": ["SOFORT Sicherheitsbehoerden einschalten", "Alle verfuegbaren Beweise sichern", "Gefaehrdete Personen warnen"]
+    }
+  }
+]

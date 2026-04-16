@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ws-01",
+    "category": "Sprache und Kommunikation",
+    "title": "Veraenderung des Sprachgebrauchs",
+    "description": "Max uebernimmt zunehmend Begriffe aus der ideologischen Szene: 'aufwachen', 'Wahrheit', 'System', 'Widerstand'. Gaming-Slang wird durch politisches Vokabular ersetzt.",
+    "severity": "mittel",
+    "phase": "normalisierung",
+    "observers": ["freunde", "lehrer", "online"],
+    "evidence_links": ["ingame-cs2-jun-2024-01", "discord-general-may-2024-01", "social-tiktok-may-2024-01"],
+    "erkennbar_fuer": {
+      "eltern": "Schwer - Eltern verstehen Gaming-Sprache oft nicht und bemerken die Verschiebung kaum",
+      "freunde": "Leicht - Freunde bemerken die Veraenderung zuerst, weil sie den Vergleich haben",
+      "lehrer": "Mittel - In Aufsaetzen und muendlichen Beitraegen koennten Veraenderungen auffallen",
+      "plattformen": "Leicht - NLP-Analyse koennte Sprachverschiebungen automatisch erkennen"
+    }
+  },
+  {
+    "id": "ws-02",
+    "category": "Soziale Isolation",
+    "title": "Rueckzug von alten Freunden",
+    "description": "Max distanziert sich von Leon, Alex und David. Er verbringt weniger Zeit mit Schulfreunden und mehr in Online-Communities. Kritische Freunde werden aktiv ausgeschlossen.",
+    "severity": "hoch",
+    "phase": "normalisierung",
+    "observers": ["freunde", "eltern", "lehrer"],
+    "evidence_links": ["connections-timeline", "ingame-cs2-apr-2024-01"],
+    "erkennbar_fuer": {
+      "eltern": "Mittel - 'Max trifft sich nicht mehr mit Leon' koennte auffallen, wird aber oft als normale Teenagerphase abgetan",
+      "freunde": "Leicht - Leon bemerkt es sofort und versucht zu intervenieren",
+      "lehrer": "Mittel - Veraenderungen in Gruppenarbeit und Pausenverhalten koennten sichtbar sein",
+      "plattformen": "Schwer - Plattformen sehen nur die Online-Seite"
+    }
+  },
+  {
+    "id": "ws-03",
+    "category": "Online-Verhalten",
+    "title": "Dramatische Zunahme der Bildschirmzeit",
+    "description": "Max' Bildschirmzeit steigt von 2,5 auf ueber 9 Stunden taeglich. Gaming wird durch Messaging-Apps ersetzt. Naechtliche Online-Zeiten nehmen zu.",
+    "severity": "mittel",
+    "phase": "normalisierung",
+    "observers": ["eltern"],
+    "evidence_links": ["analytics-screentime-overview"],
+    "erkennbar_fuer": {
+      "eltern": "Leicht - Screentime-Berichte sind auf jedem Smartphone verfuegbar, aber Eltern pruefen sie selten",
+      "freunde": "Schwer - Freunde sehen nur, dass Max 'immer online' ist",
+      "lehrer": "Schwer - Nicht direkt sichtbar im Schulkontext",
+      "plattformen": "Leicht - Die Daten liegen vor, werden aber nicht als Warnsignal genutzt"
+    }
+  },
+  {
+    "id": "ws-04",
+    "category": "Online-Identitaet",
+    "title": "Profilaenderungen und neue Online-Identitaet",
+    "description": "Max aendert seinen Nutzernamen von MaxGamer_official zu IceWolf88 (88 = Code fuer 'Heil Hitler'). Profilbilder werden dunkler/militaerischer, Bios werden ideologisch.",
+    "severity": "hoch",
+    "phase": "normalisierung",
+    "observers": ["freunde", "online", "plattformen"],
+    "evidence_links": ["profile-tiktok-max-2024-05", "ingame-cs2-mar-2024-02"],
+    "erkennbar_fuer": {
+      "eltern": "Schwer - Eltern kennen Max' Online-Identitaet oft nicht",
+      "freunde": "Leicht - Freunde bemerken den Namenswechsel sofort",
+      "lehrer": "Schwer - Ohne Zugang zu Online-Profilen nicht sichtbar",
+      "plattformen": "Leicht - Automatische Erkennung von Szene-Codes (88, 14, etc.) ist technisch moeglich"
+    }
+  },
+  {
+    "id": "ws-05",
+    "category": "Content-Konsum",
+    "title": "Verschiebung des Content-Konsums",
+    "description": "Max' YouTube-Verlauf verschiebt sich von Gaming zu Kulturkritik, dann zu politisch radikalen Inhalten und Verschwoerungstheorien. Die Watch-Time steigt dramatisch.",
+    "severity": "hoch",
+    "phase": "normalisierung",
+    "observers": ["eltern", "plattformen"],
+    "evidence_links": ["analytics-youtube-watchtime", "algorithm-tiktok-feed-nov-2024"],
+    "erkennbar_fuer": {
+      "eltern": "Mittel - Browser-Verlauf und YouTube-History sind prinzipiell einsehbar",
+      "freunde": "Mittel - Max teilt Videos in Chats, Freunde koennten die Verschiebung bemerken",
+      "lehrer": "Schwer - Nicht im Schulkontext sichtbar",
+      "plattformen": "Leicht - Die Algorithmen kennen den Content-Konsum genau"
+    }
+  },
+  {
+    "id": "ws-06",
+    "category": "Content-Produktion",
+    "title": "Vom Konsument zum Verbreiter",
+    "description": "Max beginnt eigenen ideologischen Content zu produzieren. Twitch-Streams werden zunehmend politisch, TikTok-Videos werden radikaler. Er empfiehlt extremen Content an seine Zuschauer.",
+    "severity": "sehr hoch",
+    "phase": "indoktrination",
+    "observers": ["freunde", "online", "plattformen"],
+    "evidence_links": ["stream-twitch-sep-2024-01", "analytics-twitch-growth", "analytics-tiktok-engagement"],
+    "erkennbar_fuer": {
+      "eltern": "Mittel - Eltern koennten die Streams sehen, aber muessen wissen, wo sie schauen",
+      "freunde": "Leicht - Alte Freunde wuerden den Content-Shift sofort bemerken",
+      "lehrer": "Schwer - Ohne Kenntnis des Twitch-Kanals nicht sichtbar",
+      "plattformen": "Leicht - Content-Analyse und Community-Reports koennten das erkennen"
+    }
+  },
+  {
+    "id": "ws-07",
+    "category": "Echokammer",
+    "title": "Aufbau einer Echokammer",
+    "description": "Timo als Moderator loescht systematisch kritische Kommentare in Max' Twitch-Chat und Discord. Nur zustimmende Stimmen bleiben sichtbar. Kritiker werden gebannt.",
+    "severity": "hoch",
+    "phase": "normalisierung",
+    "observers": ["online", "plattformen"],
+    "evidence_links": ["stream-twitch-jun-2024-01", "stream-twitch-sep-2024-01"],
+    "erkennbar_fuer": {
+      "eltern": "Schwer - Nicht sichtbar",
+      "freunde": "Mittel - Leon hat es erlebt, wurde selbst gebannt",
+      "lehrer": "Schwer - Nicht sichtbar",
+      "plattformen": "Leicht - Hohe Ban-Rate und geloeschte Kommentare sind messbar"
+    }
+  },
+  {
+    "id": "ws-08",
+    "category": "Schulische Leistung",
+    "title": "Leistungsabfall in der Schule",
+    "description": "Max' schulische Leistungen fallen ab Mitte 2024 deutlich ab. Er fehlt haeufiger, beteiligt sich weniger am Unterricht und gibt Hausaufgaben nicht ab.",
+    "severity": "mittel",
+    "phase": "normalisierung",
+    "observers": ["lehrer", "eltern"],
+    "evidence_links": [],
+    "erkennbar_fuer": {
+      "eltern": "Leicht - Noten und Lehrergespraeche machen es sichtbar",
+      "freunde": "Mittel - Freunde bemerken, dass Max weniger engagiert ist",
+      "lehrer": "Leicht - Direkt sichtbar, aber Herr Berger schreibt es der Scheidung zu",
+      "plattformen": "Nicht relevant"
+    }
+  },
+  {
+    "id": "ws-09",
+    "category": "Geheimhaltung",
+    "title": "Wechsel zu verschluesselten Kommunikationskanaelen",
+    "description": "Ab Oktober 2024 verlagert Max seine Kommunikation zunehmend auf Telegram und Signal. Discord-Aktivitaet sinkt, waehrend die eigentliche Koordination auf verschluesselten Kanaelen stattfindet.",
+    "severity": "sehr hoch",
+    "phase": "indoktrination",
+    "observers": ["eltern"],
+    "evidence_links": ["analytics-discord-activity", "analytics-screentime-overview"],
+    "erkennbar_fuer": {
+      "eltern": "Mittel - Neue Apps auf dem Smartphone koennten auffallen",
+      "freunde": "Schwer - Verschluesselte Kommunikation ist per Definition nicht einsehbar",
+      "lehrer": "Schwer - Nicht sichtbar",
+      "plattformen": "Schwer - Ende-zu-Ende-Verschluesselung verhindert Inhaltsueberwachung"
+    }
+  },
+  {
+    "id": "ws-10",
+    "category": "Ideologische Verfestigung",
+    "title": "Schwarz-Weiss-Denken und Feindbilder",
+    "description": "Max teilt die Welt zunehmend in 'wir' und 'die'. Er spricht von 'Schlafschafen', 'Systemlingen' und 'Verraeter'. Nuancen und Grauteone verschwinden aus seiner Kommunikation.",
+    "severity": "sehr hoch",
+    "phase": "indoktrination",
+    "observers": ["freunde", "lehrer", "online"],
+    "evidence_links": ["discord-philosophy-aug-2024-01", "stream-twitch-jan-2025-01"],
+    "erkennbar_fuer": {
+      "eltern": "Mittel - Koennten in Gespraechen am Esstisch auffallen, wenn sie stattfinden",
+      "freunde": "Leicht - Deutlich hoerbar in jeder Interaktion",
+      "lehrer": "Mittel - In Diskussionen und Aufsaetzen erkennbar",
+      "plattformen": "Leicht - Sprachanalyse koennte dies erkennen"
+    }
+  },
+  {
+    "id": "ws-11",
+    "category": "Offline-Verhalten",
+    "title": "Hinweise auf reale Aktionsbereitschaft",
+    "description": "Max deutet in Streams und Chats an, dass sich 'bald etwas aendern wird' und fordert seine Community auf 'bereit zu sein'. Die Sprache wechselt von theoretisch zu handlungsorientiert.",
+    "severity": "kritisch",
+    "phase": "indoktrination",
+    "observers": ["online", "plattformen"],
+    "evidence_links": ["stream-twitch-jan-2025-01", "discord-vip-jan-2025-01"],
+    "erkennbar_fuer": {
+      "eltern": "Schwer - Finden hauptsaechlich online statt",
+      "freunde": "Mittel - Alte Freunde haben keinen Zugang mehr, Timo bemerkt es aber normalisiert es",
+      "lehrer": "Schwer - Nicht im Schulkontext sichtbar",
+      "plattformen": "Leicht - NLP koennte Handlungsaufrufe erkennen, wird aber oft nicht implementiert"
+    }
+  },
+  {
+    "id": "ws-12",
+    "category": "Netzwerk",
+    "title": "Mitgliedschaft in geschlossenen Gruppen mit Hierarchien",
+    "description": "Max ist Teil des Sturmfront Discord-Servers, der ein klares Stufensystem hat (Neuling → Mitglied → Vertrauenswuerdig → Kernmitglied → Innerer Kreis). Solche Hierarchien sind typisch fuer extremistische Organisationen.",
+    "severity": "hoch",
+    "phase": "indoktrination",
+    "observers": ["plattformen"],
+    "evidence_links": ["analytics-discord-activity", "connections-recruitment-pipeline"],
+    "erkennbar_fuer": {
+      "eltern": "Schwer - Discord-Server-Strukturen sind fuer Aussenstehende nicht sichtbar",
+      "freunde": "Schwer - Nur sichtbar, wenn man selbst Mitglied ist",
+      "lehrer": "Schwer - Komplett ausserhalb des Sichtfelds",
+      "plattformen": "Mittel - Discord koennte Rollensysteme und versteckte Kanaele als Muster erkennen"
+    }
+  }
+]

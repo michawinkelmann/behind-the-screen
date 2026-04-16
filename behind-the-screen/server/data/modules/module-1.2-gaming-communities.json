@@ -1,0 +1,63 @@
+{
+  "id": "module-1.2",
+  "title": "Gaming-Communities",
+  "description": "Wie Gaming-Communities funktionieren, positive und negative Aspekte, Rekrutierung durch Gaming",
+  "day_available": 1,
+  "order": 3,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Die Welt der Gaming-Communities"
+    },
+    {
+      "type": "text",
+      "content": "Online-Gaming ist für Millionen junger Menschen ein zentraler Teil ihres sozialen Lebens. In Gaming-Communities entstehen echte Freundschaften, Teamgeist und ein Gefühl der Zugehörigkeit. Plattformen wie Discord, Teamspeak oder In-Game-Chats ermöglichen es, Gleichgesinnte zu finden und gemeinsam Spaß zu haben. Diese positiven Aspekte machen Gaming-Communities aber auch zu einem attraktiven Umfeld für diejenigen, die junge Menschen gezielt ansprechen wollen."
+    },
+    {
+      "type": "heading",
+      "content": "Positive Seiten von Gaming-Communities"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Soziale Zugehörigkeit und Gemeinschaftsgefühl",
+        "Entwicklung von Teamfähigkeit und strategischem Denken",
+        "Kreativität und gemeinsames Problemlösen",
+        "Interkultureller Austausch mit Spielern weltweit",
+        "Anerkennung und Erfolgserlebnisse unabhängig von schulischen Leistungen"
+      ]
+    },
+    {
+      "type": "heading",
+      "content": "Wenn Gaming zur Einstiegsdroge wird"
+    },
+    {
+      "type": "text",
+      "content": "Das Problem beginnt, wenn bestimmte Gruppen innerhalb von Gaming-Communities gezielt nach vulnerablen Spielern suchen. Sie identifizieren Jugendliche, die einsam wirken, Frust äußern oder nach Anerkennung suchen. Der Einstieg erfolgt oft über gemeinsames Spielen — erst danach werden nach und nach ideologische Inhalte eingestreut. Die Grenze zwischen Gaming-Gespräch und Propaganda verschwimmt bewusst."
+    },
+    {
+      "type": "example",
+      "title": "Wie Niklas Max ansprach",
+      "content": "Niklas lernte Max in einem öffentlichen Gaming-Lobby kennen. Er bot sich als erfahrener Mitspieler an, half Max bei schwierigen Missionen und lud ihn auf einen privaten Discord-Server ein. Dort wurde zunächst nur über das Spiel geredet. Erst nach Wochen des Vertrauensaufbaus begann Niklas, politische Themen einzustreuen — zunächst als scheinbar harmlose Witze, dann als angebliche 'unbequeme Wahrheiten'."
+    },
+    {
+      "type": "heading",
+      "content": "Rekrutierungsmuster in Gaming-Communities"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Gezielte Kontaktaufnahme in öffentlichen Lobbys oder Foren",
+        "Aufbau einer persönlichen Beziehung durch gemeinsames Spielen",
+        "Einladung in geschlossene, private Server oder Gruppen",
+        "Schrittweise Einführung ideologischer Inhalte, getarnt als Humor oder Memes",
+        "Nutzung von In-Game-Sprache und Symbolen als Erkennungszeichen"
+      ]
+    },
+    {
+      "type": "reflection",
+      "question": "Habt ihr in euren eigenen Gaming-Erfahrungen schon einmal erlebt, dass jemand versucht hat, euch in eine bestimmte Gruppe zu ziehen oder politische Meinungen zu verbreiten? Wie habt ihr reagiert?"
+    }
+  ]
+}

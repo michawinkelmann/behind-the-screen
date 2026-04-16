@@ -1,0 +1,135 @@
+[
+  {
+    "id": "connections-social-graph",
+    "type": "connection_map",
+    "spur": "discord",
+    "source": "Ermittlungsergebnis - Sozialer Graph",
+    "date": "2025-02-01",
+    "title": "Sozialer Netzwerk-Graph: Max' Kontakte",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["network-analysis", "recruitment-structure"],
+    "content": {
+      "nodes": [
+        {"id": "max", "label": "Max (IceWolf88)", "type": "hauptperson", "group": "kern", "description": "17, Schueler, radikalisiert ueber Gaming → Discord → Streaming"},
+        {"id": "niklas", "label": "Niklas (WolfCommander)", "type": "rekrutierer", "group": "kern", "description": "22, Betreiber von Sturmfront Gaming Discord, ideologischer Mentor"},
+        {"id": "timo", "label": "Timo (ShadowTimo)", "type": "enabler", "group": "kern", "description": "17, Max' bester Freund, Twitch-Moderator, Mitlaeufer"},
+        {"id": "leon", "label": "Leon (LeonDerSkeptiker)", "type": "verlorener_freund", "group": "alte_freunde", "description": "17, ehemaliger Freund, wurde ausgeschlossen als er Widerstand leistete"},
+        {"id": "sandra", "label": "Sandra Hartmann", "type": "elternteil", "group": "familie", "description": "44, Max' Mutter, ueberarbeitet, erkennt Warnsignale nicht"},
+        {"id": "thomas", "label": "Thomas Hartmann", "type": "elternteil", "group": "familie", "description": "46, Max' Vater, nach Scheidung wenig Kontakt"},
+        {"id": "berger", "label": "Herr Berger", "type": "lehrer", "group": "schule", "description": "38, Klassenlehrer, bemerkt Veraenderungen, schreibt sie der Scheidung zu"},
+        {"id": "erik", "label": "Erik (ValkyrieStorm)", "type": "netzwerk_mitglied", "group": "sturmfront", "description": "19, Sturmfront-Moderator, organisiert Offline-Treffen"},
+        {"id": "felix", "label": "Felix (NordischFelix)", "type": "netzwerk_mitglied", "group": "sturmfront", "description": "20, erstellt Propaganda-Material, YouTube-Editor fuer Niklas"},
+        {"id": "jana", "label": "Jana (J_Rebel)", "type": "netzwerk_mitglied", "group": "sturmfront", "description": "18, aktive Recruiterin auf TikTok, verbreitet Memes"},
+        {"id": "marco", "label": "Marco (IronGuard_Leader)", "type": "clan_leader", "group": "gaming", "description": "21, Leiter des Iron Guard CS2-Clans, Verbindung zwischen Gaming und Ideologie"},
+        {"id": "alex", "label": "Alex", "type": "alter_freund", "group": "alte_freunde", "description": "17, ehemaliger Schulfreund, hat Kontakt zu Max verloren"},
+        {"id": "david", "label": "David", "type": "alter_freund", "group": "alte_freunde", "description": "16, ehemaliger Gaming-Buddy, spielt nicht mehr mit Max"}
+      ],
+      "edges": [
+        {"from": "max", "to": "niklas", "type": "mentor", "label": "Ideologischer Mentor seit Feb 2024", "strength": 5, "direction": "niklas→max"},
+        {"from": "max", "to": "timo", "type": "freund", "label": "Bester Freund + Twitch-Mod", "strength": 5, "direction": "bidirektional"},
+        {"from": "max", "to": "leon", "type": "ehemals_freund", "label": "Kontaktabbruch Jun 2024", "strength": 1, "direction": "max→leon (ausgeschlossen)"},
+        {"from": "max", "to": "sandra", "type": "familie", "label": "Zunehmend distanziert", "strength": 2, "direction": "bidirektional"},
+        {"from": "max", "to": "thomas", "type": "familie", "label": "Minimaler Kontakt seit Scheidung", "strength": 1, "direction": "sporadisch"},
+        {"from": "max", "to": "berger", "type": "schule", "label": "Lehrer-Schueler, besorgt", "strength": 2, "direction": "berger→max"},
+        {"from": "max", "to": "erik", "type": "netzwerk", "label": "Sturmfront-Kontakt, Offline-Treffen", "strength": 4, "direction": "bidirektional"},
+        {"from": "max", "to": "marco", "type": "gaming", "label": "Iron Guard Clan seit Jan 2024", "strength": 3, "direction": "bidirektional"},
+        {"from": "max", "to": "alex", "type": "ehemals_freund", "label": "Kontakt verloren Mitte 2024", "strength": 0, "direction": "keiner"},
+        {"from": "max", "to": "david", "type": "ehemals_freund", "label": "Spielt nicht mehr zusammen seit Apr 2024", "strength": 0, "direction": "keiner"},
+        {"from": "niklas", "to": "erik", "type": "netzwerk", "label": "Sturmfront-Moderator", "strength": 5, "direction": "niklas→erik"},
+        {"from": "niklas", "to": "felix", "type": "netzwerk", "label": "Content-Produzent fuer Niklas", "strength": 4, "direction": "niklas→felix"},
+        {"from": "niklas", "to": "jana", "type": "netzwerk", "label": "TikTok-Recruiterin", "strength": 4, "direction": "niklas→jana"},
+        {"from": "niklas", "to": "marco", "type": "netzwerk", "label": "Gaming-Clan als Rekrutierungskanal", "strength": 3, "direction": "niklas→marco"},
+        {"from": "timo", "to": "leon", "type": "ehemals_freund", "label": "Hat Leon aus dem Discord gebannt", "strength": 1, "direction": "timo→leon"},
+        {"from": "timo", "to": "erik", "type": "netzwerk", "label": "Kontakt ueber Max", "strength": 2, "direction": "bidirektional"},
+        {"from": "leon", "to": "alex", "type": "freund", "label": "Noch befreundet", "strength": 3, "direction": "bidirektional"},
+        {"from": "leon", "to": "berger", "type": "info", "label": "Leon hat Berger ueber Max informiert (ignoriert)", "strength": 1, "direction": "leon→berger"}
+      ],
+      "groups": {
+        "kern": {"label": "Kern-Akteure", "color": "#e74c3c", "description": "Die drei zentralen Personen der Radikalisierungsgeschichte"},
+        "sturmfront": {"label": "Sturmfront-Netzwerk", "color": "#9b59b6", "description": "Mitglieder des ideologischen Discord-Servers"},
+        "gaming": {"label": "Gaming-Kontakte", "color": "#3498db", "description": "Kontakte aus dem Gaming-Umfeld"},
+        "alte_freunde": {"label": "Alte Freunde", "color": "#2ecc71", "description": "Freunde aus der Zeit vor der Radikalisierung"},
+        "familie": {"label": "Familie", "color": "#f39c12", "description": "Familienmitglieder"},
+        "schule": {"label": "Schule", "color": "#1abc9c", "description": "Schulische Kontakte"}
+      },
+      "description": "Der soziale Graph zeigt Max' Netzwerk-Transformation. Vor der Radikalisierung hatte Max ein ausgewogenes soziales Umfeld: Schulfreunde (Leon, Alex, David), Familie, Gaming-Kontakte. Ueber 18 Monate wurden die alten Verbindungen systematisch durch neue aus dem Sturmfront-Netzwerk ersetzt. Niklas ist der zentrale Knotenpunkt, der das gesamte radikale Netzwerk verbindet. Timo ist die Bruecke zwischen Max' altem und neuem Leben."
+    },
+    "analysis": {
+      "context": "Netzwerk-Analyse ist ein Standardwerkzeug der Ermittlungsarbeit. Der Graph zeigt, wie Radikalisierung das soziale Umfeld einer Person komplett umstrukturiert.",
+      "significance": "Der Graph zeigt zwei kritische Muster: 1) Systematische Isolation von stabilisierenden Kontakten (Familie, alte Freunde, Schule). 2) Aufbau eines neuen, ideologisch homogenen Netzwerks mit klarer Hierarchie (Niklas an der Spitze).",
+      "intervention_points": ["Leon's Versuch, Herrn Berger zu informieren, haette ernst genommen werden muessen", "Die zunehmende Isolation von alten Freunden ist ein fruehes Warnsignal"]
+    }
+  },
+  {
+    "id": "connections-timeline",
+    "type": "connection_map",
+    "spur": "discord",
+    "source": "Ermittlungsergebnis - Kontakt-Timeline",
+    "date": "2025-02-01",
+    "title": "Timeline der Kontaktveraenderungen",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 2,
+    "warnsignale_tags": ["isolation", "network-shift"],
+    "content": {
+      "timeline": [
+        {"date": "2023-10", "event": "Max hat einen stabilen Freundeskreis: Timo, Leon, Alex, David. Spielt CS2 und Valorant mit ihnen.", "contact_added": [], "contact_lost": [], "network_health": "gesund"},
+        {"date": "2023-12", "event": "Max beginnt mit Streaming. Timo wird sein Moderator.", "contact_added": ["Twitch-Community (klein)"], "contact_lost": [], "network_health": "gesund"},
+        {"date": "2024-01", "event": "Max tritt dem Iron Guard CS2-Clan bei. Lernt Marco kennen.", "contact_added": ["Marco (IronGuard)"], "contact_lost": [], "network_health": "gesund"},
+        {"date": "2024-02", "event": "Marco laedt Max in den Sturmfront Gaming Discord ein. Max trifft Niklas.", "contact_added": ["Niklas (WolfCommander)", "Sturmfront-Server"], "contact_lost": [], "network_health": "leicht verschoben"},
+        {"date": "2024-04", "event": "Max verbringt mehr Zeit im Discord als mit Schulfreunden. Erste Spannungen mit Leon.", "contact_added": ["Erik (ValkyrieStorm)"], "contact_lost": [], "network_health": "verschoben"},
+        {"date": "2024-05", "event": "Leon kritisiert Max' neue Ansichten. Streit in der Gaming-Gruppe.", "contact_added": ["Jana (J_Rebel)", "Felix (NordischFelix)"], "contact_lost": ["Alex (distanziert sich)"], "network_health": "polarisiert"},
+        {"date": "2024-06", "event": "Leon wird aus Max' Discord-Chat gebannt. Max bezeichnet ihn als 'Schlafschaf'.", "contact_added": [], "contact_lost": ["Leon (gebannt/ausgeschlossen)"], "network_health": "ungesund"},
+        {"date": "2024-08", "event": "Max hat kaum noch Kontakt zu Schulfreunden. Fast alle sozialen Kontakte sind online/ideologisch.", "contact_added": ["Weitere Sturmfront-Mitglieder"], "contact_lost": ["David (kein Kontakt mehr)"], "network_health": "isoliert"},
+        {"date": "2024-10", "event": "Max distanziert sich von seiner Mutter. Kommunikation fast nur noch mit Sturmfront-Netzwerk.", "contact_added": [], "contact_lost": ["Sandra (emotional distanziert)"], "network_health": "stark isoliert"},
+        {"date": "2024-12", "event": "Max' soziales Netzwerk besteht fast ausschliesslich aus dem Sturmfront-Kreis. Einzige Ausnahme: Timo.", "contact_added": [], "contact_lost": [], "network_health": "komplett ersetzt"},
+        {"date": "2025-01", "event": "Kommunikation verlagert sich auf verschluesselte Kanaele. Vorbereitung auf 'Aktion'.", "contact_added": ["Signal-Gruppe"], "contact_lost": [], "network_health": "gefaehrlich isoliert"}
+      ],
+      "description": "Die Kontakt-Timeline zeigt die schrittweise Isolation von Max. Innerhalb von 15 Monaten wurde sein gesamtes soziales Umfeld ausgetauscht. Alte, stabilisierende Kontakte (Familie, Schulfreunde) wurden durch ein ideologisch homogenes Netzwerk ersetzt. Dieser Prozess ist typisch fuer Radikalisierung: Zuerst werden neue Kontakte aufgebaut, dann werden kritische Stimmen entfernt, bis nur noch die Echokammer uebrig ist."
+    },
+    "analysis": {
+      "context": "Die Timeline der Kontaktveraenderungen ist ein Schluesselbeweisstueck. Sie zeigt den systematischen Charakter der Isolation.",
+      "significance": "Der Verlust aller nicht-ideologischen Kontakte ist das deutlichste Warnsignal fuer fortgeschrittene Radikalisierung. Wenn eine Person nur noch innerhalb der Gruppe kommuniziert, ist eine Intervention von aussen extrem schwierig.",
+      "intervention_points": ["Jeder verlorene Kontakt war ein verpasstes Warnsignal", "Leon's Ausschluss im Juni 2024 war ein kritischer Wendepunkt"]
+    }
+  },
+  {
+    "id": "connections-recruitment-pipeline",
+    "type": "connection_map",
+    "spur": "discord",
+    "source": "Ermittlungsergebnis - Rekrutierungspfad",
+    "date": "2025-02-01",
+    "title": "Niklas' Rekrutierungssystem",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["recruitment", "systematic", "predatory"],
+    "content": {
+      "pipeline_stages": [
+        {"stage": 1, "name": "Kontaktaufnahme", "method": "Gaming-Clans, Twitch-Raids, TikTok-Kommentare", "targets": "Junge Maenner 15-20, gaming-affin, Anzeichen von Unzufriedenheit", "success_rate": "~30% gehen zur naechsten Stufe"},
+        {"stage": 2, "name": "Einladung", "method": "Discord-Server Einladung 'fuer Gamer die mehr wollen'", "targets": "Interessierte aus Stufe 1", "success_rate": "~50% werden aktive Discord-Mitglieder"},
+        {"stage": 3, "name": "Normalisierung", "method": "#allgemein-Chat: Gaming + leichte Kulturkritik, Gemeinschaftsgefuehl", "targets": "Neue Discord-Mitglieder", "success_rate": "~40% zeigen Interesse an tieferen Inhalten"},
+        {"stage": 4, "name": "Vertiefung", "method": "Zugang zu #philosophie, Leselisten, YouTube-Empfehlungen", "targets": "Mitglieder die 'Fragen stellen'", "success_rate": "~60% uebernehmen Narrativ"},
+        {"stage": 5, "name": "Innerer Kreis", "method": "Zugang zu #vip-strategie, Voice-Calls mit Niklas, Aufgaben", "targets": "Ideologisch gefestigte Mitglieder", "success_rate": "~30% werden aktive Verbreiter"},
+        {"stage": 6, "name": "Aktivierung", "method": "Eigener Content, Rekrutierung anderer, verschluesselte Kommunikation", "targets": "Innerer Kreis", "success_rate": "~20% sind bereit fuer 'Aktionen'"}
+      ],
+      "max_path": {
+        "stage_1": {"date": "2024-01", "detail": "Max trifft Marco im Iron Guard Clan, wird fuer Sturmfront empfohlen"},
+        "stage_2": {"date": "2024-02", "detail": "Max tritt dem Sturmfront Discord bei, 'nur zum Zocken'"},
+        "stage_3": {"date": "2024-02 bis 2024-05", "detail": "Max wird aktives Mitglied, postet in #allgemein, fuehlt sich zugehoerig"},
+        "stage_4": {"date": "2024-05 bis 2024-08", "detail": "Max erhaelt Zugang zu #philosophie, liest empfohlene Texte, uebernimmt Vokabular"},
+        "stage_5": {"date": "2024-08 bis 2024-11", "detail": "Max wird Teil des inneren Kreises, plant Content mit Niklas, moderiert"},
+        "stage_6": {"date": "2024-11 bis 2025-02", "detail": "Max produziert eigenen ideologischen Content, rekrutiert ueber Twitch, kommuniziert verschluesselt"}
+      },
+      "estimated_victims": "Niklas hat ueber den Sturmfront-Server schaetzungsweise 150-200 junge Menschen kontaktiert. Etwa 40-50 wurden aktive Mitglieder. Max ist einer von geschaetzt 10-15, die die letzte Stufe erreichten.",
+      "description": "Niklas betreibt ein systematisches Rekrutierungsmodell mit 6 Stufen. Es beginnt harmlos mit Gaming und steigert sich schrittweise zu ideologischer Indoktrinierung. Jede Stufe hat 'Gatekeeper'-Mechanismen: Nur wer das richtige Vokabular verwendet und Loyalitaet zeigt, steigt auf. Max durchlief alle 6 Stufen in etwa 12 Monaten."
+    },
+    "analysis": {
+      "context": "Das Rekrutierungssystem ist professionell aufgebaut und folgt bekannten Mustern extremistischer Organisationen. Gaming dient als Tarnmantel.",
+      "significance": "Dies zeigt, dass Max' Radikalisierung kein Zufall war, sondern das Ergebnis eines gezielten, systematischen Prozesses. Niklas ist nicht einfach ein 'schlechter Einfluss' — er betreibt aktive Rekrutierung.",
+      "intervention_points": ["Discord koennte Server mit Stufensystemen und versteckten Kanaelen als potenzielle Radikalisierungsstrukturen erkennen", "Aufklaerung ueber Rekrutierungstaktiken in Schulen koennte Jugendliche schuetzen"]
+    }
+  }
+]

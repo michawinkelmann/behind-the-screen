@@ -1,0 +1,53 @@
+{
+  "id": "module-1.1",
+  "title": "Digitale Identität",
+  "description": "Online- vs. Offline-Identität, Benutzernamen und Profilveränderungen als Warnsignale",
+  "day_available": 1,
+  "order": 2,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Wer bist du online?"
+    },
+    {
+      "type": "text",
+      "content": "Im Internet können wir uns neu erfinden. Wir wählen Benutzernamen, Profilbilder und Beschreibungen, die ein bestimmtes Bild von uns vermitteln. Diese digitale Identität kann sich stark von unserer Offline-Persönlichkeit unterscheiden. Das ist zunächst nichts Ungewöhnliches — aber die Art und Weise, wie sich eine digitale Identität verändert, kann viel über die innere Entwicklung einer Person verraten."
+    },
+    {
+      "type": "heading",
+      "content": "Benutzernamen und Selbstdarstellung"
+    },
+    {
+      "type": "text",
+      "content": "Ein Benutzername ist mehr als nur ein Label. Er spiegelt wider, wie wir uns selbst sehen oder gesehen werden wollen. Wenn jemand seinen Benutzernamen von einem neutralen Gaming-Tag zu einem ideologisch aufgeladenen Namen ändert, kann das ein Hinweis auf eine veränderte Selbstwahrnehmung sein. Auch Profilbilder, verwendete Symbole und die Sprache in der Profilbeschreibung erzählen eine Geschichte."
+    },
+    {
+      "type": "example",
+      "title": "Max' Profilwandel",
+      "content": "Max' ursprünglicher Benutzername war 'MaxPlays2008' — ein typischer, harmloser Gaming-Name. Im Laufe weniger Monate änderte er ihn zunächst zu 'ShadowWolf_88' und schließlich zu 'Berserker_Walhall'. Sein Profilbild wechselte von einem Foto mit Freunden zu einem nordischen Krieger-Symbol. Diese schrittweise Veränderung zeigt, wie er eine neue Identität innerhalb der Gruppe annahm."
+    },
+    {
+      "type": "heading",
+      "content": "Profilveränderungen als Warnsignale"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Plötzliche Änderung von Benutzernamen, besonders hin zu ideologisch aufgeladenen Begriffen",
+        "Neue Profilbilder mit Symbolen bestimmter Szenen oder Bewegungen",
+        "Veränderung der Sprache in Profilbeschreibungen — aggressiver, abgrenzender Ton",
+        "Entfernen alter Freunde oder Kontakte aus der Freundesliste",
+        "Beitritt zu geschlossenen oder privaten Gruppen mit auffälligen Namen"
+      ]
+    },
+    {
+      "type": "reflection",
+      "question": "Denkt an eure eigenen Online-Profile: Inwiefern unterscheidet sich euer digitales Ich von eurem Offline-Ich? Wo seht ihr die Grenze zwischen normaler Selbstdarstellung und einer problematischen Identitätsveränderung?"
+    },
+    {
+      "type": "text",
+      "content": "Nicht jede Profiländerung ist ein Warnsignal. Jugendliche experimentieren ständig mit ihrer Identität — das ist ein normaler Teil des Erwachsenwerdens. Entscheidend ist das Muster: Wenn sich Name, Bild, Sprache und soziales Umfeld gleichzeitig und in eine bestimmte ideologische Richtung verändern, sollte man aufmerksam werden."
+    }
+  ]
+}

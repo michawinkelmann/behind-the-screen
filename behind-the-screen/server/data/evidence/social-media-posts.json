@@ -1,0 +1,842 @@
+[
+  {
+    "id": "social-tiktok-nov-2023-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2023-11-15",
+    "title": "Erster Valorant Clutch Clip",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Mein erster 1v5 Clutch!! Bin immer noch am Zittern lol 🔥🎮",
+      "hashtags": ["#valorant", "#clutch", "#gaming", "#fyp", "#gamingclips"],
+      "likes": 47,
+      "comments_count": 8,
+      "shares": 3,
+      "duration": "0:15",
+      "sound": "Original Sound - MaxGamer_official",
+      "description": "Ein 15-Sekunden-Clip aus einem Valorant-Match, in dem Max als Jett eine 1v5-Situation gewinnt. Im Hintergrund hoert man Timo und Leon ueber Discord jubeln. Typischer Gaming-Clip mit aufgeregter Stimme und Freude ueber den Sieg. Komplett harmloses Gaming-Content eines begeisterten 15-Jaehrigen."
+    },
+    "analysis": {
+      "context": "Max' erster TikTok-Upload. Noch komplett normaler Gaming-Content, geringe Reichweite, Kommentare von Freunden und Familie.",
+      "significance": "Zeigt Max' urspruengliche Content-Motivation: Spass am Gaming teilen. Wichtiger Ausgangspunkt fuer die spaetere Entwicklung. Kommentar seiner Mutter ('Toll gemacht Schatz!') zeigt intakte Familienbeziehung.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "social-instagram-nov-2023-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2023-11-28",
+    "title": "Gaming-Setup Foto mit Freunden",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Neues Setup endlich fertig! Rate 1-10? 🎮 Leon und Timo kommen morgen zum Zocken vorbei",
+      "hashtags": ["#gamingsetup", "#pcgaming", "#setuptour", "#gamerlife", "#rgb"],
+      "likes": 34,
+      "comments_count": 7,
+      "image_description": "Foto eines aufgeraeumten Schreibtischs mit Gaming-PC, RGB-Beleuchtung, zwei Monitoren und mechanischer Tastatur. Im Hintergrund haengen CS2- und Valorant-Poster. Schulbuecher liegen auf dem Bett daneben. Typisches Teenager-Zimmer.",
+      "description": "Max zeigt stolz sein neues Gaming-Setup. Die Kommentare sind von Schulfreunden: LaraSchulz_03 schreibt 'Sieht mega aus!', JonasK_real gibt '8/10 aber du brauchst bessere Maus'. Normaler Teenager-Content."
+    },
+    "analysis": {
+      "context": "Normaler Instagram-Post eines gaming-begeisterten Teenagers. Zeigt sein Hobby und freut sich auf gemeinsames Zocken mit realen Freunden.",
+      "significance": "Max ist sozial eingebunden und hat reale Freunde die kommentieren. Schulbuecher im Hintergrund zeigen normalen Schulalltag. Keinerlei problematische Inhalte.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "social-youtube-dec-2023-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2023-12-05",
+    "title": "Erstes Let's Play - CS2 mit Freunden",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "CS2 Competitive mit den Jungs! Road to Faceit Level 10 | MaxGamer",
+      "duration": "24:17",
+      "views": 89,
+      "likes": 12,
+      "dislikes": 1,
+      "comments_count": 4,
+      "description": "Let's Play Video in dem Max mit Leon und Timo CS2 Competitive spielt. Die Stimmung ist locker, sie machen Witze ueber verpatzte Schuesse und freuen sich gemeinsam. Max kommentiert seine Spielzuege und gibt Anfaenger-Tipps. Einfaches Editing mit Webcam-Overlay. Typischer Low-Budget Gaming-Content."
+    },
+    "analysis": {
+      "context": "Max' erster YouTube-Upload. Kleine Community von Schulfreunden. Leon und Timo sind als Mitspieler dabei.",
+      "significance": "Zeigt die gesunde Gruppendynamik: drei Freunde die gemeinsam Spass haben. Die niedrigen Zahlen sind typisch fuer Anfaenger-Creator. Niklas_Admin kommentiert ermutigend: 'Guter Anfang! Mach mehr auf YouTube' - moeglicherweise erster strategischer Kontakt.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "social-tiktok-dec-2023-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2023-12-18",
+    "title": "Lustige Gaming-Fails Compilation",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Meine besten Fails aus 2023 😂 Ja ich bin wirklich so schlecht manchmal #gamingfails #funny #cs2",
+      "hashtags": ["#gamingfails", "#funny", "#fails", "#valorant", "#cs2"],
+      "likes": 203,
+      "comments_count": 12,
+      "shares": 8,
+      "duration": "0:31",
+      "sound": "Benny Hill Theme - Classic TV",
+      "description": "30-Sekunden-Compilation von lustigen Gaming-Momenten: versehentliche Teamkills, Sturz von der Map, verfehlte einfache Schuesse. Mit lustiger Musik unterlegt. Selbstironischer Humor. Timo_Gaming kommentiert: 'Den Knife-Fail hab ich live gesehen, war noch schlimmer'."
+    },
+    "analysis": {
+      "context": "Typischer Gaming-Humor-Content. Max zeigt Selbstironie und Spass am Spielen. Die Reichweite waechst langsam organisch.",
+      "significance": "Noch komplett unbedenklicher Content. Max geniesst die wachsende Mini-Community und die positive Resonanz seiner Freunde.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "social-instagram-jan-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-01-03",
+    "title": "Silvester-Rueckblick mit Freunden",
+    "importance": 1,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": [],
+    "content": {
+      "platform": "Instagram",
+      "caption": "2024 wird unser Jahr! Danke fuer den besten Silvester ever 💪🎆 #2024 #silvester #bestfriends #squad",
+      "hashtags": ["#2024", "#silvester", "#bestfriends", "#squad", "#newyear"],
+      "likes": 67,
+      "comments_count": 11,
+      "image_description": "Karussell-Post mit drei Bildern. Bild 1: Max, Timo und Leon mit Wunderkerzen draussen. Bild 2: Die drei vor dem Fernseher beim Zocken, ueberall Snacks. Bild 3: Gruppen-Selfie mit weiteren Schulfreunden um Mitternacht. Alle lachen.",
+      "description": "Silvester-Rueckblick. Viele positive Kommentare von Klassenkameraden. Leon kommentiert: 'Bestes Silvester! Naechstes Jahr noch krasser'. Max' Mutter liked den Post."
+    },
+    "analysis": {
+      "context": "Normaler Social-Media-Post nach Silvester. Zeigt intaktes soziales Netzwerk mit realen Freundschaften.",
+      "significance": "Letzte Phase in der Max' Freundeskreis vollstaendig intakt ist. Leon ist noch sehr praesent als enger Freund. Diese Bilder werden spaeter einen schmerzhaften Kontrast zur Isolation bilden.",
+      "intervention_points": []
+    }
+  },
+  {
+    "id": "social-tiktok-jan-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-01-25",
+    "title": "Frustrationspost ueber Schule und Gendern",
+    "importance": 2,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": ["frustration", "algorithmus-belohnung"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Wenn die Lehrerin dir ne 5 gibt weil dein Aufsatz nicht 'gendersensibel' genug war... Ich kann nicht mehr 😤 #schule #ungerecht #gendern",
+      "hashtags": ["#schule", "#ungerecht", "#deutsch", "#fml", "#gendern", "#noten"],
+      "likes": 1247,
+      "comments_count": 189,
+      "shares": 87,
+      "duration": "0:22",
+      "sound": "Original Sound - MaxGamer_official",
+      "description": "Max sitzt frustriert an seinem Schreibtisch und zeigt seine Deutscharbeit in die Kamera. Er beschwert sich emotional ueber Punktabzug. Deutlich emotionaler als seine bisherigen Gaming-Posts. In den Kommentaren mischen sich erstmals Accounts aus der Manosphere-Szene unter die Antworten."
+    },
+    "analysis": {
+      "context": "Erster Post der reale Frustration zeigt. Das Thema Gendern ist ein haeufiger Einstiegspunkt in anti-progressive Diskurse. Die deutlich hoeheren Engagement-Zahlen zeigen, dass kontroverser Content vom Algorithmus belohnt wird.",
+      "significance": "Max merkt, dass kontroverse Inhalte mehr Aufmerksamkeit bringen als Gaming-Clips. Ein Account namens RedPillGamer_DE kommentiert: 'Du bist auf dem richtigen Weg Bruder.' Erster Kontakt mit der Szene.",
+      "intervention_points": ["Eltern oder Lehrer koennten das Gespraech ueber die Frustration suchen", "Medienkompetenz: Algorithmus-Belohnungsmechanismen erklaeren"]
+    }
+  },
+  {
+    "id": "social-tiktok-feb-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-02-12",
+    "title": "Gaming-Rant ueber Diversity-Charaktere",
+    "importance": 2,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": ["anti-diversity", "frustration", "algorithmus-belohnung"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Warum muss jetzt jedes Spiel einen Diversity-Charakter haben der niemandem gefaellt?? Macht einfach gute Spiele! 🎮 #gaming #woke #gamer #meinung",
+      "hashtags": ["#gaming", "#woke", "#gamer", "#meinung", "#gamingcommunity", "#rant"],
+      "likes": 3891,
+      "comments_count": 412,
+      "shares": 234,
+      "duration": "0:48",
+      "sound": "Original Sound - MaxGamer_official",
+      "description": "Max redet in die Kamera ueber einen neuen Charakter in einem beliebten Spiel. Sein Ton ist frustriert aber noch nicht aggressiv. Er betont mehrfach 'nichts gegen Leute zu haben' aber dass Spiele nicht politisch sein sollten. In den Kommentaren taucht erstmals @RedPillNiklas auf und schreibt: 'Endlich sagt es einer. Check meinen Kanal fuer die ganze Wahrheit.'"
+    },
+    "analysis": {
+      "context": "Gateway-Rhetorik: 'Ich hab nichts gegen X, aber...' Die Engagement-Zahlen explodieren im Vergleich zu Gaming-Posts. Max erlebt zum ersten Mal viralen Erfolg.",
+      "significance": "Der Algorithmus belohnt den kontroversen Take mit zehnmal mehr Reichweite. Max lernt dass polarisierende Meinungen Aufmerksamkeit bringen. RedPillNiklas etabliert den ersten direkten Kontakt.",
+      "intervention_points": ["Gespraech ueber Algorithmus-Feedback-Loops", "Aufklaerung ueber den Unterschied zwischen Kritik und Anti-Diversity-Rhetorik"]
+    }
+  },
+  {
+    "id": "social-youtube-feb-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2024-02-20",
+    "title": "Erstes Reaction-Video: Woke Gaming Momente",
+    "importance": 2,
+    "phase": "isolation",
+    "day_available": 1,
+    "warnsignale_tags": ["content-shift", "anti-diversity"],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "Die SCHLIMMSTEN 'Woke' Momente in Games 2024 | Reaction Video",
+      "duration": "18:42",
+      "views": 2341,
+      "likes": 187,
+      "dislikes": 23,
+      "comments_count": 89,
+      "description": "Max reagiert auf eine Zusammenstellung von angeblich 'woken' Momenten in aktuellen Spielen. Er spottet ueber diverse Charaktere und Inklusions-Features. Der Ton ist noch humorvoll, die Kritik oberflaechlich. Deutlicher Stilwechsel weg von Let's Plays. In den Kommentaren empfehlen mehrere Accounts den Kanal von RedPillNiklas."
+    },
+    "analysis": {
+      "context": "Erster Content-Shift auf YouTube: von Let's Plays zu Reaction-Content im Anti-Woke-Gaming-Genre. Dieses Format ist ein bekannter Radikalisierungs-Trichter auf YouTube.",
+      "significance": "Die Aufrufzahlen sind deutlich hoeher als bei Let's Plays. Max erkennt dass dieser Content-Typ erfolgreicher ist. Die gezielte Empfehlung von RedPillNiklas in den Kommentaren zeigt koordinierte Ansprache.",
+      "intervention_points": ["Eltern koennten den Content-Wechsel bemerken und ansprechen", "YouTube-Empfehlungsalgorithmus fuehrt zu immer extremerem Content"]
+    }
+  },
+  {
+    "id": "social-instagram-mar-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-03-08",
+    "title": "Repost von RedPillNiklas Meme",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["influencer-kontakt", "anti-feminismus", "meme-radikalisierung"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Basiert. @RedPillNiklas spricht aus was alle denken 💯 #redpill #basiert #wahrheit #maennerrechte",
+      "hashtags": ["#redpill", "#basiert", "#wahrheit", "#maennerrechte", "#aufwachen"],
+      "likes": 287,
+      "comments_count": 43,
+      "image_description": "Repost eines Memes von @RedPillNiklas. Das Meme zeigt einen Vergleich: links ein muskuloeser Krieger mit 'Maenner frueher', rechts ein karikierter Mann mit 'Maenner laut Feminismus'. Darunter: 'Sie wollen uns schwach sehen'.",
+      "description": "Max teilt zum ersten Mal Inhalte von Niklas. In den Kommentaren reagiert Leon (LeonDerSkeptiker) kritisch: 'Alter was ist das fuer ein Muell?' Max antwortet: 'Du checkst es halt nicht bro'. Lara fragt: 'Alles ok bei dir? Klingt anders als sonst.'"
+    },
+    "analysis": {
+      "context": "Beginn der Normalisierungsphase. Max teilt offen Inhalte aus der Manosphere/Red-Pill-Szene. Der Kontakt zu RedPillNiklas wird sichtbar.",
+      "significance": "Erster oeffentlicher Bruch mit Leon. Max reagiert defensiv auf Kritik. Die Sprache veraendert sich: 'basiert', 'redpill' sind Szenebegriffe. Laras besorgte Nachfrage zeigt, dass das Umfeld die Veraenderung bemerkt.",
+      "intervention_points": ["Leons Widerspruch ist ein positives Zeichen - er koennte unterstuetzt werden", "Laras Beobachtung als natuerlichen Fruehwarn-Moment nutzen"]
+    }
+  },
+  {
+    "id": "social-tiktok-mar-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-03-22",
+    "title": "Kulturkritik-Rant ueber Schulprojekt",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["anti-mainstream", "kulturpessimismus", "opfernarrativ"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Schulprojekt ueber 'kulturelle Vielfalt' und ich durfte nicht ueber DEUTSCHE Kultur schreiben. Klar alles andere ist wichtiger als wir 🇩🇪 #kultur #identitaet #ungerecht #zensur",
+      "hashtags": ["#deutsch", "#kultur", "#identitaet", "#ungerecht", "#zensur", "#meinungsfreiheit"],
+      "likes": 8742,
+      "comments_count": 1023,
+      "shares": 567,
+      "duration": "0:56",
+      "sound": "Original Sound - MaxGamer_official",
+      "description": "Max erzaehlt emotional von einem Schulprojekt. Er stellt es so dar als wuerde deutsche Kultur systematisch unterdrueckt. Der Kommentarbereich wird von Accounts aus der rechten Szene geflutet die Max in seinem Opfernarrativ bestaerken. WolfPack_DE schreibt: 'Genau so. Unterhaltung ist Ablenkung. Aufklaerung ist Pflicht.'"
+    },
+    "analysis": {
+      "context": "Max greift ein identitaeres Kernnarrativ auf: 'Deutsche Kultur wird unterdrueckt.' Die Darstellung des Schulprojekts ist wahrscheinlich verzerrt. Die enormen Engagement-Zahlen zeigen, dass identitaere Inhalte von der Szene gezielt gepusht werden.",
+      "significance": "Sprunghafter Anstieg der Reichweite. Max wird sichtbar fuer organisierte rechte Netzwerke. Das Opfernarrativ ist ein zentrales Element rechtsextremer Propaganda.",
+      "intervention_points": ["Lehrer koennten die verzerrte Darstellung des Schulprojekts richtigstellen", "Gespraech ueber den Unterschied zwischen Kulturinteresse und Kulturpessimismus"]
+    }
+  },
+  {
+    "id": "social-youtube-apr-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2024-04-02",
+    "title": "Reaction auf RedPillNiklas Video",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["influencer-kontakt", "anti-feminismus", "gateway-content"],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "RedPillNiklas ZERSTOERT Feministin in Debatte | Meine Reaction",
+      "duration": "32:15",
+      "views": 8934,
+      "likes": 892,
+      "dislikes": 67,
+      "comments_count": 234,
+      "description": "Max reagiert auf ein Video von RedPillNiklas in dem dieser eine feministische Aktivistin in einer Online-Debatte angreift. Max stimmt durchgehend zu und fuegt eigene Kommentare hinzu. Er verwendet zunehmend Szene-Sprache. Am Ende ermutigt er Zuschauer Niklas zu abonnieren. NiklasClanBoss kommentiert: 'Starker Content. Teile das in allen Gruppen.'"
+    },
+    "analysis": {
+      "context": "Max positioniert sich oeffentlich als Unterstuetzer von RedPillNiklas. Das Reaction-Format normalisiert extremere Positionen fuer Max' juengeres Publikum.",
+      "significance": "Symbiotische Beziehung: Max bekommt Views durch Niklas' Kontroversitaet, Niklas bekommt Zugang zu Max' jungem Publikum. Die Debatte wird als 'Zerstoerung' geframt - typisches Format der Manosphere.",
+      "intervention_points": ["YouTube koennte die Cross-Promotion erkennen", "Eltern koennten die zunehmende Verbindung zu Niklas hinterfragen"]
+    }
+  },
+  {
+    "id": "social-instagram-apr-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-04-18",
+    "title": "Aesthetik-Wechsel und neues Profilbild",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["aesthetischer-wandel", "identitaetswandel", "szene-symbole"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Neues Ich. Keine Kompromisse mehr. 🐺⚔️ #wolf #krieger #maennlich #sigma #icewolf",
+      "hashtags": ["#wolf", "#krieger", "#maennlich", "#sigma", "#icewolf", "#starkbleiben"],
+      "likes": 342,
+      "comments_count": 56,
+      "image_description": "Neues Profilbild und Post: Max hat sein Profilbild von einem freundlichen Selfie zu einem dunklen, kontrastreichen Bild mit Wolf-Motiv geaendert. Der Post zeigt Max in schwarzer Kleidung mit hartem Gesichtsausdruck. Der gesamte Feed hat eine dunkle, militaristische Aesthetik bekommen.",
+      "description": "Kompletter aesthetischer Rebranding. Leon kommentiert: 'Alter du bist 16, nicht in der Army lol' und wird von neuen Followern angegriffen. Alte Schulfreunde fragen irritiert 'Was ist mit dir los?'. Niklas kommentiert: 'Respekt. Starkes Auftreten.'"
+    },
+    "analysis": {
+      "context": "Visueller Identitaetswandel der den inneren Wandel nach aussen traegt. Wolf-Symbolik und militaristische Aesthetik sind typische Elemente rechter Jugendkulturen.",
+      "significance": "Leons Kritik wird nicht mehr nur von Max abgelehnt, sondern von der neuen Community aktiv angegriffen. Die Szene schuetzt Max vor Kritik und isoliert ihn von alten Freunden.",
+      "intervention_points": ["Der visuelle Wandel ist fuer Eltern und Lehrer leicht erkennbar", "Leon braucht Unterstuetzung - er wird fuer seine Kritik angegriffen"]
+    }
+  },
+  {
+    "id": "social-tiktok-may-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-05-03",
+    "title": "Duett mit RedPillNiklas ueber Messerangriffe",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["influencer-vertiefung", "anti-migration", "normalisierung-extremer-positionen"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Duett mit @RedPillNiklas - endlich sagt es mal jemand! Die Wahrheit ueber Messerattacken in Deutschland #wahrheit #sicherheit #migration",
+      "hashtags": ["#wahrheit", "#deutschland", "#sicherheit", "#redpill", "#aufwachen", "#migration"],
+      "likes": 14523,
+      "comments_count": 2341,
+      "shares": 1876,
+      "duration": "1:02",
+      "sound": "Original Sound - RedPillNiklas",
+      "description": "TikTok-Duett: Links spricht Niklas ueber Messerangriffe und stellt sie als reines Migrationsproblem dar. Rechts nickt Max zustimmend und fuegt Kommentare hinzu. Max wiederholt Niklas' Punkte mit eigenen Worten und ergaenzt: 'Aber das darf man ja nicht sagen.'"
+    },
+    "analysis": {
+      "context": "Erstes Duett mit dem Radikalisierer. Max uebernimmt anti-Migrations-Narrative unkritisch und gibt ihnen durch sein 'normales Teenager'-Image Glaubwuerdigkeit.",
+      "significance": "Die Formulierung 'das darf man ja nicht sagen' suggeriert eine unterdrueckte Wahrheit und macht jede Gegenrede zum Beweis fuer vermeintliche Zensur. Engagement-Zahlen erreichen neues Hoch.",
+      "intervention_points": ["TikTok-Meldung wegen Desinformation", "Eltern koennten die Kollaboration mit einem extremen Account bemerken"]
+    }
+  },
+  {
+    "id": "social-instagram-may-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-05-20",
+    "title": "Sigma-Grindset Zitat-Post",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["toxische-maennlichkeit", "sigma-grindset", "ideologisierung"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Die Gesellschaft will Maenner brechen. Wir lassen uns nicht brechen. 💪🐺 #sigma #grindset #maennlich #stark",
+      "hashtags": ["#sigma", "#grindset", "#maennlich", "#stark", "#aufwachen", "#krieger"],
+      "likes": 567,
+      "comments_count": 78,
+      "image_description": "Schwarz-weiss bearbeitetes Bild mit Zitat auf dunklem Hintergrund: 'Ein Mann der sich entschuldigt fuer das was er ist, hat bereits verloren.' Darunter ein Wolf im Wald. Klassisches Sigma-Grindset-Meme-Format.",
+      "description": "Max postet zunehmend ideologische Zitat-Bilder statt persoenlicher Fotos. Leons Kommentar 'Max das ist cringe Alter' hat 23 negative Antworten von Fremden. Niklas kommentiert: 'Starke Worte. Respekt.'"
+    },
+    "analysis": {
+      "context": "Typischer Content aus der Sigma-Male/Manosphere-Szene. Die Botschaft verbindet toxische Maennlichkeitsideale mit einem Opfernarrativ.",
+      "significance": "Max' Instagram hat sich komplett gewandelt: von persoenlichen Fotos und Gaming zu ideologischen Zitat-Posts. Leon wird systematisch vom neuen Publikum mundtot gemacht.",
+      "intervention_points": ["Der vollstaendige Content-Wandel ist fuer Aussenstehende erkennbar", "Leons zunehmende Isolation aus Max' Community ist ein Warnzeichen"]
+    }
+  },
+  {
+    "id": "social-youtube-may-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2024-05-28",
+    "title": "Video-Essay ueber Maenner in Medien",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["anti-feminismus", "opfernarrativ", "pseudo-intellektuell"],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "Warum Maenner in Filmen und Games ABSICHTLICH schwach dargestellt werden | Die Wahrheit",
+      "duration": "28:34",
+      "views": 15678,
+      "likes": 1432,
+      "dislikes": 189,
+      "comments_count": 456,
+      "description": "Max' erster Video-Essay. Er argumentiert dass Maenner in modernen Medien absichtlich schwach dargestellt werden als Teil eines gesellschaftlichen Projekts. Er zitiert selektiv und ignoriert Gegenbeweise. Die Produktion ist deutlich professioneller - Timo (ShadowTimo) hat beim Schnitt geholfen."
+    },
+    "analysis": {
+      "context": "Uebergang vom Reaction-Format zum Video-Essay. Max versucht seine Positionen pseudo-intellektuell zu untermauern. Timos Beteiligung am Schnitt zeigt dass auch er tiefer in die Szene hineingezogen wird.",
+      "significance": "Die professionellere Aufmachung verleiht problematischen Inhalten mehr Glaubwuerdigkeit. Die These einer 'absichtlichen Schwaechung von Maennern' ist ein identitaeres Kernnarrativ.",
+      "intervention_points": ["Timos Beteiligung als zweites Radikalisierungsopfer erkennen", "Pseudo-akademische Argumentationsweise im Unterricht thematisieren"]
+    }
+  },
+  {
+    "id": "social-tiktok-jun-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-06-10",
+    "title": "Oeffentlicher Bruch mit Leon",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["freundes-abbruch", "isolation", "in-group-out-group"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "An alle die meinen sie koennten mir sagen was ich denken darf: Tschuess. Ich brauch keine Schafe in meinem Leben 🐑➡️🚪 #fakefriends #schafe #wolf",
+      "hashtags": ["#eigenermweg", "#wahrheit", "#fakefriends", "#schafe", "#aufwachen", "#wolf"],
+      "likes": 6234,
+      "comments_count": 867,
+      "shares": 345,
+      "duration": "0:44",
+      "sound": "Original Sound - MaxGamer_official",
+      "description": "Max spricht direkt in die Kamera mit ernstem, fast aggressivem Gesichtsausdruck. Er redet ueber 'Leute die nicht aufwachen wollen'. Ohne Leon namentlich zu nennen ist der Bezug eindeutig. Er benutzt die Wolf/Schaf-Metapher. Die Community feiert den Bruch als 'Staerke'."
+    },
+    "analysis": {
+      "context": "Oeffentlicher Bruch mit Leon und anderen kritischen Freunden. Die Wolf/Schaf-Metapher ist zentral fuer die Szene-Identitaet.",
+      "significance": "Max schneidet aktiv Freunde ab die seinen neuen Ueberzeugungen widersprechen. Dies vertieft die Isolation und macht ihn abhaengiger von der Online-Community.",
+      "intervention_points": ["Letzte Chance fuer Intervention durch reale Bezugspersonen", "Leon koennte als Gespraechspartner fuer Schulsozialarbeit dienen"]
+    }
+  },
+  {
+    "id": "social-tiktok-jul-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-07-08",
+    "title": "Verschwoerungstheorie Bevoelkerungsaustausch",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["verschwoerungstheorie", "great-replacement", "rechtsextreme-narrative"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Schaut euch die Zahlen an und sagt mir das ist Zufall. Aufwachen Leute!! 🇩🇪📉 #demografie #wahrheit #aufwachen",
+      "hashtags": ["#deutschland", "#bevoelkerung", "#wahrheit", "#aufwachen", "#demografie", "#volk"],
+      "likes": 23456,
+      "comments_count": 4521,
+      "shares": 3456,
+      "duration": "1:15",
+      "sound": "Dramatic Music - Cinematic Sounds",
+      "description": "Max praesentiert angebliche demografische Statistiken mit dramatischer Musik. Die Zahlen sind aus dem Kontext gerissen und teilweise falsch. Er suggeriert einen geplanten 'Bevoelkerungsaustausch'. Das Video ist deutlich professioneller und hat klare Propaganda-Aesthetik."
+    },
+    "analysis": {
+      "context": "Max verbreitet die 'Great Replacement'-Verschwoerungstheorie, ein zentrales Narrativ des Rechtsextremismus. Die professionelle Aufmachung gibt dem Video pseudo-wissenschaftlichen Anstrich.",
+      "significance": "Uebergang von kulturellem Unbehagen zu offener Verschwoerungstheorie. Die enormen Engagement-Zahlen zeigen dass das Video von organisierten Netzwerken gepusht wird.",
+      "intervention_points": ["TikTok-Meldung wegen Verschwoerungstheorien", "Faktencheck der verwendeten Statistiken", "Schulische Medienkompetenz-Workshops"]
+    }
+  },
+  {
+    "id": "social-youtube-jul-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2024-07-22",
+    "title": "Livestream mit RedPillNiklas - Sturmfront Gaming",
+    "importance": 4,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["influencer-kollaboration", "radikalisierung", "netzwerk-aufbau"],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "LIVE mit @RedPillNiklas: Warum die Medien uns BELUEGEN | Sturmfront Gaming Spezial",
+      "duration": "1:12:34",
+      "views": 34567,
+      "likes": 3456,
+      "dislikes": 234,
+      "comments_count": 1234,
+      "description": "Livestream-Aufzeichnung in der Max und Niklas ueber Medienmanipulation sprechen. Niklas fuehrt das Gespraech und lenkt es geschickt zu immer extremeren Positionen. Max stimmt durchgehend zu. Am Ende bewirbt Niklas seinen Discord-Server 'Sturmfront Gaming' und Max ermutigt seine Zuschauer beizutreten."
+    },
+    "analysis": {
+      "context": "Erste direkte Kollaboration. Niklas nutzt das Gespraech um Max' Publikum in seinen Einflussbereich zu ziehen. Der Discord-Server dient als geschlossener Radikalisierungsraum.",
+      "significance": "Max ist sichtlich beeindruckt und unterwuerfig gegenueber Niklas. Die Bewerbung des Discord-Servers ist der Versuch Zuschauer von oeffentlichen Plattformen in unkontrollierte Raeume zu verlagern.",
+      "intervention_points": ["Der Name 'Sturmfront' ist eine Referenz auf die rechtsextreme Website Stormfront", "YouTube koennte die Bewerbung eines extremistischen Discord-Servers unterbinden"]
+    }
+  },
+  {
+    "id": "social-instagram-jul-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-07-30",
+    "title": "Fitness-Transformation mit Ideologie",
+    "importance": 3,
+    "phase": "normalisierung",
+    "day_available": 2,
+    "warnsignale_tags": ["koerper-ideologie", "maennlichkeitskult", "szene-aesthetik"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "4 Monate Transformation. Ein starker Koerper fuer einen starken Geist. Wer sich nicht verbessert geht unter. 💪🔥 #gym #grindset #krieger",
+      "hashtags": ["#gym", "#transformation", "#grindset", "#discipline", "#krieger", "#sigma"],
+      "likes": 823,
+      "comments_count": 112,
+      "image_description": "Vorher-Nachher Fitness-Foto. Links: Max vor ein paar Monaten, normal gebaut. Rechts: Deutlich mehr Muskelmasse, harter Gesichtsausdruck, schwarzes Tank-Top. Stark kontrastbearbeitet im Manosphere-Fitness-Stil.",
+      "description": "Max praesentiert seine koerperliche Veraenderung. Niklas (WolfCommander) kommentiert: 'So sieht ein richtiger Mann aus. Weiter so Bruder.' Timo postet Flammen-Emojis. Kein einziger Kommentar mehr von alten Schulfreunden."
+    },
+    "analysis": {
+      "context": "Fitness und Koerperoptimierung werden als Teil der ideologischen Identitaet verstanden. 'Starker Koerper = starker Geist' verbindet Selbstverbesserung mit ideologischer Festigung.",
+      "significance": "Die vollstaendige Abwesenheit alter Schulfreunde in den Kommentaren zeigt die erfolgte soziale Isolation. Max' Publikum hat sich komplett ausgetauscht.",
+      "intervention_points": ["Fitness an sich ist positiv - die ideologische Aufladung ist das Problem", "Niklas' oeffentliche Verbindung ist fuer Eltern sichtbar"]
+    }
+  },
+  {
+    "id": "social-tiktok-aug-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-08-09",
+    "title": "10K Follower - Ideologisches Statement",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["reichweite", "sendungsbewusstsein", "identitaere-sprache"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "10.000 Woelfe!! 🐺🔥 Zusammen werden wir lauter. Das ist erst der Anfang Brueder! #10k #wolfpack #bewegung #sturmfront",
+      "hashtags": ["#10k", "#wolfpack", "#bewegung", "#deutschland", "#aufwachen", "#sturmfront"],
+      "likes": 8765,
+      "comments_count": 1456,
+      "shares": 678,
+      "duration": "0:38",
+      "sound": "Epic Motivational - Cinematic Audio",
+      "description": "Max feiert 10.000 TikTok-Follower. Er spricht von einer 'Bewegung' und einer 'Gemeinschaft von Woelfen'. Die Sprache ist pathetisch und militaristisch. Er traegt ein schwarzes T-Shirt mit dem Sturmfront Gaming Logo."
+    },
+    "analysis": {
+      "context": "Beginn der Indoktrinationsphase. Max hat signifikante Reichweite aufgebaut und sieht sich als Teil einer 'Bewegung'. Die Sprache hat sich von Gaming-Slang zu identitaerer Rhetorik gewandelt.",
+      "significance": "Max traegt oeffentlich das Logo des extremistischen Discord-Servers. Er bezeichnet Follower als 'Brueder' und 'Woelfe'. Der Begriff 'Bewegung' zeigt politisches Sendungsbewusstsein.",
+      "intervention_points": ["Die Marke 'Sturmfront' ist ein klares Warnzeichen fuer Plattform-Moderation", "10K Follower bedeuten reale Verbreitung extremer Inhalte"]
+    }
+  },
+  {
+    "id": "social-instagram-aug-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-08-22",
+    "title": "Gruppenfoto erstes Offline-Treffen",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["offline-treffen", "gruppenzugehoerigkeit", "szene-vernetzung", "rekrutierung"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Erstes echtes Treffen mit den Bruedern. Online-Freundschaften werden real. Das hier ist Familie. 🐺⚔️ #sturmfront #brueder #familie",
+      "hashtags": ["#sturmfront", "#brueder", "#familie", "#treffen", "#gemeinschaft", "#wolfpack"],
+      "likes": 1567,
+      "comments_count": 234,
+      "image_description": "Gruppenfoto von etwa 10-12 jungen Maennern (16-22 Jahre) bei einem Treffen im Freien. Mehrere tragen schwarze Kleidung mit Wolf-Motiven und Sturmfront-Logos. Max steht neben Niklas (WolfCommander), der deutlich aelter ist (ca. 22). Timo (ShadowTimo) ist ebenfalls erkennbar. Niklas steht in zentraler Position.",
+      "description": "Erstes dokumentiertes Offline-Treffen der Sturmfront-Gruppe. Die Kommentare sind ausschliesslich von Szene-Accounts. Kein einziger Kommentar von Max' ehemaligen Schulfreunden oder Familie."
+    },
+    "analysis": {
+      "context": "Der Uebergang von Online zu Offline ist ein kritischer Eskalationsschritt. Max trifft Niklas persoenlich. Die Gruppe ersetzt vollstaendig seinen alten Freundeskreis.",
+      "significance": "Hoechste Warnstufe: Real-Life-Treffen mit einer extremistischen Gruppe. Der Altersunterschied zwischen Niklas (22) und Max (16) zeigt asymmetrische Machtdynamik. Die Abwesenheit alter Freunde belegt die erfolgte soziale Isolation.",
+      "intervention_points": ["Eltern muessen ueber das Offline-Treffen informiert werden", "Jugendschutz: Ein 22-Jaehriger rekrutiert 16-Jaehrige", "Das Foto ist Beweis fuer reale Vernetzung"]
+    }
+  },
+  {
+    "id": "social-youtube-sep-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2024-09-15",
+    "title": "Pseudo-Dokumentation: Wer kontrolliert Deutschland?",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["verschwoerungstheorie", "antisemitismus-codiert", "propaganda", "pseudo-dokumentation"],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "Wer steuert Deutschland WIRKLICH? Die Wahrheit die niemand ausspricht | Dokumentation",
+      "duration": "45:12",
+      "views": 67890,
+      "likes": 5678,
+      "dislikes": 456,
+      "comments_count": 2345,
+      "description": "Pseudo-dokumentarischer Video-Essay ueber 'verborgene Eliten' die angeblich Deutschland kontrollieren. Max verwendet codiert antisemitische Narrative ('internationale Finanzeliten', 'die im Hintergrund') ohne explizit Juden zu nennen. Professionell produziert mit Grafiken, dramatischer Musik und serioesem Erzaehlstil."
+    },
+    "analysis": {
+      "context": "Codierter Antisemitismus verpackt als investigative Dokumentation. Die Begriffe 'internationale Finanzeliten' und 'die im Hintergrund' sind klassische antisemitische Chiffren.",
+      "significance": "Hoechste Eskalationsstufe des YouTube-Contents. Max produziert professionelle Propaganda. Die pseudo-dokumentarische Form macht den Inhalt besonders gefaehrlich. 67.000 Aufrufe bedeuten massive Verbreitung.",
+      "intervention_points": ["YouTube-Meldung wegen codiertem Antisemitismus", "Die professionelle Produktion deutet auf Unterstuetzung durch die Gruppe hin"]
+    }
+  },
+  {
+    "id": "social-tiktok-oct-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-10-04",
+    "title": "Eisberg-Video: Gaming ist nur die Spitze",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["verschwoerungstheorie", "desinformation", "fear-mongering"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Du GLAUBST NICHT was sie vor dir verstecken. Die Gaming-Industrie ist nur die Spitze des Eisbergs. #versteckt #wahrheit #aufwachen",
+      "hashtags": ["#versteckt", "#wahrheit", "#aufwachen", "#system", "#kontrolle", "#iceberg"],
+      "likes": 31200,
+      "comments_count": 8900,
+      "shares": 5670,
+      "duration": "1:18",
+      "sound": "Dark Cinematic - Horror Ambience",
+      "description": "Max praesentiert eine 'Eisberg-Theorie': Oben Gaming-Probleme, darunter Medienmanipulation, darunter politische Kontrolle, ganz unten 'die wahren Strippenzieher'. Rote Schnur zwischen Fotos, verschwoerungstheoretische Darstellung. TikTok-Moderation hat einen Hinweis zu Falschinformationen angeheftet, aber das Video bleibt online."
+    },
+    "analysis": {
+      "context": "Max' reichweitenstaerkstes Video. Die 'Eisberg'-Struktur beginnt mit nachvollziehbaren Kritikpunkten und fuehrt schrittweise zu extremen Verschwoerungstheorien.",
+      "significance": "234K Views bedeuten massive Reichweite bei jungen Zuschauern. TikTok-Moderation hat reagiert aber das Video bleibt online. Max verbindet Gaming mit allgemeinen Verschwoerungstheorien.",
+      "intervention_points": ["Eisberg-Methode als Radikalisierungstechnik erkennen", "Plattform-Moderation als unzureichende Massnahme"]
+    }
+  },
+  {
+    "id": "social-instagram-oct-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-10-25",
+    "title": "Leon als Verraeter dargestellt",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["mobbing", "einschuechterung", "in-group-out-group", "feindbilder"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Wenn 'Freunde' dich bei der Schulleitung verpetzen weil du die Wahrheit sagst. Verraeter erkennt man erst wenns drauf ankommt. @LeonDerSkeptiker du bist fuer mich gestorben. 🐍 #verraeter #fakefriends",
+      "hashtags": ["#verraeter", "#fakefriends", "#wahrheit", "#zensur", "#schlange", "#konsequenzen"],
+      "likes": 2345,
+      "comments_count": 567,
+      "image_description": "Schwarzer Hintergrund mit dem Text 'Verrat wird nicht vergessen' in gotischer Schrift. Darunter ein durchgestrichenes Bild einer Schlange. Die Kommentare sind voll von Drohungen gegen Leon aus der Sturmfront-Community.",
+      "description": "Max macht oeffentlich dass Leon sich an die Schulleitung gewandt hat. Er markiert Leon namentlich, was eine Welle von Beleidigungen und Drohungen aus der Community ausloest."
+    },
+    "analysis": {
+      "context": "Oeffentliche Denunzierung und Einschuechterung eines ehemaligen Freundes der Hilfe gesucht hat. Leon hat das Richtige getan indem er sich an die Schulleitung gewandt hat.",
+      "significance": "Leon wird fuer seinen Hilferuf bestraft. Die oeffentliche Markierung und die resultierenden Drohungen sind Cybermobbing. Dies hat einen Einschuechterungseffekt auf andere die helfen wollen.",
+      "intervention_points": ["Leon braucht Schutz und Unterstuetzung", "Die Schulleitung muss die Drohungen ernst nehmen", "Strafanzeige wegen Bedrohung pruefen"]
+    }
+  },
+  {
+    "id": "social-tiktok-nov-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2024-11-08",
+    "title": "Rekrutierungsvideo fuer Discord",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["rekrutierung", "gateway", "jugendgefaehrdung"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Du fuehlst dich auch so? Du weisst dass was falsch laeuft? Dann komm zu uns. Sturmfront Gaming - wo Brueder sich finden 🐺 #sturmfront #joinus #discord",
+      "hashtags": ["#sturmfront", "#gemeinschaft", "#aufwachen", "#joinus", "#discord", "#wolfpack"],
+      "likes": 12345,
+      "comments_count": 3456,
+      "shares": 2345,
+      "duration": "0:52",
+      "sound": "Dramatic Orchestral - Epic Music",
+      "description": "Professionell geschnittenes Rekrutierungsvideo fuer den Sturmfront Gaming Discord. Zusammenschnitte von Gaming-Highlights, Gruppentreffen und motivierenden Zitaten. Zielt auf einsame Jugendliche ab: 'Du bist nicht allein', 'Hier gehoerst du hin'. Max ist vom Rekrutierten zum Rekrutierenden geworden."
+    },
+    "analysis": {
+      "context": "Max produziert aktiv Rekrutierungsmaterial fuer die extremistische Gruppe. Das Video richtet sich gezielt an vulnerable Jugendliche.",
+      "significance": "Max reproduziert exakt die Methoden mit denen er selbst angeworben wurde: Zugehoerigkeitsversprechen an einsame Jugendliche. Der Zyklus der Radikalisierung schliesst sich.",
+      "intervention_points": ["TikTok-Meldung: Rekrutierung fuer extremistische Gruppe", "Jugendschutzmeldung", "Das Video ist Beweismaterial fuer organisierte Rekrutierung"]
+    }
+  },
+  {
+    "id": "social-youtube-nov-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2024-11-22",
+    "title": "Manifest-Video: Aufruf an alle Deutschen",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["manifest", "extremismus", "radikale-ideologie", "sendungsbewusstsein"],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "AUFWACHEN: Warum wir die letzte Generation sind die etwas aendern kann | Ein Aufruf",
+      "duration": "38:45",
+      "views": 89234,
+      "likes": 8765,
+      "dislikes": 567,
+      "comments_count": 4567,
+      "description": "Max haelt einen langen pathetischen Monolog der einem Manifest gleicht. Er spricht von einer 'letzten Chance', von 'Verrat der Eliten', von 'Widerstand' und 'Opferbereitschaft'. Er zitiert historische Figuren aus dem Kontext gerissen. Das Video endet mit dem Aufruf dem Sturmfront-Discord beizutreten und 'Teil der Loesung' zu werden."
+    },
+    "analysis": {
+      "context": "Das Video hat den Charakter eines politischen Manifests. Die Sprache, die Dringlichkeit und der apokalyptische Ton sind typisch fuer extremistische Radikalisierung im Endstadium.",
+      "significance": "89.000 Aufrufe fuer offen extremistischen Content zeigen das Versagen der Plattform-Moderation. Max spricht von 'Opferbereitschaft' - ein moeglicher Hinweis auf Gewaltbereitschaft.",
+      "intervention_points": ["YouTube muss das Video entfernen", "Verfassungsschutz informieren", "Deradikalisierungsexperten einschalten"]
+    }
+  },
+  {
+    "id": "social-instagram-dec-2024-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2024-12-20",
+    "title": "Weihnachten mit der Gruppe statt Familie",
+    "importance": 4,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["familien-distanzierung", "isolation", "radikale-gemeinschaft"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Weihnachten mit meiner ECHTEN Familie. Blut ist nicht immer dicker als Wasser. Danke Wolfpack. 🐺🖤",
+      "hashtags": ["#wolfpack", "#familie", "#bruederschaft", "#weihnachten", "#gemeinschaft"],
+      "likes": 567,
+      "comments_count": 89,
+      "image_description": "Foto zeigt Max bei einem Treffen mit anderen jungen Maennern in schwarzer Kleidung. Sie sitzen um einen Tisch mit Kerzen und Wolfpack-Symbolen. Max hat sich komplett von seiner Familie distanziert.",
+      "description": "Max verbringt Weihnachten mit der Sturmfront-Gruppe statt mit seiner Familie. Seine Mutter (MaxsMom_Petra) kommentiert verzweifelt: 'Max bitte komm nach Hause. Wir vermissen dich. Papa und ich lieben dich.' Max antwortet nicht. Lara schreibt: 'Das ist so traurig. Max' Mama kommentiert und er antwortet nicht mal.'"
+    },
+    "analysis": {
+      "context": "Max hat den Kontakt zu seiner Familie abgebrochen. Der oeffentliche Kommentar seiner Mutter ist ein Hilferuf.",
+      "significance": "Familiendistanzierung ist ein klassisches Merkmal von Sekten und extremistischen Gruppen. Die 'Wolfpack'-Gruppe hat Max' Familie funktional ersetzt. Kontrast zum Silvester-Post von einem Jahr zuvor ist erschuetternd.",
+      "intervention_points": ["Familiendistanzierung als schwerwiegendes Warnsignal", "Oeffentliche Hilferufe der Mutter", "Gruppenersatz-Dynamik wie bei Sekten"]
+    }
+  },
+  {
+    "id": "social-tiktok-jan-2025-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2025-01-10",
+    "title": "Die 10 Wahrheiten - Manifest-Video",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["manifest", "ideologie-komplett", "radikalisierung-final"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Die 10 Wahrheiten die JEDER wissen muss. Teilt das ueberall. Speichert es bevor es geloescht wird. #manifest #wahrheit #aufklaerung",
+      "hashtags": ["#wahrheit", "#10wahrheiten", "#manifest", "#aufklaerung", "#widerstand"],
+      "likes": 24500,
+      "comments_count": 6780,
+      "shares": 4500,
+      "duration": "1:28",
+      "sound": "Original Sound - MaxGamer_official",
+      "description": "Max praesentiert '10 Wahrheiten' - eine Zusammenfassung seiner ideologischen Position. Von Gaming-Kritik ueber Medienkritik bis zu offen rechtsextremen Positionen. Ein 15-Jaehriger (JungerWolf_15) kommentiert: 'Habe alles ausgedruckt und in der Schule verteilt!' Ein Lehrer meldet sich: 'Einer meiner Schueler hat das im Unterricht zitiert.'"
+    },
+    "analysis": {
+      "context": "Max hat seine Ideologie in einem 'Manifest' zusammengefasst. Die Verbreitung in Schulen durch andere Jugendliche zeigt die Multiplikatorwirkung.",
+      "significance": "Ein persoenliches 'Manifest' ist ein extrem besorgniserregendes Zeichen. Die Tatsache dass andere Jugendliche es in Schulen verteilen zeigt wie weit die Wirkung reicht.",
+      "intervention_points": ["Manifest-Erstellung als hoechste Warnstufe", "Verbreitung in Schulen erfordert sofortige Intervention", "Lehrer als wichtige Fruehwarner"]
+    }
+  },
+  {
+    "id": "social-youtube-jan-2025-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "YouTube MaxGamer_official",
+    "date": "2025-01-24",
+    "title": "Mein Weg zur Wahrheit - Radikalisierung als Heldenreise",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["vollstaendige-radikalisierung", "rekrutierungs-blaupause", "gefaehrder"],
+    "content": {
+      "platform": "YouTube",
+      "video_title": "Mein Weg zur Wahrheit: Wie ich aufgewacht bin | IceWolf88 Dokumentation",
+      "duration": "52:18",
+      "views": 123456,
+      "likes": 12345,
+      "dislikes": 1234,
+      "comments_count": 6789,
+      "description": "Max erzaehlt rueckblickend seinen 'Weg zur Erwachung'. Er glorifiziert seinen Radikalisierungsprozess als Heldenreise vom 'schlafenden Normie' zum 'aufgewachten Krieger'. Zeigt Ausschnitte seiner alten harmlosen Videos im Kontrast zu heute. Er fordert andere Jugendliche auf den gleichen Weg zu gehen. EXIT-Deutschland kommentiert mit einem Hilfsangebot."
+    },
+    "analysis": {
+      "context": "Max dokumentiert und glorifiziert seine eigene Radikalisierung als nachahmenswertes Beispiel. Das Video ist ein effektives Rekrutierungswerkzeug.",
+      "significance": "Das gefaehrlichste Video. Es dient als Blaupause fuer die Radikalisierung anderer Jugendlicher. Max stellt seinen Verlust von Freunden, Familie und Normalitaet als 'notwendige Opfer' dar. 123.000 Aufrufe bedeuten massive Reichweite.",
+      "intervention_points": ["YouTube muss das Video sofort entfernen", "Das Video ist Beweismaterial fuer die gesamte Radikalisierungskette", "Deradikalisierungsprogramm fuer Max einleiten"]
+    }
+  },
+  {
+    "id": "social-instagram-feb-2025-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "Instagram @IceWolf88",
+    "date": "2025-02-03",
+    "title": "Letzter Instagram-Post: Abschied vom Mainstream",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["plattformwechsel", "abschied", "radikaler-rueckzug"],
+    "content": {
+      "platform": "Instagram",
+      "caption": "Dieser Account wird geloescht. Instagram ist Teil des Systems. Wer die Wahrheit will findet mich auf Telegram: @IceWolf88_Truth. Wolfpack bleibt. Fuer immer. 🐺",
+      "hashtags": ["#abschied", "#telegram", "#wolfpack", "#wahrheit", "#fuerimmer"],
+      "likes": 892,
+      "comments_count": 234,
+      "image_description": "Schwarzes Bild mit dem Wolfpack-Symbol und einem Abschiedstext in weisser Schrift. Minimalistisch und endgueltig.",
+      "description": "Max kuendigt die Loeschung seines Instagram-Accounts an. Seine Mutter kommentiert: 'Max bitte. Ich flehe dich an. Komm nach Hause oder ruf wenigstens an. Wir lieben dich so sehr.' Lara: 'Ich hab so geweint als ich das gelesen hab. Das ist nicht mehr er.' EXIT-Deutschland postet ein Hilfsangebot. Max antwortet auf keinen der verzweifelten Kommentare."
+    },
+    "analysis": {
+      "context": "Max' letzter Post auf Instagram. Die Kommentare seiner Mutter und seiner ehemaligen Freundin sind herzzerreissend und zeigen die menschlichen Kosten der Radikalisierung.",
+      "significance": "Der Rueckzug auf Telegram bedeutet den Verlust jeder oeffentlichen Erreichbarkeit fuer Familie und Freunde. Dies ist der Endpunkt der Social-Media-Radikalisierung.",
+      "intervention_points": ["Petras und Laras Kommentare als Beweise fuer die Zerstoerungskraft der Radikalisierung", "Professionelle Hilfe fuer betroffene Familien notwendig", "Exit-Programme als letzte Chance"]
+    }
+  },
+  {
+    "id": "social-tiktok-feb-2025-01",
+    "type": "social_media",
+    "spur": "social-media",
+    "source": "TikTok @MaxGamer_official",
+    "date": "2025-02-14",
+    "title": "Letztes TikTok: Worte reichen nicht mehr",
+    "importance": 5,
+    "phase": "indoktrination",
+    "day_available": 3,
+    "warnsignale_tags": ["drohung-implizit", "gewaltbereitschaft", "endphase"],
+    "content": {
+      "platform": "TikTok",
+      "caption": "Letzte Nachricht hier. Worte reichen nicht mehr. Es ist Zeit zu HANDELN. Die Geschichte wird uns recht geben. IceWolf88 - out.",
+      "hashtags": ["#handeln", "#zeit", "#geschichte", "#wolfpack", "#out"],
+      "likes": 19800,
+      "comments_count": 8900,
+      "shares": 4567,
+      "duration": "0:42",
+      "sound": "Dark Ambient - Tension",
+      "description": "Max' allerletztes TikTok-Video. Er spricht ruhig aber bestimmt in die Kamera. Sein Blick ist kalt und entschlossen. Er spricht von 'Handeln' statt 'Reden' ohne zu spezifizieren was er meint. David (SchulfreundMax_David) kommentiert: 'Was meinst du mit HANDELN? Max das macht mir Angst. Ich rufe die Polizei an wenn du nicht antwortest.' EXIT-Deutschland postet erneut ein Hilfsangebot."
+    },
+    "analysis": {
+      "context": "Max' letztes oeffentliches Video. Die Sprache hat sich von Meinungsaeusserung zu impliziter Gewaltbereitschaft gewandelt. 'Handeln' statt 'Reden' ist eine bekannte Formulierung vor extremistischen Aktionen.",
+      "significance": "Dieses Video ist das alarmierende Ende der Social-Media-Spur. Die Sprache deutet auf moegliche reale Gewaltbereitschaft hin. Davids Drohung die Polizei einzuschalten ist der letzte verzweifelte Versuch des alten Umfelds.",
+      "intervention_points": ["Implizite Gewaltankuendigungen erfordern sofortige behoerdliche Intervention", "Davids Reaktion als richtige Handlung anerkennen", "Deradikalisierung ist nur noch mit professioneller Hilfe moeglich"]
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "id": "module-2.2",
+  "title": "Echokammern und Moderation",
+  "description": "Wie Echokammern entstehen, die Rolle der Moderation und das Unterdrücken von Widerspruch",
+  "day_available": 2,
+  "order": 3,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Was ist eine Echokammer?"
+    },
+    {
+      "type": "text",
+      "content": "Eine Echokammer ist ein geschlossenes Kommunikationsumfeld, in dem nur eine bestimmte Meinung toleriert wird. Im Gegensatz zur Filter-Bubble, die durch Algorithmen entsteht, wird eine Echokammer aktiv von Menschen erschaffen und kontrolliert. Administratoren und Moderatoren bestimmen, welche Beiträge erlaubt sind, welche gelöscht werden und wer aus der Gruppe entfernt wird. Das Ergebnis ist ein Raum, in dem alle Stimmen dasselbe Echo erzeugen."
+    },
+    {
+      "type": "heading",
+      "content": "Die Rolle der Moderation"
+    },
+    {
+      "type": "text",
+      "content": "Moderation ist an sich nichts Negatives — sie kann Communities vor Belästigung, Spam und schädlichen Inhalten schützen. In radikalen Gruppen wird Moderation jedoch als Werkzeug der Kontrolle eingesetzt: Kritische Stimmen werden gelöscht, Zweifler werden gebannt und nur gruppenkonformes Verhalten wird belohnt. Die Moderatoren werden so zu Torwächtern der Ideologie."
+    },
+    {
+      "type": "example",
+      "title": "Timo als Moderator",
+      "content": "Timo war der Hauptmoderator des Discord-Servers, auf dem sich Max radikalisierte. Er präsentierte sich als besonnener, fairer Admin — doch in Wirklichkeit löschte er systematisch jeden Beitrag, der das Weltbild der Gruppe infrage stellte. Nutzer, die kritische Fragen stellten, wurden zunächst verwarnt und dann stillschweigend entfernt. Gleichzeitig beförderte Timo aktive Mitglieder wie Max, die die Gruppenideologie übernahmen, und gab ihnen besondere Rollen und Rechte."
+    },
+    {
+      "type": "heading",
+      "content": "Methoden der Meinungsunterdrückung"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Löschen kritischer Beiträge ohne Erklärung",
+        "Bannen oder Stummschalten von Mitgliedern, die Fragen stellen",
+        "Lächerlichmachen von Zweiflern durch die Gruppe ('Du bist noch nicht so weit')",
+        "Schaffen eines Klimas, in dem sich niemand traut, Widerspruch zu äußern",
+        "Belohnung konformen Verhaltens durch Ränge, Rollen und exklusive Kanäle",
+        "Framing von Kritik als 'Angriff von außen', um den Zusammenhalt zu stärken"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "In einer funktionierenden Echokammer merkt die betroffene Person nicht einmal, dass ihr Informationen vorenthalten werden. Max glaubte, in einer offenen Community zu sein, in der 'endlich die Wahrheit gesagt werden darf'. In Wirklichkeit war er in einer sorgfältig kuratierten Blase gefangen, in der nur eine einzige Perspektive existierte."
+    },
+    {
+      "type": "reflection",
+      "question": "Wie kann man erkennen, ob eine Online-Community eine gesunde Diskussionskultur hat oder eine Echokammer ist? Welche konkreten Merkmale würdet ihr überprüfen?"
+    }
+  ]
+}

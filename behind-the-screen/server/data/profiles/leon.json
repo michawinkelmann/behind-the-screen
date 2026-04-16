@@ -1,0 +1,109 @@
+{
+  "id": "leon",
+  "name": "Leon Mueller",
+  "age": 17,
+  "role": "Ehemaliger Freund - Gescheiterte Intervention",
+  "online_aliases": ["LeonDerSkeptiker"],
+  "platforms": ["Discord", "Steam", "CS2", "Instagram", "WhatsApp"],
+  "description": "17-jaehriger Schueler und ehemaliges Mitglied von Max' Gaming-Gruppe. Leon ist kritisch, reflektiert und hat als Einziger im Freundeskreis frueh erkannt, dass sich Max veraendert. Seine Versuche, Max zu warnen und die Gruppe zu hinterfragen, fuehren zu seinem Ausschluss. Er repraesentiert die gescheiterte Intervention von Gleichaltrigen.",
+  "personality": ["kritisch", "reflektiert", "mutig", "direkt", "empathisch", "frustriert", "hilflos"],
+  "background": "Leon kennt Max seit der fuenften Klasse. Sie haben zusammen mit dem Gaming angefangen, waren Teil derselben CS2-Gruppe und haben regelmaessig zusammen gespielt. Leon hat einen stabilen Familienhintergrund und ein gesundes Selbstbewusstsein, was ihn weniger anfaellig fuer Niklas' Manipulation macht. Als Niklas anfaengt, politische Inhalte in die Gruppe einzubringen, ist Leon zunaechst irritiert, dann besorgt. Er spricht sowohl Max als auch Timo direkt an, stoesst aber auf Abwehr und Verharmlosung. Nach mehreren gescheiterten Versuchen wird er von der Gruppe als 'Verraeter' und 'Systemling' gebrandmarkt und im September 2024 aus dem Discord gebannt. Leon traegt danach ein schlechtes Gewissen, weil er nicht mehr tun konnte. Er ueberlegt mehrfach, Erwachsene einzuschalten, traut sich aber nicht, seinen Freund zu 'verraten'.",
+  "timeline": [
+    {
+      "date": "2023-12",
+      "event": "Tritt mit Max dem 'Sturmfront Gaming'-Discord bei. Findet den Namen merkwuerdig, wird aber beruhigt ('Ist ironisch gemeint')."
+    },
+    {
+      "date": "2024-01",
+      "event": "Spielt regelmaessig mit Max, Timo und Niklas CS2. Findet Niklas zunaechst sympathisch, bemerkt aber schnell, dass dieser Max besonders stark beeinflusst."
+    },
+    {
+      "date": "2024-03",
+      "event": "Bemerkt, dass im Discord vermehrt politische Memes und 'Witze' geteilt werden. Fragt im Chat: 'Ist das euer Ernst?' Bekommt als Antwort: 'Chill mal, ist nur Humor'."
+    },
+    {
+      "date": "2024-05",
+      "event": "Spricht Max unter vier Augen an: 'Du redest anders als frueher. Was ist los mit dir?' Max reagiert aggressiv und abweisend."
+    },
+    {
+      "date": "2024-05",
+      "event": "Spricht auch Timo an und bittet ihn um Hilfe. Timo weicht aus und verharmlost: 'Max macht gerade eine schwere Zeit durch, lass ihn'."
+    },
+    {
+      "date": "2024-06",
+      "event": "Widerspricht im Discord oeffentlich einem rassistischen Post. Wird von mehreren Mitgliedern angegriffen. Niklas schreibt: 'Wenn du nicht klarkommst, bist du hier falsch'."
+    },
+    {
+      "date": "2024-07",
+      "event": "Versucht ein letztes Mal, Max in einem privaten Gespraech zu erreichen. Max bezeichnet ihn als 'Schlafschaf' und 'Verraeter'."
+    },
+    {
+      "date": "2024-09",
+      "event": "Wird aus dem Discord-Server 'Sturmfront Gaming' gebannt. Max und Timo unterstuetzen den Ausschluss. Leon ist am Boden zerstoert."
+    },
+    {
+      "date": "2024-10",
+      "event": "Ueberlegt, mit dem Klassenlehrer Herrn Berger zu sprechen, traut sich aber nicht. Hat Angst, als 'Petze' dazustehen."
+    },
+    {
+      "date": "2024-12",
+      "event": "Sieht Max' TikTok-Videos mit rechtsextremer Symbolik. Macht Screenshots, weiss aber nicht, was er damit tun soll."
+    },
+    {
+      "date": "2025-02",
+      "event": "Nach dem Vorfall an der Schule wird Leon als wichtiger Zeuge befragt. Seine fruehen Beobachtungen und Screenshots werden Teil der Ermittlung."
+    }
+  ],
+  "relationships": {
+    "max": "Ehemaliger Freund. Leon vermisst den 'alten Max' und fuehlt sich schuldig, ihn nicht gerettet zu haben. Die Zurueckweisung durch Max hat ihn tief verletzt.",
+    "timo": "Leon ist enttaeuscht von Timo, der seine Bedenken ignoriert und sich auf Max' Seite gestellt hat. Leon haelt Timo fuer feige, aber nicht fuer boese.",
+    "niklas": "Leon hat Niklas von Anfang an misstraut. Er hat frueher als alle anderen erkannt, dass Niklas Max manipuliert. Seine Warnungen wurden jedoch nicht ernst genommen.",
+    "herr_berger": "Leon respektiert Herrn Berger, traut sich aber nicht, ihn einzuweihen. Diese Hemmschwelle repraesentiert ein reales Problem: Jugendliche wenden sich selten an Erwachsene."
+  },
+  "interventionsversuche": [
+    {
+      "datum": "2024-03",
+      "art": "Oeffentliche Nachfrage im Discord",
+      "reaktion": "Wird als humorlos abgetan",
+      "ergebnis": "Gescheitert"
+    },
+    {
+      "datum": "2024-05",
+      "art": "Persoenliches Gespraech mit Max",
+      "reaktion": "Max wird aggressiv und abweisend",
+      "ergebnis": "Gescheitert"
+    },
+    {
+      "datum": "2024-05",
+      "art": "Gespraech mit Timo, Bitte um Unterstuetzung",
+      "reaktion": "Timo verharmlost und weicht aus",
+      "ergebnis": "Gescheitert"
+    },
+    {
+      "datum": "2024-06",
+      "art": "Oeffentlicher Widerspruch im Discord",
+      "reaktion": "Wird von der Gruppe angegriffen",
+      "ergebnis": "Gescheitert, verschaerft Ausgrenzung"
+    },
+    {
+      "datum": "2024-07",
+      "art": "Letztes persoenliches Gespraech mit Max",
+      "reaktion": "Max bezeichnet ihn als 'Schlafschaf'",
+      "ergebnis": "Endgueltig gescheitert"
+    }
+  ],
+  "screenshots_gesichert": [
+    "discord-memes-apr-2024-01",
+    "discord-general-jun-2024-leon-widerspruch",
+    "tiktok-max-oct-2024-screenshot",
+    "instagram-max-story-dec-2024-screenshot"
+  ],
+  "key_evidence": [
+    "discord-general-mar-2024-01",
+    "discord-general-jun-2024-leon-widerspruch",
+    "whatsapp-timo-leon-may-2024",
+    "leon-screenshots-sammlung-2024",
+    "zeugenaussage-leon-feb-2025"
+  ],
+  "paedagogische_funktion": "Leon zeigt, dass Gleichaltrige Warnsignale oft als Erste erkennen, aber nicht wissen, wie sie damit umgehen sollen. Sein Beispiel verdeutlicht die Notwendigkeit niedrigschwelliger Meldestrukturen und die Frage: Was haettest DU an Leons Stelle getan? Wo haette Leon Hilfe finden koennen?"
+}

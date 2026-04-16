@@ -1,0 +1,53 @@
+{
+  "id": "module-1.0",
+  "title": "Wer ist Max?",
+  "description": "Einführung in den Fall: Wer ist Max, was ist passiert und wie wird ermittelt?",
+  "day_available": 1,
+  "order": 1,
+  "duration_minutes": 10,
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Der Fall Max Hartmann"
+    },
+    {
+      "type": "text",
+      "content": "Max Hartmann ist 17 Jahre alt, besucht die 12. Klasse eines Gymnasiums und ist seit kurzem verschwunden. Seine Eltern und Freunde sind besorgt — in den letzten Monaten hat sich Max zunehmend zurückgezogen, alte Freundschaften aufgegeben und immer mehr Zeit online verbracht. Eure Aufgabe als Ermittlungsteam ist es, anhand seiner digitalen Spuren herauszufinden, was mit Max passiert ist und wie es so weit kommen konnte."
+    },
+    {
+      "type": "heading",
+      "content": "Was wissen wir bisher?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Max war ein durchschnittlicher Schüler mit einem stabilen Freundeskreis.",
+        "Vor etwa sechs Monaten begann er, sich aus seinem sozialen Umfeld zurückzuziehen.",
+        "Er verbrachte immer mehr Zeit in Online-Gaming-Communities und auf bestimmten Plattformen.",
+        "Seine Noten verschlechterten sich, er schwänzte zunehmend die Schule.",
+        "Kurz vor seinem Verschwinden postete er eine kryptische Nachricht in einem Online-Forum."
+      ]
+    },
+    {
+      "type": "heading",
+      "content": "Wie funktioniert die Ermittlung?"
+    },
+    {
+      "type": "text",
+      "content": "In dieser Untersuchung werdet ihr digitale Beweismittel sichten: Chat-Verläufe, Social-Media-Profile, Forenbeiträge und private Nachrichten. Dabei lernt ihr, wie digitale Kommunikation analysiert wird, welche Muster auf eine Radikalisierung hindeuten und wie man Warnsignale frühzeitig erkennen kann. Jeder Tag der Ermittlung deckt neue Hinweise auf und vertieft euer Verständnis für die Mechanismen hinter Online-Radikalisierung."
+    },
+    {
+      "type": "example",
+      "title": "Max' erster Hinweis",
+      "content": "In Max' Browser-Verlauf findet ihr einen Gaming-Discord-Server namens 'Valhalla Knights'. Was zunächst wie eine harmlose Gaming-Community aussieht, entpuppt sich im Laufe der Ermittlung als Einstiegspunkt in ein Netzwerk, das gezielt junge Menschen anspricht."
+    },
+    {
+      "type": "reflection",
+      "question": "Was glaubt ihr: Warum sind gerade Jugendliche in Umbruchphasen — Schulstress, Einsamkeit, Identitätssuche — besonders anfällig für die Ansprache durch radikale Gruppen im Internet?"
+    },
+    {
+      "type": "text",
+      "content": "Wichtig: In dieser Ermittlung geht es nicht darum, Max zu verurteilen. Es geht darum zu verstehen, wie Radikalisierung funktioniert, um sie in Zukunft erkennen und verhindern zu können. Jeder kann in eine solche Situation geraten — das Verständnis der Mechanismen ist der beste Schutz."
+    }
+  ]
+}
