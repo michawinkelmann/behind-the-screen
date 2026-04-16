@@ -74,6 +74,7 @@ window.SocketClient = {
 
     // Game events
     this.socket.on('game:paused', ({ message }) => {
+      if (AppState.get('isAdmin')) return;
       const overlay = document.getElementById('pause-overlay');
       const msg = document.getElementById('pause-message');
       if (overlay) { overlay.classList.add('visible'); }
