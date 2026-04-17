@@ -2,6 +2,8 @@ const db = require('../config/database');
 
 const Interaction = {
   log(teamId, actionType, actionData = {}) {
+    // Admin-Sessions haben teamId=0 und keinen Eintrag in `teams` - FK-Fehler vermeiden.
+    if (!teamId) return;
     db.prepare(`
       INSERT INTO interactions (team_id, action_type, action_data)
       VALUES (?, ?, ?)
