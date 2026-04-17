@@ -55,6 +55,8 @@ window.AdminPanel = {
         <div id="admin-game-state" class="text-sm text-muted"></div>
       </div>
 
+      ${window.TeacherPresentations ? TeacherPresentations.renderAdminSection(() => this._currentDayPhase()) : ''}
+
       <!-- Broadcast -->
       <div class="admin-section">
         <h3>Nachricht senden</h3>
@@ -264,8 +266,19 @@ window.AdminPanel = {
     const heatmapSel = document.getElementById('admin-heatmap-minutes');
     if (heatmapSel) heatmapSel.addEventListener('change', () => this.loadHeatmap());
 
+    if (window.TeacherPresentations) {
+      TeacherPresentations.bindAdminSection(() => this._currentDayPhase());
+    }
+
     // Load connection info
     this.loadConnectionInfo();
+  },
+
+  _currentDayPhase() {
+    const gs = AppState.get('gameState') || {};
+    const day = Number.parseInt(gs.current_day, 10) || 1;
+    const phase = Number.parseInt(gs.current_phase, 10) || 1;
+    return { day, phase };
   },
 
   async loadPresence() {
@@ -402,6 +415,12 @@ window.AdminPanel = {
       const durInput = document.getElementById('admin-duration-input');
       if (durInput && document.activeElement !== durInput) {
         durInput.value = gameState.phase_duration_minutes || 60;
+      }
+
+      const tpLabel = document.getElementById('tp-current-label');
+      if (tpLabel && window.TeacherPresentations) {
+        const phaseName = TeacherPresentations.PHASE_NAMES[gameState.current_phase] || gameState.current_phase;
+        tpLabel.textContent = `Aktuell: Tag ${gameState.current_day} - ${phaseName}`;
       }
 
       // Teams
