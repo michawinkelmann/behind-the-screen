@@ -4,6 +4,10 @@ const Team = require('../models/Team');
 const Evidence = require('../models/Evidence');
 const Progress = require('../models/Progress');
 const Interaction = require('../models/Interaction');
+const AuditLog = require('../models/AuditLog');
+const Presence = require('../models/Presence');
+const Session = require('../models/Session');
+const Export = require('../utils/export-markdown');
 const { adminMiddleware } = require('./auth');
 
 const router = express.Router();
@@ -12,6 +16,10 @@ const BROADCAST_MAX_LEN = 500;
 const PAUSE_MSG_MAX_LEN = 200;
 
 router.use(adminMiddleware);
+
+function audit(req, action, details = {}) {
+  try { AuditLog.record(action, details, req.ip || ''); } catch (e) {}
+}
 
 // GET /api/admin/gamestate
 router.get('/gamestate', (req, res) => {
@@ -29,6 +37,7 @@ router.post('/pause', (req, res) => {
   db.prepare('UPDATE game_state SET is_paused = 1 WHERE id = 1').run();
   const gameState = db.prepare('SELECT * FROM game_state WHERE id = 1').get();
   req.app.get('io').emit('game:paused', { message });
+  audit(req, 'game.pause', { message });
   res.json({ gameState });
 });
 
@@ -37,6 +46,7 @@ router.post('/resume', (req, res) => {
   db.prepare('UPDATE game_state SET is_paused = 0 WHERE id = 1').run();
   const gameState = db.prepare('SELECT * FROM game_state WHERE id = 1').get();
   req.app.get('io').emit('game:resumed', {});
+  audit(req, 'game.resume');
   res.json({ gameState });
 });
 
@@ -58,6 +68,7 @@ router.post('/advance-phase', (req, res) => {
 
   const gameState = db.prepare('SELECT * FROM game_state WHERE id = 1').get();
   req.app.get('io').emit('game:phase-changed', { gameState });
+  audit(req, 'game.advance-phase', { from: { day: current.current_day, phase: current.current_phase }, to: { day: newDay, phase: newPhase } });
   res.json({ gameState });
 });
 
@@ -74,6 +85,7 @@ router.post('/set-day', (req, res) => {
 
   const gameState = db.prepare('SELECT * FROM game_state WHERE id = 1').get();
   req.app.get('io').emit('game:phase-changed', { gameState });
+  audit(req, 'game.set-day', { day });
   res.json({ gameState });
 });
 
@@ -87,17 +99,19 @@ router.post('/broadcast', (req, res) => {
 
   db.prepare('UPDATE game_state SET teacher_message = ? WHERE id = 1').run(message);
   req.app.get('io').emit('admin:broadcast', { message, timestamp: new Date().toISOString() });
+  audit(req, 'admin.broadcast', { message });
   res.json({ success: true });
 });
 
-// POST /api/admin/clear-broadcast - dismiss the current teacher message
+// POST /api/admin/clear-broadcast
 router.post('/clear-broadcast', (req, res) => {
   db.prepare("UPDATE game_state SET teacher_message = '' WHERE id = 1").run();
   req.app.get('io').emit('admin:broadcast-cleared', {});
+  audit(req, 'admin.clear-broadcast');
   res.json({ success: true });
 });
 
-// POST /api/admin/set-duration - change phase duration in minutes
+// POST /api/admin/set-duration
 router.post('/set-duration', (req, res) => {
   const minutes = Number.parseInt(req.body && req.body.minutes, 10);
   if (!Number.isInteger(minutes) || minutes < 1 || minutes > 240) {
@@ -106,6 +120,7 @@ router.post('/set-duration', (req, res) => {
   db.prepare('UPDATE game_state SET phase_duration_minutes = ? WHERE id = 1').run(minutes);
   const gameState = db.prepare('SELECT * FROM game_state WHERE id = 1').get();
   req.app.get('io').emit('game:phase-changed', { gameState });
+  audit(req, 'game.set-duration', { minutes });
   res.json({ gameState });
 });
 
@@ -116,7 +131,26 @@ router.get('/activity', (req, res) => {
   res.json({ recent, teamActivity });
 });
 
-// GET /api/admin/export
+// GET /api/admin/presence - live socket-derived presence for each team
+router.get('/presence', (req, res) => {
+  res.json({ presence: Presence.snapshot() });
+});
+
+// GET /api/admin/heatmap?minutes=60&bucket=5 - activity heatmap per team
+router.get('/heatmap', (req, res) => {
+  const minutes = Math.max(5, Math.min(360, Number.parseInt(req.query.minutes, 10) || 60));
+  const bucket = Math.max(1, Math.min(30, Number.parseInt(req.query.bucket, 10) || 5));
+  res.json(Presence.heatmap(minutes, bucket));
+});
+
+// GET /api/admin/audit - paginated audit log
+router.get('/audit', (req, res) => {
+  const limit = Math.max(1, Math.min(500, Number.parseInt(req.query.limit, 10) || 100));
+  const offset = Math.max(0, Number.parseInt(req.query.offset, 10) || 0);
+  res.json({ entries: AuditLog.list(limit, offset), total: AuditLog.count() });
+});
+
+// GET /api/admin/export (JSON)
 router.get('/export', (req, res) => {
   const gameState = db.prepare('SELECT * FROM game_state WHERE id = 1').get();
   const teams = Team.getAllWithProgress();
@@ -126,12 +160,22 @@ router.get('/export', (req, res) => {
   const interactions = db.prepare('SELECT * FROM interactions ORDER BY timestamp DESC LIMIT 2000').all();
 
   res.setHeader('Content-Disposition', 'attachment; filename="behind-the-screen-export.json"');
+  audit(req, 'admin.export', { format: 'json' });
   res.json({
     exportDate: new Date().toISOString(),
     gameState, teams, notes, comments,
     discoveredEvidence: discovered,
     recentInteractions: interactions
   });
+});
+
+// GET /api/admin/export/markdown - human-readable classroom debrief
+router.get('/export/markdown', (req, res) => {
+  const md = Export.buildMarkdownExport();
+  res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+  res.setHeader('Content-Disposition', 'attachment; filename="behind-the-screen-export.md"');
+  audit(req, 'admin.export', { format: 'markdown' });
+  res.send(md);
 });
 
 // POST /api/admin/reset
@@ -142,6 +186,7 @@ router.post('/reset', (req, res) => {
     db.prepare('DELETE FROM interactions').run();
     Evidence.resetDiscoveries();
     Progress.resetAll();
+    Session.destroyAll();
     db.prepare(
       "UPDATE game_state SET current_day = 1, current_phase = 1, is_paused = 0, teacher_message = '', phase_start_time = datetime('now') WHERE id = 1"
     ).run();
@@ -149,6 +194,7 @@ router.post('/reset', (req, res) => {
   reset();
 
   req.app.get('io').emit('game:reset', {});
+  audit(req, 'admin.reset');
   res.json({ success: true });
 });
 

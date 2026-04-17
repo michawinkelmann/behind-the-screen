@@ -54,11 +54,81 @@ window.LearningHub = {
       }).join('');
     }
 
+    html += `
+      <div style="margin-top:1rem; padding-top:0.75rem; border-top:1px solid var(--border);">
+        <button class="btn btn-secondary btn-sm w-full" id="export-reflections-btn">Reflexionen exportieren</button>
+      </div>
+    `;
+
     container.innerHTML = html;
 
     container.querySelectorAll('[data-module-id]').forEach(item => {
       item.addEventListener('click', () => this.showModule(item.dataset.moduleId));
     });
+    const exportBtn = container.querySelector('#export-reflections-btn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => this.exportReflections());
+    }
+  },
+
+  exportReflections() {
+    const team = AppState.get('team') || {};
+    const prefix = `bts_reflection:${team.id || 'anon'}:`;
+    const entries = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key || !key.startsWith(prefix)) continue;
+      const rest = key.slice(prefix.length);
+      const colon = rest.indexOf(':');
+      if (colon < 0) continue;
+      const moduleId = rest.slice(0, colon);
+      const question = rest.slice(colon + 1);
+      const answer = localStorage.getItem(key) || '';
+      if (!answer.trim()) continue;
+      entries.push({ moduleId, question, answer });
+    }
+
+    if (entries.length === 0) {
+      Notifications.show('Keine gespeicherten Antworten gefunden.', 'info');
+      return;
+    }
+
+    const modules = new Map(this._modules.map(m => [m.id, m]));
+    const byModule = new Map();
+    for (const e of entries) {
+      if (!byModule.has(e.moduleId)) byModule.set(e.moduleId, []);
+      byModule.get(e.moduleId).push(e);
+    }
+
+    const lines = [];
+    lines.push(`# Reflexionen - ${team.name || 'Team'}`);
+    lines.push('');
+    lines.push(`_Exportiert: ${new Date().toLocaleString('de-DE')}_`);
+    lines.push('');
+    for (const [moduleId, list] of byModule) {
+      const mod = modules.get(moduleId);
+      lines.push(`## ${mod ? mod.title : moduleId}`);
+      lines.push('');
+      if (mod && mod.day) lines.push(`_Tag ${mod.day}${mod.duration ? ' - ' + mod.duration : ''}_`);
+      lines.push('');
+      for (const e of list) {
+        lines.push(`**Frage:** ${e.question}`);
+        lines.push('');
+        lines.push(e.answer.split(/\r?\n/).map(l => '> ' + l).join('\n'));
+        lines.push('');
+      }
+    }
+
+    const blob = new Blob([lines.join('\n')], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `reflexionen-${(team.name || 'team').replace(/[^a-z0-9]/gi, '_')}.md`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    Notifications.show('Reflexionen exportiert.', 'success');
   },
 
   async showModule(moduleId) {

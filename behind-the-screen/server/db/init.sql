@@ -114,7 +114,30 @@ CREATE TABLE IF NOT EXISTS interactions (
   FOREIGN KEY(team_id) REFERENCES teams(id)
 );
 
+-- Persistent sessions (survives server restart)
+CREATE TABLE IF NOT EXISTS sessions (
+  token TEXT PRIMARY KEY,
+  team_id INTEGER NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  last_used TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  expires_at TIMESTAMP NOT NULL,
+  FOREIGN KEY(team_id) REFERENCES teams(id) ON DELETE CASCADE
+);
+
+-- Admin audit log (phase changes, broadcasts, resets, exports)
+CREATE TABLE IF NOT EXISTS admin_audit_log (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  actor TEXT DEFAULT 'admin',
+  action TEXT NOT NULL,
+  details TEXT DEFAULT '{}',
+  ip TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Indexes for common queries
+CREATE INDEX IF NOT EXISTS idx_sessions_team ON sessions(team_id);
+CREATE INDEX IF NOT EXISTS idx_sessions_expires ON sessions(expires_at);
+CREATE INDEX IF NOT EXISTS idx_audit_created ON admin_audit_log(created_at);
 CREATE INDEX IF NOT EXISTS idx_evidence_spur ON evidence(spur);
 CREATE INDEX IF NOT EXISTS idx_evidence_type ON evidence(type);
 CREATE INDEX IF NOT EXISTS idx_evidence_date ON evidence(date);

@@ -173,3 +173,15 @@ function showBroadcastBanner(message) {
   }
 }
 window.showBroadcastBanner = showBroadcastBanner;
+
+// Close button for the broadcast banner (replaces former inline onclick; needed
+// for strict CSP).
+document.addEventListener('DOMContentLoaded', () => {
+  const closeBtn = document.getElementById('broadcast-close-btn');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      const banner = document.getElementById('broadcast-banner');
+      if (banner) banner.classList.remove('visible');
+    });
+  }
+});

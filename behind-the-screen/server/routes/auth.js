@@ -1,25 +1,48 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const Team = require('../models/Team');
+const Session = require('../models/Session');
 
 const router = express.Router();
 
-// In-memory session store (sufficient for local classroom use).
-// Persistence across restarts is handled client-side: teams re-authenticate
-// automatically via /login (password cached) and admin via adminPassword.
-const sessions = new Map();
+// Admin tokens are kept in-memory only (short-lived, no team row to reference).
+// Team sessions live in the `sessions` table and survive restarts.
+const adminTokens = new Map(); // token -> { createdAt }
+const ADMIN_TOKEN_TTL_MS = 12 * 60 * 60 * 1000; // 12h
 
-// Middleware to check auth
+function pruneAdminTokens() {
+  const cutoff = Date.now() - ADMIN_TOKEN_TTL_MS;
+  for (const [t, data] of adminTokens) {
+    if (data.createdAt < cutoff) adminTokens.delete(t);
+  }
+}
+setInterval(pruneAdminTokens, 60 * 60 * 1000).unref();
+setInterval(() => Session.pruneExpired(), 60 * 60 * 1000).unref();
+
+function resolveToken(token) {
+  if (!token || typeof token !== 'string') return null;
+  if (adminTokens.has(token)) {
+    const entry = adminTokens.get(token);
+    if (Date.now() - entry.createdAt > ADMIN_TOKEN_TTL_MS) {
+      adminTokens.delete(token);
+      return null;
+    }
+    return { id: 0, name: 'Admin', isAdmin: true };
+  }
+  return Session.getTeam(token);
+}
+
 function authMiddleware(req, res, next) {
   const token = req.headers['x-session-token'];
-  if (!token || !sessions.has(token)) {
+  const team = resolveToken(token);
+  if (!team) {
     return res.status(401).json({ error: 'Nicht angemeldet' });
   }
-  req.team = sessions.get(token);
+  req.team = team;
+  req.sessionToken = token;
   next();
 }
 
-// Admin auth middleware
 function adminMiddleware(req, res, next) {
   const adminPw = req.headers['x-admin-token'];
   if (!adminPw || adminPw !== process.env.ADMIN_PASSWORD) {
@@ -28,7 +51,6 @@ function adminMiddleware(req, res, next) {
   next();
 }
 
-// Validation constants
 const NAME_MIN = 2;
 const NAME_MAX = 40;
 const PW_MIN = 4;
@@ -49,8 +71,6 @@ function validateCredentials(name, password) {
   return null;
 }
 
-// Tiny in-memory rate limiter (per IP+route). Enough to slow brute-force on a
-// LAN without adding a dependency.
 const attemptLog = new Map();
 function rateLimit(key, max, windowMs) {
   const now = Date.now();
@@ -72,7 +92,6 @@ function clientKey(req, bucket) {
   return `${bucket}:${req.ip}`;
 }
 
-// POST /api/auth/register
 router.post('/register', (req, res) => {
   if (rateLimit(clientKey(req, 'register'), 10, 60 * 60 * 1000)) {
     return res.status(429).json({ error: 'Zu viele Registrierungen - bitte warten' });
@@ -87,8 +106,7 @@ router.post('/register', (req, res) => {
 
   try {
     const team = Team.create(name.trim(), password, primarySpur);
-    const token = uuidv4();
-    sessions.set(token, team);
+    const token = Session.createForTeam(team.id);
     res.json({ team, token });
   } catch (e) {
     if (e.message && e.message.includes('UNIQUE')) {
@@ -99,7 +117,6 @@ router.post('/register', (req, res) => {
   }
 });
 
-// POST /api/auth/login
 router.post('/login', (req, res) => {
   if (rateLimit(clientKey(req, 'login'), 20, 15 * 60 * 1000)) {
     return res.status(429).json({ error: 'Zu viele Login-Versuche - bitte spaeter erneut' });
@@ -115,12 +132,10 @@ router.post('/login', (req, res) => {
     return res.status(401).json({ error: 'Falsche Anmeldedaten' });
   }
 
-  const token = uuidv4();
-  sessions.set(token, team);
+  const token = Session.createForTeam(team.id);
   res.json({ team, token });
 });
 
-// POST /api/auth/admin-login
 router.post('/admin-login', (req, res) => {
   if (rateLimit(clientKey(req, 'admin-login'), 10, 15 * 60 * 1000)) {
     return res.status(429).json({ error: 'Zu viele Login-Versuche - bitte spaeter erneut' });
@@ -131,20 +146,26 @@ router.post('/admin-login', (req, res) => {
     return res.status(401).json({ error: 'Falsches Admin-Passwort' });
   }
   const token = 'admin-' + uuidv4();
-  sessions.set(token, { id: 0, name: 'Admin', isAdmin: true });
+  adminTokens.set(token, { createdAt: Date.now() });
   res.json({ token, isAdmin: true });
 });
 
-// GET /api/auth/me - used by clients to verify an existing session
 router.get('/me', authMiddleware, (req, res) => {
   res.json({ team: req.team });
 });
 
-// POST /api/auth/logout - invalidate current session
 router.post('/logout', (req, res) => {
   const token = req.headers['x-session-token'];
-  if (token) sessions.delete(token);
+  if (token) {
+    if (adminTokens.has(token)) adminTokens.delete(token);
+    else Session.destroy(token);
+  }
   res.json({ success: true });
 });
 
-module.exports = { router, authMiddleware, adminMiddleware, sessions };
+module.exports = {
+  router,
+  authMiddleware,
+  adminMiddleware,
+  resolveToken
+};
