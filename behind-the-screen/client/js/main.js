@@ -241,7 +241,7 @@
   }
 
   // Exposed for socket events
-  window.updateNavInfo = function() {
+  function updateNavInfo() {
     const state = AppState.get('gameState');
     if (!state) return;
 
@@ -290,7 +290,8 @@
       if (cur && cur.is_paused) return;
       updateLabel();
     }, 1000);
-  };
+  }
+  window.updateNavInfo = updateNavInfo;
 
   function escapeHTML(str) {
     const div = document.createElement('div');
