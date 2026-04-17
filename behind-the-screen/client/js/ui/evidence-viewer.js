@@ -78,9 +78,15 @@ window.EvidenceViewer = {
 
     document.getElementById('modal-container').appendChild(modal);
 
-    // Close handlers
-    modal.querySelector('#evidence-modal-close').addEventListener('click', () => modal.remove());
-    modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+    // Close handlers - button, overlay click and Escape key
+    const closeModal = () => {
+      modal.remove();
+      document.removeEventListener('keydown', onKey);
+    };
+    const onKey = (e) => { if (e.key === 'Escape') closeModal(); };
+    modal.querySelector('#evidence-modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', onKey);
 
     // Pin to board
     modal.querySelector('#evidence-pin-btn').addEventListener('click', async () => {
@@ -114,9 +120,8 @@ window.EvidenceViewer = {
       }
     });
 
-    // Discover the evidence
+    // Discover the evidence (server broadcasts to others via socket)
     API.discoverEvidence(evidence.id).catch(() => {});
-    SocketClient.discoverEvidence(evidence.id);
   },
 
   renderImportance(level) {

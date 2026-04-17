@@ -17,7 +17,13 @@ const Progress = {
     const progress = this.getByTeamId(teamId);
     if (!progress) return null;
 
-    const completed = JSON.parse(progress.modules_completed || '[]');
+    let completed;
+    try {
+      completed = JSON.parse(progress.modules_completed || '[]');
+      if (!Array.isArray(completed)) completed = [];
+    } catch (e) {
+      completed = [];
+    }
     if (!completed.includes(moduleId)) {
       completed.push(moduleId);
       db.prepare('UPDATE progress SET modules_completed = ? WHERE team_id = ?')

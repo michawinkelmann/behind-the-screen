@@ -9,20 +9,32 @@ const router = express.Router();
 
 const modulesDir = path.join(__dirname, '..', 'data', 'modules');
 
+// Cache modules after first load - files only change between server restarts.
+let _modulesCache = null;
 function loadModules() {
-  if (!fs.existsSync(modulesDir)) return [];
-  return fs.readdirSync(modulesDir)
+  if (_modulesCache) return _modulesCache;
+  if (!fs.existsSync(modulesDir)) {
+    _modulesCache = [];
+    return _modulesCache;
+  }
+  _modulesCache = fs.readdirSync(modulesDir)
     .filter(f => f.endsWith('.json'))
     .map(f => {
-      const data = JSON.parse(fs.readFileSync(path.join(modulesDir, f), 'utf8'));
-      return data;
+      try {
+        return JSON.parse(fs.readFileSync(path.join(modulesDir, f), 'utf8'));
+      } catch (e) {
+        console.error(`Modul ${f} ist ungueltig:`, e.message);
+        return null;
+      }
     })
+    .filter(Boolean)
     .sort((a, b) => {
       const dayA = a.day_available || a.day || 0;
       const dayB = b.day_available || b.day || 0;
       if (dayA !== dayB) return dayA - dayB;
       return (a.order || 0) - (b.order || 0);
     });
+  return _modulesCache;
 }
 
 // GET /api/modules
@@ -61,6 +73,18 @@ router.get('/:id', authMiddleware, (req, res) => {
 
 // POST /api/modules/:id/complete
 router.post('/:id/complete', authMiddleware, (req, res) => {
+  const db = require('../config/database');
+  const module = loadModules().find(m => m.id === req.params.id);
+  if (!module) {
+    return res.status(404).json({ error: 'Modul nicht gefunden' });
+  }
+  const gameState = db.prepare('SELECT current_day FROM game_state WHERE id = 1').get();
+  const currentDay = gameState ? gameState.current_day : 1;
+  const moduleDay = module.day_available || module.day || 1;
+  if (moduleDay > currentDay) {
+    return res.status(400).json({ error: 'Modul fuer diesen Tag noch nicht freigeschaltet' });
+  }
+
   const progress = Progress.completeModule(req.team.id, req.params.id);
   Interaction.log(req.team.id, 'module_complete', { moduleId: req.params.id });
   res.json({ progress });

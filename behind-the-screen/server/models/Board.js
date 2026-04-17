@@ -2,21 +2,20 @@ const db = require('../config/database');
 
 const Board = {
   createNote({ teamId, title, content, columnName, tags, evidenceLinks }) {
-    const stmt = db.prepare(`
-      INSERT INTO board_notes (team_id, title, content, column_name, tags, evidence_links)
-      VALUES (?, ?, ?, ?, ?, ?)
-    `);
-    const result = stmt.run(
-      teamId, title, content || '',
-      columnName || 'timeline',
-      JSON.stringify(tags || []),
-      JSON.stringify(evidenceLinks || [])
-    );
-
-    // Update team progress
-    db.prepare('UPDATE progress SET notes_created = notes_created + 1 WHERE team_id = ?').run(teamId);
-
-    return this.getNoteById(result.lastInsertRowid);
+    const run = db.transaction(() => {
+      const result = db.prepare(`
+        INSERT INTO board_notes (team_id, title, content, column_name, tags, evidence_links)
+        VALUES (?, ?, ?, ?, ?, ?)
+      `).run(
+        teamId, title, content || '',
+        columnName || 'timeline',
+        JSON.stringify(tags || []),
+        JSON.stringify(evidenceLinks || [])
+      );
+      db.prepare('UPDATE progress SET notes_created = notes_created + 1 WHERE team_id = ?').run(teamId);
+      return result.lastInsertRowid;
+    });
+    return this.getNoteById(run());
   },
 
   getNoteById(id) {
@@ -81,16 +80,20 @@ const Board = {
   },
 
   addComment(noteId, teamId, content) {
-    const stmt = db.prepare(`
-      INSERT INTO board_comments (note_id, team_id, content) VALUES (?, ?, ?)
-    `);
-    const result = stmt.run(noteId, teamId, content);
-    return db.prepare(`
-      SELECT bc.*, t.name as team_name
-      FROM board_comments bc
-      JOIN teams t ON bc.team_id = t.id
-      WHERE bc.id = ?
-    `).get(result.lastInsertRowid);
+    try {
+      const result = db.prepare(`
+        INSERT INTO board_comments (note_id, team_id, content) VALUES (?, ?, ?)
+      `).run(noteId, teamId, content);
+      return db.prepare(`
+        SELECT bc.*, t.name as team_name
+        FROM board_comments bc
+        JOIN teams t ON bc.team_id = t.id
+        WHERE bc.id = ?
+      `).get(result.lastInsertRowid);
+    } catch (e) {
+      // Foreign-key fails when the parent note or team no longer exists.
+      return null;
+    }
   },
 
   getComments(noteId) {
