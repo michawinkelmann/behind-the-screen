@@ -39,6 +39,16 @@ const Evidence = {
   },
 
   discover(id, teamId) {
+    const evidence = this.getById(id);
+    if (!evidence) return null;
+
+    // Admin-Sessions haben teamId=0 und keinen Eintrag in `teams`: Nur anzeigen,
+    // keinen Discovery-Claim setzen, FK-Fehler vermeiden.
+    if (!teamId) {
+      evidence._firstDiscovery = false;
+      return evidence;
+    }
+
     // Atomic claim: only the first team to hit this row flips is_discovered,
     // and only that flip triggers a progress increment.
     const run = db.transaction(() => {
@@ -58,8 +68,6 @@ const Evidence = {
       return { claimed: false };
     });
 
-    const evidence = this.getById(id);
-    if (!evidence) return null;
     const result = run();
     const after = this.getById(id);
     if (after) after._firstDiscovery = result.claimed;
