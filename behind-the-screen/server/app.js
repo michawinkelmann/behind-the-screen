@@ -55,6 +55,29 @@ app.set('io', io);
 app.use(express.json({ limit: '256kb' }));
 app.use(express.urlencoded({ extended: true, limit: '64kb' }));
 
+// Security headers. CSP is strict: scripts and styles only from this origin,
+// images may come from data: URIs and the QR service used in the admin panel.
+// Socket.IO uses same-origin WebSockets so connect-src 'self' is enough.
+app.use((req, res, next) => {
+  res.setHeader('Content-Security-Policy', [
+    "default-src 'self'",
+    "script-src 'self'",
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data: https://api.qrserver.com",
+    "font-src 'self' data:",
+    "connect-src 'self' ws: wss:",
+    "frame-ancestors 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "object-src 'none'"
+  ].join('; '));
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('Referrer-Policy', 'same-origin');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('Permissions-Policy', 'geolocation=(), microphone=(), camera=()');
+  next();
+});
+
 // Serve client files
 app.use(express.static(path.join(__dirname, '..', 'client')));
 

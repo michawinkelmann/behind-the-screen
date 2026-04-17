@@ -1,5 +1,6 @@
 const Interaction = require('../models/Interaction');
-const { sessions } = require('../routes/auth');
+const { resolveToken } = require('../routes/auth');
+const Presence = require('../models/Presence');
 
 const CHAT_MIN_INTERVAL_MS = 500;
 const CHAT_MAX_LEN = 500;
@@ -16,11 +17,12 @@ function setupSocketHandlers(io) {
     }, UNAUTH_TIMEOUT_MS);
 
     socket.on('auth', ({ token } = {}) => {
-      if (typeof token !== 'string' || !sessions.has(token)) {
+      const team = resolveToken(token);
+      if (!team) {
         socket.emit('auth:error', { error: 'Ungueltiger Token' });
         return;
       }
-      currentTeam = sessions.get(token);
+      currentTeam = team;
       clearTimeout(authTimeout);
 
       socket.join('authenticated');
@@ -33,6 +35,7 @@ function setupSocketHandlers(io) {
       socket.emit('auth:success', { team: currentTeam });
 
       if (currentTeam.id) {
+        Presence.addSocket(currentTeam.id, currentTeam.name, socket.id);
         socket.to('authenticated').emit('team:online', {
           teamId: currentTeam.id,
           teamName: currentTeam.name
@@ -60,6 +63,7 @@ function setupSocketHandlers(io) {
       };
       io.to('authenticated').emit('chat:message', chatMessage);
       Interaction.log(currentTeam.id, 'chat_message', { message: clean.substring(0, 100) });
+      Presence.touch(currentTeam.id);
     });
 
     // Team ready signal - for collaborative "we're done with this phase"
@@ -74,10 +78,13 @@ function setupSocketHandlers(io) {
     socket.on('disconnect', () => {
       clearTimeout(authTimeout);
       if (currentTeam && currentTeam.id) {
-        socket.to('authenticated').emit('team:offline', {
-          teamId: currentTeam.id,
-          teamName: currentTeam.name
-        });
+        const stillOnline = Presence.removeSocket(currentTeam.id, socket.id);
+        if (!stillOnline) {
+          socket.to('authenticated').emit('team:offline', {
+            teamId: currentTeam.id,
+            teamName: currentTeam.name
+          });
+        }
       }
     });
   });

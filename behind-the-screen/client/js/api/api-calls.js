@@ -178,6 +178,18 @@ window.API = {
     return this._fetch('/api/admin/activity');
   },
 
+  async adminGetPresence() {
+    return this._fetch('/api/admin/presence');
+  },
+
+  async adminGetHeatmap(minutes = 60, bucket = 5) {
+    return this._fetch(`/api/admin/heatmap?minutes=${minutes}&bucket=${bucket}`);
+  },
+
+  async adminGetAudit(limit = 100, offset = 0) {
+    return this._fetch(`/api/admin/audit?limit=${limit}&offset=${offset}`);
+  },
+
   async adminExport() {
     return this._fetch('/api/admin/export');
   },

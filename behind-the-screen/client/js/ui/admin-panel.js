@@ -86,10 +86,39 @@ window.AdminPanel = {
         <div id="admin-board-notes" style="margin-top:0.75rem; max-height:420px; overflow-y:auto;"></div>
       </div>
 
+      <!-- Presence -->
+      <div class="admin-section">
+        <h3>Team-Praesenz <span class="text-xs text-muted" id="admin-presence-count"></span></h3>
+        <div id="admin-presence-list" class="text-sm"></div>
+      </div>
+
+      <!-- Heatmap -->
+      <div class="admin-section">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+          <h3 style="margin:0;">Aktivitaets-Heatmap</h3>
+          <div>
+            <label class="text-xs text-muted">Fenster:</label>
+            <select id="admin-heatmap-minutes" style="font-size:0.8rem;">
+              <option value="30">30 Min.</option>
+              <option value="60" selected>60 Min.</option>
+              <option value="120">2 Std.</option>
+              <option value="240">4 Std.</option>
+            </select>
+          </div>
+        </div>
+        <div id="admin-heatmap" style="margin-top:0.5rem;"></div>
+      </div>
+
       <!-- Activity Log -->
       <div class="admin-section">
         <h3>Aktivitaet</h3>
         <div id="admin-activity-log" style="max-height:300px; overflow-y:auto;"></div>
+      </div>
+
+      <!-- Audit Log -->
+      <div class="admin-section">
+        <h3>Admin-Audit-Log <span class="text-xs text-muted" id="admin-audit-count"></span></h3>
+        <div id="admin-audit-log" style="max-height:260px; overflow-y:auto;"></div>
       </div>
 
       <!-- Evidence Stats -->
@@ -102,7 +131,8 @@ window.AdminPanel = {
       <div class="admin-section">
         <h3 style="color:var(--warning);">Gefahrenzone</h3>
         <button class="btn btn-danger" id="admin-reset-btn">Spiel zuruecksetzen</button>
-        <button class="btn btn-secondary" id="admin-export-btn" style="margin-left:0.5rem;">Daten exportieren</button>
+        <button class="btn btn-secondary" id="admin-export-btn" style="margin-left:0.5rem;">JSON-Export</button>
+        <button class="btn btn-secondary" id="admin-export-md-btn" style="margin-left:0.5rem;">Markdown-Export</button>
       </div>
     `;
 
@@ -208,8 +238,119 @@ window.AdminPanel = {
       Notifications.show('Export heruntergeladen', 'success');
     });
 
+    document.getElementById('admin-export-md-btn').addEventListener('click', async () => {
+      try {
+        const res = await fetch('/api/admin/export/markdown', {
+          headers: {
+            'X-Admin-Token': AppState.get('adminPassword') || '',
+            'X-Session-Token': AppState.get('token') || ''
+          }
+        });
+        if (!res.ok) throw new Error('Export fehlgeschlagen');
+        const text = await res.text();
+        const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'behind-the-screen-export.md';
+        a.click();
+        URL.revokeObjectURL(url);
+        Notifications.show('Markdown-Export heruntergeladen', 'success');
+      } catch (e) {
+        Notifications.show('Fehler: ' + e.message, 'warning');
+      }
+    });
+
+    const heatmapSel = document.getElementById('admin-heatmap-minutes');
+    if (heatmapSel) heatmapSel.addEventListener('change', () => this.loadHeatmap());
+
     // Load connection info
     this.loadConnectionInfo();
+  },
+
+  async loadPresence() {
+    try {
+      const { presence } = await API.adminGetPresence();
+      const el = document.getElementById('admin-presence-list');
+      const count = document.getElementById('admin-presence-count');
+      if (!el) return;
+      if (count) count.textContent = `(${presence.length} online)`;
+      if (presence.length === 0) {
+        el.innerHTML = '<div class="text-muted">Aktuell keine Teams online.</div>';
+        return;
+      }
+      el.innerHTML = presence.map(p => {
+        const idleLabel = p.idleSeconds < 60
+          ? 'aktiv'
+          : p.idleSeconds < 300 ? `${Math.round(p.idleSeconds / 60)} Min. idle` : `${Math.round(p.idleSeconds / 60)} Min. idle`;
+        const color = p.idleSeconds < 60 ? 'var(--success)' : p.idleSeconds < 300 ? 'var(--warning)' : 'var(--text-muted)';
+        return `
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:0.3rem 0; border-bottom:1px solid var(--border);">
+            <span><strong>${this.escapeHTML(p.teamName || 'Team')}</strong>
+              <span class="text-xs text-muted" style="margin-left:0.4rem;">${p.sockets} Tab${p.sockets !== 1 ? 's' : ''}</span>
+            </span>
+            <span class="text-xs" style="color:${color};">${idleLabel}</span>
+          </div>
+        `;
+      }).join('');
+    } catch (e) {}
+  },
+
+  async loadHeatmap() {
+    try {
+      const sel = document.getElementById('admin-heatmap-minutes');
+      const minutes = sel ? parseInt(sel.value, 10) || 60 : 60;
+      const data = await API.adminGetHeatmap(minutes, 5);
+      const el = document.getElementById('admin-heatmap');
+      if (!el) return;
+      if (!data.teams || data.teams.length === 0) {
+        el.innerHTML = '<div class="text-muted text-sm">Noch keine Aktivitaet im gewaehlten Fenster.</div>';
+        return;
+      }
+      const max = Math.max(1, ...data.teams.flatMap(t => t.counts));
+      el.innerHTML = data.teams.map(t => `
+        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.2rem;">
+          <div style="width:110px; font-size:0.78rem;" title="${this.escapeHTML(t.teamName || '')}">${this.escapeHTML((t.teamName || '-').slice(0, 14))}</div>
+          <div style="display:flex; gap:2px; flex:1;">
+            ${t.counts.map(c => {
+              const intensity = Math.min(1, c / max);
+              const alpha = c === 0 ? 0.08 : 0.2 + intensity * 0.8;
+              return `<div title="${c} Aktionen" style="flex:1; height:18px; background:rgba(99, 179, 237, ${alpha}); border-radius:2px;"></div>`;
+            }).join('')}
+          </div>
+          <div style="width:40px; text-align:right; font-size:0.78rem; color:var(--text-muted);">${t.total}</div>
+        </div>
+      `).join('') + `<div class="text-xs text-muted" style="margin-top:0.3rem;">Je Spalte = ${data.bucketMinutes} Minuten (links = alt, rechts = neu)</div>`;
+    } catch (e) {}
+  },
+
+  async loadAudit() {
+    try {
+      const { entries, total } = await API.adminGetAudit(30, 0);
+      const el = document.getElementById('admin-audit-log');
+      const count = document.getElementById('admin-audit-count');
+      if (count) count.textContent = `(${total})`;
+      if (!el) return;
+      if (!entries || entries.length === 0) {
+        el.innerHTML = '<div class="text-muted text-sm">Noch keine Admin-Aktionen protokolliert.</div>';
+        return;
+      }
+      el.innerHTML = entries.map(e => {
+        let details = '';
+        try {
+          const d = JSON.parse(e.details || '{}');
+          const parts = Object.entries(d).map(([k, v]) => `${k}=${typeof v === 'object' ? JSON.stringify(v) : String(v).slice(0, 60)}`);
+          if (parts.length) details = parts.join(' | ');
+        } catch (_) {}
+        return `
+          <div style="font-size:0.78rem; padding:0.25rem 0; border-bottom:1px solid var(--border);">
+            <span style="color:var(--accent); font-weight:600;">${this.escapeHTML(e.action)}</span>
+            ${details ? `<span class="text-muted" style="margin-left:0.3rem;">${this.escapeHTML(details)}</span>` : ''}
+            <span class="text-muted" style="float:right;">${new Date(e.created_at).toLocaleTimeString('de-DE', {hour:'2-digit', minute:'2-digit', second:'2-digit'})}</span>
+          </div>
+        `;
+      }).join('');
+    } catch (e) {}
   },
 
   async loadConnectionInfo() {
@@ -226,15 +367,21 @@ window.AdminPanel = {
             </div>
             <div class="text-xs text-muted mt-1">Schueler geben diese URL im Browser ein (PC oder iPad)</div>
           </div>
-          <div style="text-align:center;">
+          <div style="text-align:center;" id="admin-qr-wrap">
             <div style="font-weight:600; margin-bottom:0.5rem;">QR-Code:</div>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(info.url)}"
-                 alt="QR Code" style="border-radius:8px; background:#fff; padding:8px;" width="160" height="160"
-                 onerror="this.parentElement.innerHTML='<div class=\\'text-muted text-sm\\'>QR-Code benoetigt Internet</div>'">
+            <img id="admin-qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(info.url)}"
+                 alt="QR Code" style="border-radius:8px; background:#fff; padding:8px;" width="160" height="160">
             <div class="text-xs text-muted mt-1">Scannen zum Verbinden</div>
           </div>
         </div>
       `;
+      const qr = document.getElementById('admin-qr-img');
+      if (qr) {
+        qr.addEventListener('error', () => {
+          const wrap = document.getElementById('admin-qr-wrap');
+          if (wrap) wrap.innerHTML = '<div class="text-muted text-sm">QR-Code benoetigt Internet</div>';
+        });
+      }
     } catch (e) {
       document.getElementById('admin-connection-info').innerHTML = '<div class="text-muted">Server-Info nicht verfuegbar</div>';
     }
@@ -307,6 +454,13 @@ window.AdminPanel = {
           <span class="text-muted" style="float:right;">${new Date(r.timestamp).toLocaleTimeString('de-DE', {hour:'2-digit', minute:'2-digit', second:'2-digit'})}</span>
         </div>
       `).join('') || '<div class="text-muted">Keine Aktivitaet.</div>';
+
+      // Parallel fetch of presence, heatmap and audit (non-critical)
+      await Promise.all([
+        this.loadPresence().catch(() => {}),
+        this.loadHeatmap().catch(() => {}),
+        this.loadAudit().catch(() => {})
+      ]);
 
     } catch (e) {
       console.error('Admin refresh error:', e);
