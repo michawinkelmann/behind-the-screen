@@ -9,27 +9,34 @@ Ein browserbasiertes Multiplayer-Ermittlungsspiel, in dem Schueler-Teams die Onl
 - **Schueler-Geraete** mit Browser (PC, Laptop oder iPad) im selben Netzwerk (WLAN/LAN)
 - **Kein Internet noetig** nach der Installation
 
-## Installation (einmalig)
+## Schnellstart (empfohlen)
 
 1. Ordner `behind-the-screen` auf den Lehrer-PC kopieren
-2. Terminal/Eingabeaufforderung oeffnen und in den Ordner wechseln:
+2. Node.js installieren (falls noch nicht vorhanden): https://nodejs.org
+3. Doppelklick auf die passende Start-Datei im Projektordner:
+   - **Windows:** `Start.bat`
+   - **macOS:** `Start.command`
+   - **Linux:** `Start.sh`
+
+Beim ersten Start werden automatisch die Abhaengigkeiten installiert und die Datenbank initialisiert. Danach oeffnet sich der Browser automatisch mit dem Spiel. Zum Beenden einfach das Fenster schliessen oder `Strg+C` druecken.
+
+> Hinweis fuer macOS: Beim ersten Start ggf. Rechtsklick auf `Start.command` -> "Oeffnen" waehlen, um den Gatekeeper-Dialog zu bestaetigen.
+
+## Manueller Start (Alternative ueber Terminal)
+
+1. Terminal/Eingabeaufforderung oeffnen und in den Ordner wechseln:
    ```
    cd behind-the-screen
    ```
-3. Abhaengigkeiten installieren:
+2. Einmalig:
    ```
    npm install
-   ```
-4. Datenbank initialisieren:
-   ```
    npm run init-db
    ```
-
-## Server starten
-
-```
-npm start
-```
+3. Server starten:
+   ```
+   npm start
+   ```
 
 Nach dem Start erscheint eine Box mit den Verbindungs-URLs:
 
