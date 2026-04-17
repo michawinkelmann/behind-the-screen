@@ -1,115 +1,79 @@
-const Board = require('../models/Board');
 const Interaction = require('../models/Interaction');
-const Evidence = require('../models/Evidence');
 const { sessions } = require('../routes/auth');
+
+const CHAT_MIN_INTERVAL_MS = 500;
+const CHAT_MAX_LEN = 500;
+const UNAUTH_TIMEOUT_MS = 15_000;
 
 function setupSocketHandlers(io) {
   io.on('connection', (socket) => {
     let currentTeam = null;
+    let lastChatAt = 0;
 
-    // Authenticate socket connection
-    socket.on('auth', ({ token }) => {
-      if (sessions.has(token)) {
-        currentTeam = sessions.get(token);
-        socket.join('authenticated');
-        if (currentTeam.primary_spur) {
-          socket.join(`spur:${currentTeam.primary_spur}`);
-        }
+    // Drop sockets that never authenticate so orphaned clients don't linger.
+    const authTimeout = setTimeout(() => {
+      if (!currentTeam) socket.disconnect(true);
+    }, UNAUTH_TIMEOUT_MS);
+
+    socket.on('auth', ({ token } = {}) => {
+      if (typeof token !== 'string' || !sessions.has(token)) {
+        socket.emit('auth:error', { error: 'Ungueltiger Token' });
+        return;
+      }
+      currentTeam = sessions.get(token);
+      clearTimeout(authTimeout);
+
+      socket.join('authenticated');
+      if (currentTeam.primary_spur) {
+        socket.join(`spur:${currentTeam.primary_spur}`);
+      }
+      if (currentTeam.id) {
         socket.join(`team:${currentTeam.id}`);
-        socket.emit('auth:success', { team: currentTeam });
+      }
+      socket.emit('auth:success', { team: currentTeam });
 
-        // Notify others
+      if (currentTeam.id) {
         socket.to('authenticated').emit('team:online', {
           teamId: currentTeam.id,
           teamName: currentTeam.name
         });
-      } else {
-        socket.emit('auth:error', { error: 'Ungültiger Token' });
       }
     });
 
-    // Board: Add note
-    socket.on('board:add-note', (data) => {
-      if (!currentTeam) return;
-      const note = Board.createNote({
-        teamId: currentTeam.id,
-        title: data.title,
-        content: data.content,
-        columnName: data.columnName,
-        tags: data.tags,
-        evidenceLinks: data.evidenceLinks
-      });
-      if (note) {
-        io.to('authenticated').emit('board:note-added', note);
-      }
-    });
+    // Team chat - rate limited + length capped.
+    socket.on('chat:send', ({ message } = {}) => {
+      if (!currentTeam || !currentTeam.id) return;
+      if (typeof message !== 'string') return;
+      const text = message.trim();
+      if (!text) return;
 
-    // Board: Update note
-    socket.on('board:update-note', (data) => {
-      if (!currentTeam) return;
-      const note = Board.updateNote(data.id, currentTeam.id, data);
-      if (note) {
-        io.to('authenticated').emit('board:note-updated', note);
-      }
-    });
+      const now = Date.now();
+      if (now - lastChatAt < CHAT_MIN_INTERVAL_MS) return;
+      lastChatAt = now;
 
-    // Board: Delete note
-    socket.on('board:delete-note', ({ id }) => {
-      if (!currentTeam) return;
-      if (Board.deleteNote(id, currentTeam.id)) {
-        io.to('authenticated').emit('board:note-deleted', { id });
-      }
-    });
-
-    // Board: Add comment
-    socket.on('board:add-comment', ({ noteId, content }) => {
-      if (!currentTeam) return;
-      const comment = Board.addComment(noteId, currentTeam.id, content);
-      if (comment) {
-        io.to('authenticated').emit('board:comment-added', { noteId, comment });
-      }
-    });
-
-    // Evidence: Discovered
-    socket.on('evidence:discover', ({ evidenceId }) => {
-      if (!currentTeam) return;
-      const evidence = Evidence.discover(evidenceId, currentTeam.id);
-      if (evidence) {
-        io.to('authenticated').emit('evidence:discovered', {
-          evidenceId,
-          teamId: currentTeam.id,
-          teamName: currentTeam.name,
-          title: evidence.title,
-          importance: evidence.importance
-        });
-      }
-    });
-
-    // Team Chat
-    socket.on('chat:send', ({ message }) => {
-      if (!currentTeam || !message) return;
+      const clean = text.slice(0, CHAT_MAX_LEN);
       const chatMessage = {
         teamId: currentTeam.id,
         teamName: currentTeam.name,
-        message,
+        message: clean,
         timestamp: new Date().toISOString()
       };
       io.to('authenticated').emit('chat:message', chatMessage);
-      Interaction.log(currentTeam.id, 'chat_message', { message: message.substring(0, 100) });
+      Interaction.log(currentTeam.id, 'chat_message', { message: clean.substring(0, 100) });
     });
 
-    // Team ready signal
+    // Team ready signal - for collaborative "we're done with this phase"
     socket.on('team:ready', () => {
-      if (!currentTeam) return;
+      if (!currentTeam || !currentTeam.id) return;
       io.to('authenticated').emit('team:ready', {
         teamId: currentTeam.id,
         teamName: currentTeam.name
       });
     });
 
-    // Disconnect
     socket.on('disconnect', () => {
-      if (currentTeam) {
+      clearTimeout(authTimeout);
+      if (currentTeam && currentTeam.id) {
         socket.to('authenticated').emit('team:offline', {
           teamId: currentTeam.id,
           teamName: currentTeam.name

@@ -97,10 +97,13 @@ window.LearningHub = {
         </div>`;
       }
       if (section.type === 'reflection') {
+        const qText = section.question || section.content || '';
+        const key = this._answerKey(mod.id, qText);
         return `<div class="card mb-1" style="border-left:3px solid var(--orange); background:var(--orange-light);">
           <div style="font-size:0.83rem; font-weight:600; margin-bottom:0.3rem; color:var(--orange);">Reflexionsfrage</div>
-          <div style="font-size:0.9rem;">${this.escapeHTML(section.question || section.content)}</div>
-          <textarea style="width:100%; margin-top:0.5rem; min-height:60px; resize:vertical;" placeholder="Deine Antwort..."></textarea>
+          <div style="font-size:0.9rem;">${this.escapeHTML(qText)}</div>
+          <textarea data-answer-key="${this.escapeHTML(key)}" style="width:100%; margin-top:0.5rem; min-height:60px; resize:vertical;" placeholder="Deine Antwort..."></textarea>
+          <div class="text-xs text-muted" style="margin-top:0.25rem;" data-saved-label>Wird lokal gespeichert.</div>
         </div>`;
       }
       if (section.type === 'simulation_intro') {
@@ -140,6 +143,32 @@ window.LearningHub = {
         }
       });
     }
+
+    // Restore and persist reflection answers in localStorage (stays on student's device).
+    contentEl.querySelectorAll('textarea[data-answer-key]').forEach(ta => {
+      const key = ta.dataset.answerKey;
+      try {
+        const saved = localStorage.getItem(key);
+        if (saved) ta.value = saved;
+      } catch (_) {}
+      let saveTimer = null;
+      const label = ta.parentElement.querySelector('[data-saved-label]');
+      ta.addEventListener('input', () => {
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(() => {
+          try {
+            localStorage.setItem(key, ta.value);
+            if (label) label.textContent = 'Gespeichert ' + new Date().toLocaleTimeString('de-DE', {hour:'2-digit', minute:'2-digit'});
+          } catch (_) {}
+        }, 400);
+      });
+    });
+  },
+
+  _answerKey(moduleId, question) {
+    const team = AppState.get('team') || {};
+    // Shorten to keep keys readable; hash-free is fine for localStorage scope.
+    return `bts_reflection:${team.id || 'anon'}:${moduleId}:${(question || '').slice(0, 60)}`;
   },
 
   escapeHTML(str) {

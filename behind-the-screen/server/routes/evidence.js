@@ -57,7 +57,19 @@ router.post('/:id/discover', authMiddleware, (req, res) => {
   if (!evidence) {
     return res.status(404).json({ error: 'Beweis nicht gefunden' });
   }
-  Interaction.log(req.team.id, 'evidence_discover', { evidenceId: req.params.id });
+  if (evidence._firstDiscovery) {
+    Interaction.log(req.team.id, 'evidence_discover', { evidenceId: req.params.id });
+    const io = req.app.get('io');
+    if (io) {
+      io.to('authenticated').emit('evidence:discovered', {
+        evidenceId: evidence.id,
+        teamId: req.team.id,
+        teamName: req.team.name,
+        title: evidence.title,
+        importance: evidence.importance
+      });
+    }
+  }
   res.json({ evidence });
 });
 

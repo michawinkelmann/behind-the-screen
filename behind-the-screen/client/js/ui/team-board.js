@@ -1,6 +1,9 @@
 // Kanban-style shared board
 window.TeamBoard = {
   _initialized: false,
+  TITLE_MAX: 200,
+  CONTENT_MAX: 4000,
+  COMMENT_MAX: 1000,
   columns: [
     { id: 'timeline', name: 'Timeline', icon: '&#128337;' },
     { id: 'profiles', name: 'Profile', icon: '&#128100;' },
@@ -89,25 +92,28 @@ window.TeamBoard = {
   },
 
   showAddNoteDialog(columnName) {
+    if (!this.columns.some(c => c.id === columnName)) columnName = 'timeline';
     const modal = document.createElement('div');
     modal.className = 'modal-overlay';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
     modal.innerHTML = `
       <div class="modal" style="max-width:500px;">
         <div class="modal-header">
           <h2 style="font-size:1rem;">Neue Notiz</h2>
-          <button class="modal-close">&times;</button>
+          <button class="modal-close" aria-label="Schliessen">&times;</button>
         </div>
         <div class="modal-body">
           <div class="form-group mb-1">
-            <label>Titel</label>
-            <input type="text" id="new-note-title" placeholder="Kurzer Titel..." class="w-full">
+            <label for="new-note-title">Titel</label>
+            <input type="text" id="new-note-title" placeholder="Kurzer Titel..." class="w-full" maxlength="${this.TITLE_MAX}">
           </div>
           <div class="form-group mb-1">
-            <label>Inhalt</label>
-            <textarea id="new-note-content" rows="4" placeholder="Beschreibung, Erkenntnisse..." class="w-full" style="resize:vertical;"></textarea>
+            <label for="new-note-content">Inhalt</label>
+            <textarea id="new-note-content" rows="4" placeholder="Beschreibung, Erkenntnisse..." class="w-full" style="resize:vertical;" maxlength="${this.CONTENT_MAX}"></textarea>
           </div>
           <div class="form-group mb-2">
-            <label>Tags (kommagetrennt)</label>
+            <label for="new-note-tags">Tags (kommagetrennt)</label>
             <input type="text" id="new-note-tags" placeholder="z.B. warnsignal, isolation" class="w-full">
           </div>
           <button class="btn btn-primary w-full" id="save-note-btn">Speichern</button>
@@ -116,15 +122,21 @@ window.TeamBoard = {
     `;
 
     document.getElementById('modal-container').appendChild(modal);
-    modal.querySelector('.modal-close').addEventListener('click', () => modal.remove());
-    modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+    const close = () => {
+      modal.remove();
+      document.removeEventListener('keydown', onKey);
+    };
+    const onKey = (e) => { if (e.key === 'Escape') close(); };
+    modal.querySelector('.modal-close').addEventListener('click', close);
+    modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+    document.addEventListener('keydown', onKey);
     modal.querySelector('#new-note-title').focus();
 
-    modal.querySelector('#save-note-btn').addEventListener('click', async () => {
+    const save = async () => {
       const title = modal.querySelector('#new-note-title').value.trim();
       const content = modal.querySelector('#new-note-content').value.trim();
       const tagsStr = modal.querySelector('#new-note-tags').value.trim();
-      const tags = tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(Boolean) : [];
+      const tags = tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(Boolean).slice(0, 10) : [];
 
       if (!title) {
         Notifications.show('Bitte Titel eingeben', 'warning');
@@ -133,11 +145,15 @@ window.TeamBoard = {
 
       try {
         await API.createBoardNote({ title, content, columnName, tags });
-        modal.remove();
+        close();
         Notifications.show('Notiz erstellt!', 'success');
       } catch (e) {
         Notifications.show('Fehler: ' + e.message, 'warning');
       }
+    };
+    modal.querySelector('#save-note-btn').addEventListener('click', save);
+    modal.querySelector('#new-note-title').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); save(); }
     });
   },
 
@@ -188,17 +204,24 @@ window.TeamBoard = {
     `;
 
     document.getElementById('modal-container').appendChild(modal);
-    modal.querySelector('.modal-close').addEventListener('click', () => modal.remove());
-    modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+    const close = () => {
+      modal.remove();
+      document.removeEventListener('keydown', onKey);
+    };
+    const onKey = (e) => { if (e.key === 'Escape') close(); };
+    modal.querySelector('.modal-close').addEventListener('click', close);
+    modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+    document.addEventListener('keydown', onKey);
 
     // Delete handler
     if (isOwn) {
       modal.querySelector('#delete-note-btn').addEventListener('click', async () => {
+        if (!confirm('Notiz wirklich loeschen?')) return;
         try {
           await API.deleteBoardNote(noteId);
-          modal.remove();
+          close();
           Notifications.show('Notiz geloescht', 'success');
-          this.loadNotes();
+          // Board refresh comes via socket broadcast
         } catch (e) {
           Notifications.show('Fehler: ' + e.message, 'warning');
         }
@@ -206,19 +229,26 @@ window.TeamBoard = {
     }
 
     // Comment handler
-    modal.querySelector('#add-comment-btn').addEventListener('click', async () => {
+    const sendComment = async () => {
       const input = modal.querySelector('#comment-input');
       const content = input.value.trim();
       if (!content) return;
+      if (content.length > this.COMMENT_MAX) {
+        Notifications.show(`Kommentar zu lang (max ${this.COMMENT_MAX} Zeichen)`, 'warning');
+        return;
+      }
       try {
         await API.addBoardComment(noteId, content);
         input.value = '';
-        modal.remove();
-        this.loadNotes();
+        close();
         Notifications.show('Kommentar hinzugefuegt', 'success');
       } catch (e) {
         Notifications.show('Fehler: ' + e.message, 'warning');
       }
+    };
+    modal.querySelector('#add-comment-btn').addEventListener('click', sendComment);
+    modal.querySelector('#comment-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); sendComment(); }
     });
   },
 

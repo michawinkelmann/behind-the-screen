@@ -1,24 +1,44 @@
 // Main application entry point
 (function() {
+  let phaseTimerInterval = null;
+
   // Init socket
   SocketClient.init();
 
-  // Check for existing session
+  // Check for existing session and try to restore it.
+  // Sessions live in server memory and may be lost on restart - so we always
+  // try to re-authenticate via cached credentials instead of trusting the token
+  // blindly.
   if (AppState.load()) {
-    // Admin sessions live in server memory and don't survive a restart.
-    // Re-login silently with the stored password so Pinnwand/REST stays authorized.
-    if (AppState.get('isAdmin') && AppState.get('adminPassword')) {
-      API.adminLogin(AppState.get('adminPassword'))
-        .then(({ token }) => {
-          AppState.set('token', token);
-          AppState.save();
-          SocketClient.authenticate(token);
-        })
-        .catch(() => { AppState.clear(); location.reload(); });
-    } else {
-      SocketClient.authenticate(AppState.get('token'));
+    bootstrapExistingSession();
+  }
+
+  async function bootstrapExistingSession() {
+    try {
+      if (AppState.get('isAdmin') && AppState.get('adminPassword')) {
+        const { token } = await API.adminLogin(AppState.get('adminPassword'));
+        AppState.set('token', token);
+        AppState.save();
+        SocketClient.authenticate(token);
+        showApp();
+        return;
+      }
+
+      // Team session - verify server still knows us
+      try {
+        const { team } = await API.me();
+        AppState.set('team', team);
+        AppState.save();
+        SocketClient.authenticate(AppState.get('token'));
+        showApp();
+      } catch (e) {
+        // Token no longer valid - drop and show login
+        AppState.clear();
+      }
+    } catch (e) {
+      AppState.clear();
+      location.reload();
     }
-    showApp();
   }
 
   // Login tabs
@@ -110,6 +130,8 @@
       AppState.set('chatUnread', 0);
       updateChatUnread();
       scrollChatToBottom();
+      const input = document.getElementById('chat-input');
+      if (input) input.focus();
     }
   });
 
@@ -123,13 +145,14 @@
     const input = document.getElementById('chat-input');
     const msg = input.value.trim();
     if (!msg) return;
-    SocketClient.sendChat(msg);
+    SocketClient.sendChat(msg.slice(0, 500));
     input.value = '';
   }
 
   // Chat messages listener
   AppState.on('chatMessages', renderChatMessages);
   AppState.on('chatUnread', updateChatUnread);
+  AppState.on('gameState', updateNavInfo);
 
   function renderChatMessages(messages) {
     const container = document.getElementById('chat-messages');
@@ -150,7 +173,7 @@
     const count = AppState.get('chatUnread') || 0;
     const badge = document.getElementById('chat-unread');
     if (count > 0) {
-      badge.textContent = count;
+      badge.textContent = count > 99 ? '99+' : String(count);
       badge.style.display = '';
     } else {
       badge.style.display = 'none';
@@ -159,7 +182,7 @@
 
   function scrollChatToBottom() {
     const container = document.getElementById('chat-messages');
-    container.scrollTop = container.scrollHeight;
+    if (container) container.scrollTop = container.scrollHeight;
   }
 
   // Show main app, hide login
@@ -170,37 +193,54 @@
     const team = AppState.get('team');
     const isAdmin = AppState.get('isAdmin');
 
-    // Update nav
     document.getElementById('nav-team-name').textContent = team ? team.name : '';
     document.getElementById('nav-team-spur').textContent = team ? AppState.getSpurName(team.primary_spur) : '';
-
-    // Show admin link if admin
     document.getElementById('nav-admin-link').style.display = isAdmin ? '' : 'none';
-
-    // Hide chat for admin
     document.getElementById('chat-panel').style.display = isAdmin ? 'none' : '';
 
-    // Load game state
-    loadGameState();
+    ensureLogoutButton();
 
-    // Init screen manager
+    loadGameState();
     ScreenManager.init();
 
-    // If admin, go to admin screen
-    if (isAdmin) {
-      window.location.hash = '#/admin';
-    }
+    if (isAdmin) window.location.hash = '#/admin';
+  }
+
+  function ensureLogoutButton() {
+    const actions = document.querySelector('.top-nav-actions');
+    if (!actions || document.getElementById('nav-logout')) return;
+    const btn = document.createElement('a');
+    btn.id = 'nav-logout';
+    btn.href = '#';
+    btn.className = 'nav-link';
+    btn.textContent = 'Abmelden';
+    btn.style.marginLeft = '0.5rem';
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      if (!confirm('Wirklich abmelden?')) return;
+      try { await API.logout(); } catch (_) {}
+      AppState.clear();
+      location.reload();
+    });
+    actions.appendChild(btn);
   }
 
   async function loadGameState() {
     try {
       const state = await API.getGameState();
       AppState.set('gameState', state);
+      if (state && state.teacher_message) {
+        if (window.showBroadcastBanner) showBroadcastBanner(state.teacher_message);
+      }
+      if (state && state.is_paused && !AppState.get('isAdmin')) {
+        const overlay = document.getElementById('pause-overlay');
+        if (overlay) overlay.classList.add('visible');
+      }
       updateNavInfo();
-    } catch (e) {}
+    } catch (e) { /* silent */ }
   }
 
-  // Expose for socket events
+  // Exposed for socket events
   window.updateNavInfo = function() {
     const state = AppState.get('gameState');
     if (!state) return;
@@ -208,6 +248,48 @@
     const phaseNames = { 1: 'Ermittlung', 2: 'Verknuepfungen', 3: 'Synthese' };
     document.getElementById('nav-day').textContent = state.current_day || 1;
     document.getElementById('nav-phase').textContent = phaseNames[state.current_phase] || state.current_phase;
+
+    // Phase timer
+    const timerContainer = document.getElementById('nav-timer-container');
+    const timerLabel = document.getElementById('nav-timer');
+    if (!timerContainer || !timerLabel) return;
+
+    if (phaseTimerInterval) {
+      clearInterval(phaseTimerInterval);
+      phaseTimerInterval = null;
+    }
+
+    if (!state.phase_start_time || !state.phase_duration_minutes) {
+      timerContainer.style.display = 'none';
+      return;
+    }
+
+    const startedAt = new Date(state.phase_start_time).getTime();
+    if (Number.isNaN(startedAt)) {
+      timerContainer.style.display = 'none';
+      return;
+    }
+    const endAt = startedAt + state.phase_duration_minutes * 60_000;
+
+    const updateLabel = () => {
+      if (state.is_paused || AppState.get('gameState') !== state && AppState.get('gameState') && AppState.get('gameState').is_paused) {
+        // paused - keep showing current text, but don't tick down
+      }
+      const now = Date.now();
+      const ms = Math.max(0, endAt - now);
+      const mins = Math.floor(ms / 60000);
+      const secs = Math.floor((ms % 60000) / 1000);
+      timerLabel.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      timerContainer.style.color = ms < 60000 ? 'var(--warning)' : '';
+    };
+
+    timerContainer.style.display = '';
+    updateLabel();
+    phaseTimerInterval = setInterval(() => {
+      const cur = AppState.get('gameState');
+      if (cur && cur.is_paused) return;
+      updateLabel();
+    }, 1000);
   };
 
   function escapeHTML(str) {

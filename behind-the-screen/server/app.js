@@ -6,18 +6,54 @@ const { Server } = require('socket.io');
 const path = require('path');
 const os = require('os');
 
+if (!process.env.ADMIN_PASSWORD) {
+  console.warn('[WARN] ADMIN_PASSWORD nicht gesetzt - verwende Fallback. Bitte .env anpassen!');
+  process.env.ADMIN_PASSWORD = 'admin2024';
+}
+if (process.env.ADMIN_PASSWORD === 'admin2024') {
+  console.warn('[WARN] Standard-Admin-Passwort aktiv. Bitte ADMIN_PASSWORD in .env aendern!');
+}
+
+function getLocalAddresses() {
+  const interfaces = os.networkInterfaces();
+  const addresses = [];
+  for (const name of Object.keys(interfaces)) {
+    for (const iface of interfaces[name]) {
+      if (iface.family === 'IPv4' && !iface.internal) {
+        addresses.push(iface.address);
+      }
+    }
+  }
+  return addresses;
+}
+
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, {
-  cors: { origin: '*' }
+
+// Socket.IO: same-origin is sufficient for a locally served SPA.
+// Accept both the loopback URL and any local IPv4 host the server listens on.
+const allowedOrigins = new Set([null, 'null']);
+const PORT = process.env.PORT || 3000;
+['localhost', '127.0.0.1', ...getLocalAddresses()].forEach(host => {
+  allowedOrigins.add(`http://${host}:${PORT}`);
+  allowedOrigins.add(`https://${host}:${PORT}`);
 });
 
-// Make io accessible in routes
+const io = new Server(server, {
+  cors: {
+    origin: (origin, cb) => {
+      // Same-origin requests come through without an Origin header.
+      if (!origin || allowedOrigins.has(origin)) return cb(null, true);
+      return cb(new Error('Origin nicht erlaubt'), false);
+    }
+  }
+});
+
 app.set('io', io);
 
-// Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// Middleware - guard against oversized payloads
+app.use(express.json({ limit: '256kb' }));
+app.use(express.urlencoded({ extended: true, limit: '64kb' }));
 
 // Serve client files
 app.use(express.static(path.join(__dirname, '..', 'client')));
@@ -38,19 +74,13 @@ app.get('/api/game/state', (req, res) => {
 
 // Server info (for QR code display)
 app.get('/api/server-info', (req, res) => {
-  const interfaces = os.networkInterfaces();
-  const addresses = [];
-  for (const name of Object.keys(interfaces)) {
-    for (const iface of interfaces[name]) {
-      if (iface.family === 'IPv4' && !iface.internal) {
-        addresses.push(iface.address);
-      }
-    }
-  }
-  const port = process.env.PORT || 3000;
-  const url = addresses.length > 0 ? `http://${addresses[0]}:${port}` : `http://localhost:${port}`;
-  res.json({ url, addresses, port });
+  const addresses = getLocalAddresses();
+  const url = addresses.length > 0 ? `http://${addresses[0]}:${PORT}` : `http://localhost:${PORT}`;
+  res.json({ url, addresses, port: PORT });
 });
+
+// JSON 404 for unknown API paths so clients surface errors cleanly
+app.use('/api', (req, res) => res.status(404).json({ error: 'Endpunkt nicht gefunden' }));
 
 // Fallback to index.html for SPA
 app.get('*', (req, res) => {
@@ -62,24 +92,13 @@ const setupSocketHandlers = require('./config/socket-handlers');
 setupSocketHandlers(io);
 
 // Start server
-const PORT = process.env.PORT || 3000;
 server.listen(PORT, '0.0.0.0', () => {
   console.log('');
   console.log('╔══════════════════════════════════════════════════╗');
   console.log('║      BEHIND THE SCREEN - Ermittlungsspiel       ║');
   console.log('╠══════════════════════════════════════════════════╣');
 
-  // Get local IP addresses
-  const interfaces = os.networkInterfaces();
-  const addresses = [];
-  for (const name of Object.keys(interfaces)) {
-    for (const iface of interfaces[name]) {
-      if (iface.family === 'IPv4' && !iface.internal) {
-        addresses.push(iface.address);
-      }
-    }
-  }
-
+  const addresses = getLocalAddresses();
   console.log(`║  Lokal:   http://localhost:${PORT}                 ║`);
   if (addresses.length > 0) {
     for (const addr of addresses) {
@@ -94,3 +113,13 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log('╚══════════════════════════════════════════════════╝');
   console.log('');
 });
+
+// Graceful shutdown so SQLite WAL flushes cleanly on Ctrl+C
+function shutdown(signal) {
+  console.log(`\n[${signal}] Server wird beendet...`);
+  try { require('./config/database').close(); } catch (e) {}
+  server.close(() => process.exit(0));
+  setTimeout(() => process.exit(0), 3000).unref();
+}
+process.on('SIGINT', () => shutdown('SIGINT'));
+process.on('SIGTERM', () => shutdown('SIGTERM'));

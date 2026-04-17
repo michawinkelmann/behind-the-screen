@@ -39,23 +39,31 @@ const Evidence = {
   },
 
   discover(id, teamId) {
-    const evidence = this.getById(id);
-    if (!evidence) return null;
-
-    if (!evidence.is_discovered) {
-      db.prepare(`
-        UPDATE evidence SET is_discovered = 1, discovered_by = ?, discovered_at = CURRENT_TIMESTAMP
-        WHERE id = ?
+    // Atomic claim: only the first team to hit this row flips is_discovered,
+    // and only that flip triggers a progress increment.
+    const run = db.transaction(() => {
+      const update = db.prepare(`
+        UPDATE evidence
+        SET is_discovered = 1, discovered_by = ?, discovered_at = CURRENT_TIMESTAMP
+        WHERE id = ? AND is_discovered = 0
       `).run(teamId, id);
 
-      // Update team progress
-      db.prepare(`
-        UPDATE progress SET evidence_found = evidence_found + 1
-        WHERE team_id = ?
-      `).run(teamId);
-    }
+      if (update.changes === 1) {
+        db.prepare(`
+          UPDATE progress SET evidence_found = evidence_found + 1
+          WHERE team_id = ?
+        `).run(teamId);
+        return { claimed: true };
+      }
+      return { claimed: false };
+    });
 
-    return this.getById(id);
+    const evidence = this.getById(id);
+    if (!evidence) return null;
+    const result = run();
+    const after = this.getById(id);
+    if (after) after._firstDiscovery = result.claimed;
+    return after;
   },
 
   getDiscoveryStats() {

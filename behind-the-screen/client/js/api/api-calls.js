@@ -7,7 +7,22 @@ window.API = {
     if (AppState.get('isAdmin')) headers['X-Admin-Token'] = AppState.get('adminPassword') || '';
 
     const res = await fetch(url, { ...options, headers });
-    const data = await res.json();
+
+    let data;
+    const ct = res.headers.get('content-type') || '';
+    if (ct.includes('application/json')) {
+      data = await res.json().catch(() => ({}));
+    } else {
+      data = { error: await res.text().catch(() => 'Unerwartete Server-Antwort') };
+    }
+
+    // Expired/unknown session - drop client state and return to login.
+    if (res.status === 401 && !url.includes('/api/auth/')) {
+      if (window.AppState) AppState.clear();
+      location.reload();
+      throw new Error(data.error || 'Sitzung abgelaufen');
+    }
+
     if (!res.ok) throw new Error(data.error || 'Anfrage fehlgeschlagen');
     return data;
   },
@@ -34,6 +49,14 @@ window.API = {
     });
   },
 
+  async me() {
+    return this._fetch('/api/auth/me');
+  },
+
+  async logout() {
+    return this._fetch('/api/auth/logout', { method: 'POST' }).catch(() => null);
+  },
+
   // Evidence
   async searchEvidence(params = {}) {
     const qs = new URLSearchParams();
@@ -42,11 +65,11 @@ window.API = {
   },
 
   async getEvidence(id) {
-    return this._fetch('/api/evidence/' + id);
+    return this._fetch('/api/evidence/' + encodeURIComponent(id));
   },
 
   async discoverEvidence(id) {
-    return this._fetch('/api/evidence/' + id + '/discover', { method: 'POST' });
+    return this._fetch('/api/evidence/' + encodeURIComponent(id) + '/discover', { method: 'POST' });
   },
 
   async getEvidenceStats() {
@@ -59,7 +82,7 @@ window.API = {
 
   // Board
   async getBoardNotes(column) {
-    const qs = column ? '?column=' + column : '';
+    const qs = column ? '?column=' + encodeURIComponent(column) : '';
     return this._fetch('/api/board/notes' + qs);
   },
 
@@ -94,11 +117,11 @@ window.API = {
   },
 
   async getModule(id) {
-    return this._fetch('/api/modules/' + id);
+    return this._fetch('/api/modules/' + encodeURIComponent(id));
   },
 
   async completeModule(id) {
-    return this._fetch('/api/modules/' + id + '/complete', { method: 'POST' });
+    return this._fetch('/api/modules/' + encodeURIComponent(id) + '/complete', { method: 'POST' });
   },
 
   // Game State
@@ -137,6 +160,17 @@ window.API = {
     return this._fetch('/api/admin/broadcast', {
       method: 'POST',
       body: JSON.stringify({ message })
+    });
+  },
+
+  async adminClearBroadcast() {
+    return this._fetch('/api/admin/clear-broadcast', { method: 'POST' });
+  },
+
+  async adminSetDuration(minutes) {
+    return this._fetch('/api/admin/set-duration', {
+      method: 'POST',
+      body: JSON.stringify({ minutes })
     });
   },
 

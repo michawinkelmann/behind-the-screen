@@ -43,11 +43,14 @@ window.AdminPanel = {
           <button class="btn btn-secondary" id="admin-resume-btn">Fortsetzen</button>
           <button class="btn btn-secondary" id="admin-advance-btn">Naechste Phase</button>
         </div>
-        <div style="display:flex; gap:0.5rem; align-items:center; margin-bottom:1rem;">
+        <div style="display:flex; gap:0.5rem; align-items:center; margin-bottom:1rem; flex-wrap:wrap;">
           <label class="text-sm">Tag:</label>
           <button class="btn btn-sm btn-secondary" data-set-day="1">Tag 1</button>
           <button class="btn btn-sm btn-secondary" data-set-day="2">Tag 2</button>
           <button class="btn btn-sm btn-secondary" data-set-day="3">Tag 3</button>
+          <span style="margin-left:1rem;" class="text-sm">Phasendauer:</span>
+          <input type="number" id="admin-duration-input" min="1" max="240" style="width:4.5rem;">
+          <button class="btn btn-sm btn-secondary" id="admin-duration-btn">Min. setzen</button>
         </div>
         <div id="admin-game-state" class="text-sm text-muted"></div>
       </div>
@@ -55,9 +58,10 @@ window.AdminPanel = {
       <!-- Broadcast -->
       <div class="admin-section">
         <h3>Nachricht senden</h3>
-        <div style="display:flex; gap:0.5rem;">
-          <input type="text" id="admin-broadcast-input" placeholder="Nachricht an alle Teams..." style="flex:1;">
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+          <input type="text" id="admin-broadcast-input" placeholder="Nachricht an alle Teams..." maxlength="500" style="flex:1; min-width:220px;">
           <button class="btn btn-primary" id="admin-broadcast-btn">Senden</button>
+          <button class="btn btn-secondary" id="admin-clear-broadcast-btn" title="Aktuelle Nachricht entfernen">Banner schliessen</button>
         </div>
       </div>
 
@@ -133,9 +137,38 @@ window.AdminPanel = {
       const input = document.getElementById('admin-broadcast-input');
       const msg = input.value.trim();
       if (!msg) return;
-      await API.adminBroadcast(msg);
-      input.value = '';
-      Notifications.show('Nachricht gesendet', 'success');
+      try {
+        await API.adminBroadcast(msg);
+        input.value = '';
+        Notifications.show('Nachricht gesendet', 'success');
+      } catch (e) {
+        Notifications.show('Fehler: ' + e.message, 'warning');
+      }
+    });
+
+    document.getElementById('admin-clear-broadcast-btn').addEventListener('click', async () => {
+      try {
+        await API.adminClearBroadcast();
+        Notifications.show('Banner entfernt', 'success');
+      } catch (e) {
+        Notifications.show('Fehler: ' + e.message, 'warning');
+      }
+    });
+
+    document.getElementById('admin-duration-btn').addEventListener('click', async () => {
+      const input = document.getElementById('admin-duration-input');
+      const minutes = parseInt(input.value, 10);
+      if (!Number.isFinite(minutes) || minutes < 1 || minutes > 240) {
+        Notifications.show('Dauer muss 1-240 Minuten sein', 'warning');
+        return;
+      }
+      try {
+        await API.adminSetDuration(minutes);
+        Notifications.show(`Phasendauer ${minutes} Min. gesetzt`, 'success');
+        this.refresh();
+      } catch (e) {
+        Notifications.show('Fehler: ' + e.message, 'warning');
+      }
     });
 
     document.getElementById('admin-reset-btn').addEventListener('click', async () => {
@@ -216,8 +249,13 @@ window.AdminPanel = {
       document.getElementById('admin-game-state').innerHTML = `
         Tag ${gameState.current_day}/3 | Phase: ${phaseNames[gameState.current_phase] || gameState.current_phase}
         | Status: ${gameState.is_paused ? '<span style="color:var(--warning)">Pausiert</span>' : '<span style="color:var(--success)">Laeuft</span>'}
-        ${gameState.teacher_message ? `<br>Aktuelle Nachricht: "${gameState.teacher_message}"` : ''}
+        | Dauer: ${gameState.phase_duration_minutes || 60} Min.
+        ${gameState.teacher_message ? `<br>Aktuelle Nachricht: "${this.escapeHTML(gameState.teacher_message)}"` : ''}
       `;
+      const durInput = document.getElementById('admin-duration-input');
+      if (durInput && document.activeElement !== durInput) {
+        durInput.value = gameState.phase_duration_minutes || 60;
+      }
 
       // Teams
       document.getElementById('admin-teams-list').innerHTML = teams.length === 0
