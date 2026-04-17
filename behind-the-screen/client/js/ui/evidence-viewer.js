@@ -141,7 +141,7 @@ window.EvidenceViewer = {
         html += `<div class="card"><strong style="font-size:0.85rem;">${this.escapeHTML(key)}:</strong>`;
         if (Array.isArray(value)) {
           html += '<ul style="padding-left:1rem; margin-top:0.25rem;">';
-          value.forEach(v => { html += `<li style="font-size:0.85rem;">${this.escapeHTML(String(v))}</li>`; });
+          value.forEach(v => { html += `<li style="font-size:0.85rem;">${this.renderArrayItem(v)}</li>`; });
           html += '</ul>';
         } else {
           html += `<pre style="font-size:0.8rem; margin-top:0.25rem; white-space:pre-wrap;">${this.escapeHTML(JSON.stringify(value, null, 2))}</pre>`;
@@ -153,6 +153,31 @@ window.EvidenceViewer = {
     }
     html += '</div>';
     return html;
+  },
+
+  renderArrayItem(v) {
+    if (v === null || v === undefined) return '';
+    if (typeof v !== 'object') return this.escapeHTML(String(v));
+    if (Array.isArray(v)) {
+      if (v.length === 0) return '<em style="color:var(--text-secondary);">—</em>';
+      return v.map(x => this.renderArrayItem(x)).join(', ');
+    }
+    const parts = Object.entries(v).map(([k, val]) => {
+      let rendered;
+      if (val === null || val === undefined || val === '') {
+        rendered = '<em style="color:var(--text-secondary);">—</em>';
+      } else if (Array.isArray(val)) {
+        rendered = val.length === 0
+          ? '<em style="color:var(--text-secondary);">—</em>'
+          : val.map(x => typeof x === 'object' && x !== null ? this.renderArrayItem(x) : this.escapeHTML(String(x))).join(', ');
+      } else if (typeof val === 'object') {
+        rendered = this.renderArrayItem(val);
+      } else {
+        rendered = this.escapeHTML(String(val));
+      }
+      return `<strong>${this.escapeHTML(k)}:</strong> ${rendered}`;
+    });
+    return parts.join(' &middot; ');
   },
 
   escapeHTML(str) {
